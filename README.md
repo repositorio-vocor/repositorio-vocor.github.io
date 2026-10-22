@@ -22,9 +22,9 @@ La primera vez, el panel pide un *token* de GitHub:
 
 (Si se prefiere un botón "Entrar con GitHub", ver la nota en `admin/config.yml`.)
 
-### Propuestas del público
+### De dónde sale el material
 
-El botón "Proponer un material" del pie del sitio abre un formulario en **Issues** (hace falta una cuenta de GitHub). Una persona validada lo revisa, lo carga desde `/admin` y cierra el issue.
+Los investigadores cargan sus materiales en [VocAr](https://www.conicet.gov.ar/programas/vocar/recursos/), el repositorio de CONICET. El equipo de VoCor filtra lo que es de Córdoba y lo carga acá, para no mantener dos bases de datos independientes.
 
 ### 2. Carga masiva desde Excel
 
