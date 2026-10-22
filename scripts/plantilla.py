@@ -10,8 +10,8 @@ wb = Workbook()
 ws = wb.active; ws.title = "Materiales"
 cols = [("Recurso", 42), ("UE", 24), ("Área", 36), ("Formato", 24), ("Público", 30), ("Palabras clave", 30), ("Descripción", 60), ("Links", 42), ("Imagen", 36)]
 ws.append([c for c, _ in cols])
-ws.append(["Ejemplo: Bichólogos (borrá esta fila)", "IDAS; IMBIV", "Ciencias Biológicas y de la Salud", "Podcast", "Público General; Docentes",
-           "microbios, bacterias", "Podcast sobre el mundo microbiano.", "https://open.spotify.com/show/…", "https://ejemplo.org/portada.jpg"])
+ws.append(["Ejemplo: Plantas nativas de las Sierras (borrá esta fila)", "IMBIV; IDEA", "Ciencias Biológicas y de la Salud", "Podcast", "Público General; Docentes",
+           "plantas nativas, flora, sierras", "Podcast sobre la flora nativa de Córdoba.", "https://open.spotify.com/show/…", "https://ejemplo.org/portada.jpg"])
 fill = PatternFill("solid", fgColor="1F6B52")
 for i, (c, w) in enumerate(cols, start=1):
     cell = ws.cell(row=1, column=i); cell.font = Font(bold=True, color="FFFFFF"); cell.fill = fill
