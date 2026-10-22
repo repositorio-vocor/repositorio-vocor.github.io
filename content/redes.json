@@ -102,6 +102,7 @@
     {
       "sigla": "IDACOR",
       "area": "Ciencias Sociales y Humanidades",
+      "logo": "/imagenes/logos/IDACOR.png",
       "web": "https://idacor.conicet.gov.ar",
       "instagram": "https://www.instagram.com/idacorconicet",
       "facebook": "https://www.facebook.com/IDACOR.CONICET",
@@ -165,6 +166,7 @@
     {
       "sigla": "IEH",
       "area": "Ciencias Sociales y Humanidades",
+      "logo": "/imagenes/logos/IEH.png",
       "web": "https://cehsegreti.org.ar/ieh"
     },
     {
@@ -214,33 +216,7 @@
       "instagram": "https://www.instagram.com/imbivconicetunc",
       "facebook": "https://www.facebook.com/IMBIVCONICETUNC",
       "x": "https://x.com/IMBIVCONICETUNC",
-      "youtube": "https://www.youtube.com/@IMBIVCONICETUNC",
-      "otros": [
-        {
-          "texto": "Museo Botánico",
-          "url": "https://museobotanico.unc.edu.ar"
-        },
-        {
-          "texto": "Facebook Museo Botánico",
-          "url": "https://www.facebook.com/museobotanico"
-        },
-        {
-          "texto": "Instagram @museobotanicunc",
-          "url": "https://www.instagram.com/museobotanicunc"
-        },
-        {
-          "texto": "Instagram @experienciabiodiversa",
-          "url": "https://www.instagram.com/experienciabiodiversa"
-        },
-        {
-          "texto": "YouTube Museo Botánico",
-          "url": "https://www.youtube.com/@imbivmuseobotanico1397"
-        },
-        {
-          "texto": "Linktree Museo Botánico",
-          "url": "https://linktr.ee/museobotanico"
-        }
-      ]
+      "youtube": "https://www.youtube.com/@IMBIVCONICETUNC"
     },
     {
       "sigla": "IMICO",
