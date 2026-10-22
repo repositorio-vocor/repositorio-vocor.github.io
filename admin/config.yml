@@ -82,10 +82,8 @@ collections:
           - Notas y entrevistas
           - Podcast
           - Publicación de divulgación científica
-          - Redes sociales
           - Revista
           - Sitio Web
-          - Webinar
       - name: area
         label: Área
         widget: select

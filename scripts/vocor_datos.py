@@ -27,14 +27,15 @@ PUBLICOS = [
     "Docentes",
 ]
 FORMATOS = [
-    "Audiovisual", "Libro", "Material didáctico", "Notas y entrevistas", "Podcast",
-    "Publicación de divulgación científica", "Redes sociales", "Revista", "Sitio Web", "Webinar",
+    "Audiovisual", "Libro", "Material didáctico", "Notas y entrevistas",
+    "Podcast", "Publicación de divulgación científica", "Revista", "Sitio Web",
 ]
 # Nombres viejos que se convierten al importar planillas.
 ALIAS_FORMATO = {
     "nota": "Notas y entrevistas", "notas": "Notas y entrevistas", "entrevista": "Notas y entrevistas", "entrevistas": "Notas y entrevistas",
     "video": "Audiovisual", "videos": "Audiovisual", "cartilla": "Material didáctico", "recursos para docentes": "Material didáctico",
     "revista anual": "Revista", "libros": "Libro", "revistas": "Revista",
+    "webinar": "Audiovisual", "webinars": "Audiovisual", "redes sociales": "Material didáctico",
 }
 
 # Valores que llevan coma adentro y no se deben partir.

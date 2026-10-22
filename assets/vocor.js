@@ -16,10 +16,10 @@ const ICONOS = {
 };
 const FAMILIA = {
   "Podcast":["audio","audio"], "Notas y entrevistas":["audio","charla"],
-  "Audiovisual":["video","video"], "Webinar":["video","charla"],
+  "Audiovisual":["video","video"],
   "Libro":["texto","libro"], "Revista":["texto","revista"], "Publicación de divulgación científica":["texto","texto"],
   "Material didáctico":["edu","edu"],
-  "Sitio Web":["web","web"], "Redes sociales":["web","redes"],
+  "Sitio Web":["web","web"],
 };
 const fam = f => FAMILIA[f] || ["texto","texto"];
 const colorDe = f => `var(--c-${fam(f)[0]})`;

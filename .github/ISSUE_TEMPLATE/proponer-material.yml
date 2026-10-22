@@ -32,10 +32,8 @@ body:
         - Notas y entrevistas
         - Podcast
         - Publicación de divulgación científica
-        - Redes sociales
         - Revista
         - Sitio Web
-        - Webinar
         - Otro
     validations:
       required: true
