@@ -29,6 +29,9 @@ PUBLICOS = [
 FORMATOS = [
     "Audiovisual", "Podcast", "Material didáctico", "Libro", "Revista", "Notas y entrevistas", "Sitio Web",
 ]
+# Formatos que por ahora NO se muestran en el sitio. Sus materiales se conservan en
+# content/materiales/ y se pueden seguir cargando; para volver a mostrarlos, sacalos de esta lista.
+FORMATOS_OCULTOS = ["Notas y entrevistas"]
 # Nombres viejos que se convierten al importar planillas.
 ALIAS_FORMATO = {
     "nota": "Notas y entrevistas", "notas": "Notas y entrevistas", "entrevista": "Notas y entrevistas", "entrevistas": "Notas y entrevistas",

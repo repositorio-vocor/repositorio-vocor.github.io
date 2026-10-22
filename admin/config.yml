@@ -72,6 +72,7 @@ collections:
         min: 1
       - name: formato
         label: Formato
+        hint: '"Notas y entrevistas" está oculto por ahora: esos materiales se guardan pero no se muestran en el sitio.'
         widget: select
         multiple: true
         min: 1

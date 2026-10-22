@@ -209,7 +209,7 @@ footer{margin-top:56px; background:var(--hero-bg); color:var(--hero-ink-2); font
   .grid.list .cover{width:96px}
   .formats{grid-template-columns:repeat(2, minmax(0,1fr)); gap:10px}
   .ftile{min-height:120px; padding:14px}
-  .ftile:first-child{grid-column:1 / -1; min-height:110px}
+  .ftile:first-child:nth-last-child(odd){grid-column:1 / -1; min-height:110px} /* solo si quedaría una suelta */
   .ftile b{font-size:17px; margin-top:12px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none !important} html{scroll-behavior:auto}}

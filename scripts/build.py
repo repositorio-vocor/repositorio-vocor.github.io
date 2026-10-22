@@ -10,7 +10,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from vocor_datos import CONTENIDO, RAIZ
+from vocor_datos import CONTENIDO, FORMATOS_OCULTOS, RAIZ
 
 SALIDA = RAIZ / "_site"
 COPIAR = ["index.html", "assets", "admin", "imagenes", "plantilla"]
@@ -26,7 +26,7 @@ def main():
             shutil.copytree(origen, SALIDA / nombre)
         elif origen.exists():
             shutil.copy2(origen, SALIDA / nombre)
-    materiales, errores = [], []
+    materiales, errores, ocultos = [], [], 0
     for f in sorted(CONTENIDO.glob("*.json")):
         try:
             d = json.loads(f.read_text(encoding="utf-8"))
@@ -37,6 +37,11 @@ def main():
             errores.append(f"{f.name}: no tiene título (recurso)")
             continue
         d["id"] = f.stem
+        formatos = [x for x in d.get("formato", []) if x not in FORMATOS_OCULTOS]
+        if d.get("formato") and not formatos:
+            ocultos += 1
+            continue
+        d["formato"] = formatos
         if d.get("imagen") and not (RAIZ / d["imagen"].lstrip("/")).exists() and not d["imagen"].startswith("http"):
             print(f"Aviso: {f.name} apunta a una imagen que no existe ({d['imagen']})")
         materiales.append(d)
@@ -44,7 +49,7 @@ def main():
         print("Hay materiales con problemas y no se publicaron:\n  " + "\n  ".join(errores))
     (SALIDA / "materiales.json").write_text(json.dumps(materiales, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     (SALIDA / ".nojekyll").write_text("")
-    print(f"Sitio armado en _site/ con {len(materiales)} materiales.")
+    print(f"Sitio armado en _site/ con {len(materiales)} materiales ({ocultos} ocultos por formato: {', '.join(FORMATOS_OCULTOS) or 'ninguno'}).")
 
 
 if __name__ == "__main__":
