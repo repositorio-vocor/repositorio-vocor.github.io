@@ -5,7 +5,7 @@
   --bg:#f6f7f9; --surface:#ffffff; --surface-2:#eef1f5; --ink:#111111; --ink-2:#686f78; --line:#d9dee5;
   --accent:#0064c8; --accent-ink:#ffffff; --accent-deep:#00468c; --sky:#0695d6; --sky-ink:#ffffff; --sun:#f6b40e; --sun-ink:#2a1f00;
   --hero-bg:#0064c8; --hero-ink:#ffffff; --hero-ink-2:#cfe3fb;
-  --c-audio:#6a4fb3; --c-video:#d9480f; --c-texto:#0064c8; --c-edu:#b07d00; --c-web:#00897b;
+  --on-c:#ffffff; --c-audio:#6a4fb3; --c-video:#d9480f; --c-texto:#0064c8; --c-edu:#b07d00; --c-web:#00897b;
   --ok:#2b7a3d; --warn:#a66a00; --err:#c62828;
   --f-display:"Roboto Condensed", "Arial Narrow", "Roboto", system-ui, sans-serif;
   --f-body:"Roboto", "Segoe UI", system-ui, sans-serif;
@@ -16,13 +16,13 @@
   --bg:#0c141d; --surface:#142030; --surface-2:#1b2a3c; --ink:#e8eef4; --ink-2:#9fb0c2; --line:#2a3b4f;
   --accent:#4da3ff; --accent-ink:#06121f; --accent-deep:#2b7fd6; --sky:#2bb0ec; --sky-ink:#06121f; --sun:#f6b40e; --sun-ink:#2a1f00;
   --hero-bg:#003a75; --hero-ink:#ffffff; --hero-ink-2:#b9d4f3;
-  --c-audio:#a68ef0; --c-video:#ff8a5c; --c-texto:#5aaeff; --c-edu:#f2c14a; --c-web:#3fc7b6;
+  --on-c:#06121f; --c-audio:#a68ef0; --c-video:#ff8a5c; --c-texto:#5aaeff; --c-edu:#f2c14a; --c-web:#3fc7b6;
   --ok:#6fcf86; --warn:#e6b14a; --err:#f08a80; --shadow:0 1px 2px rgb(0 0 0 / .3), 0 10px 28px rgb(0 0 0 / .3); color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#0c141d; --surface:#142030; --surface-2:#1b2a3c; --ink:#e8eef4; --ink-2:#9fb0c2; --line:#2a3b4f;
   --accent:#4da3ff; --accent-ink:#06121f; --accent-deep:#2b7fd6; --sky:#2bb0ec; --sky-ink:#06121f; --sun:#f6b40e; --sun-ink:#2a1f00;
   --hero-bg:#003a75; --hero-ink:#ffffff; --hero-ink-2:#b9d4f3;
-  --c-audio:#a68ef0; --c-video:#ff8a5c; --c-texto:#5aaeff; --c-edu:#f2c14a; --c-web:#3fc7b6;
+  --on-c:#06121f; --c-audio:#a68ef0; --c-video:#ff8a5c; --c-texto:#5aaeff; --c-edu:#f2c14a; --c-web:#3fc7b6;
   --ok:#6fcf86; --warn:#e6b14a; --err:#f08a80; --shadow:0 1px 2px rgb(0 0 0 / .3), 0 10px 28px rgb(0 0 0 / .3); color-scheme:dark}
 
 *{box-sizing:border-box}
@@ -60,14 +60,17 @@ a{color:var(--accent)}
 .stat span{font-size:13px; color:var(--hero-ink-2)}
 
 /* ---------- Explorar por formato ---------- */
-.formats{display:grid; grid-template-columns:repeat(auto-fill, minmax(220px, 1fr)); gap:10px}
-.ftile{display:grid; grid-template-columns:auto minmax(0,1fr); grid-template-rows:auto auto; column-gap:12px; align-items:center; padding:11px 14px; background:var(--surface); border:1px solid var(--line); border-radius:var(--r); cursor:pointer; text-align:left; transition:border-color .15s, transform .15s, box-shadow .15s; min-width:0}
-.ftile:hover{transform:translateY(-2px); box-shadow:var(--shadow); border-color:var(--c)}
-.ftile[aria-pressed="true"]{border-color:var(--c); box-shadow:inset 0 0 0 1.5px var(--c)}
-.ftile .ic{grid-row:1 / 3; width:40px; height:40px; border-radius:50%; display:grid; place-items:center; background:color-mix(in srgb, var(--c) 14%, var(--surface)); color:var(--c)}
-.ftile .ic svg{width:20px; height:20px}
-.ftile b{font-size:14.5px; font-weight:500; line-height:1.25; align-self:end}
-.ftile > span:last-child{font-family:var(--f-mono); font-size:12px; color:var(--ink-2); align-self:start}
+.formats{display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:12px}
+.ftile{position:relative; overflow:hidden; display:flex; flex-direction:column; align-items:flex-start; gap:4px; padding:18px 16px 16px; min-height:150px; background:color-mix(in srgb, var(--c) 9%, var(--surface)); border:1px solid color-mix(in srgb, var(--c) 22%, var(--line)); border-radius:var(--r); cursor:pointer; text-align:left; transition:background .2s, color .2s, transform .2s, box-shadow .2s; min-width:0}
+.ftile:hover{transform:translateY(-3px); box-shadow:var(--shadow)}
+.ftile[aria-pressed="true"], .ftile:hover{background:var(--c); border-color:var(--c); color:var(--on-c)}
+.ftile .ic{width:48px; height:48px; border-radius:50%; display:grid; place-items:center; background:var(--surface); color:var(--c); margin-bottom:auto; box-shadow:0 1px 2px rgb(0 0 0 / .08)}
+.ftile .ic svg{width:24px; height:24px}
+.ftile b{font-family:var(--f-display); font-size:19px; font-weight:700; line-height:1.15; margin-top:18px}
+.ftile > span:last-child{font-family:var(--f-mono); font-size:12px; color:var(--ink-2)}
+.ftile[aria-pressed="true"] > span:last-child, .ftile:hover > span:last-child{color:inherit; opacity:.85}
+.ftile::after{content:""; position:absolute; right:-28px; bottom:-28px; width:96px; height:96px; border-radius:50%; background:var(--c); opacity:.08; transition:opacity .2s}
+.ftile:hover::after, .ftile[aria-pressed="true"]::after{opacity:.18; background:#ffffff}
 
 /* ---------- Lo más nuevo ---------- */
 .feat{display:grid; grid-template-columns:minmax(0,1.5fr) minmax(0,1fr); gap:18px}
@@ -204,7 +207,9 @@ footer{margin-top:56px; background:var(--hero-bg); color:var(--hero-ink-2); font
   .hero-search input{padding-right:16px}
   .hero-search button{display:none}
   .grid.list .cover{width:96px}
-  .formats{display:flex; overflow-x:auto; padding-bottom:6px; scroll-snap-type:x proximity}
-  .ftile{flex:0 0 190px; scroll-snap-align:start}
+  .formats{grid-template-columns:repeat(2, minmax(0,1fr)); gap:10px}
+  .ftile{min-height:120px; padding:14px}
+  .ftile:first-child{grid-column:1 / -1; min-height:110px}
+  .ftile b{font-size:17px; margin-top:12px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none !important} html{scroll-behavior:auto}}
