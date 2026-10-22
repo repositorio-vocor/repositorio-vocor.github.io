@@ -12,9 +12,11 @@ permissions:
   pages: write
   id-token: write
 
+# Cada publicación arma el sitio completo, así que si llega un cambio nuevo
+# se cancela la anterior (aunque esté trabada en la cola) y se publica la última.
 concurrency:
   group: publicar
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   armar:
