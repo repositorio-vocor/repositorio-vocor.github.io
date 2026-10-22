@@ -4,7 +4,7 @@
 
 backend:
   name: github
-  repo: comisionrelevamiento/vocor
+  repo: repositorio-vocor/repositorio-vocor.github.io
   branch: main
   commit_messages:
     create: "Nuevo material: {{slug}}"
@@ -17,8 +17,8 @@ backend:
   # y poné acá la dirección del worker:
   # base_url: https://vocor-cms-auth.TU-CUENTA.workers.dev
 
-site_url: https://comisionrelevamiento.github.io/vocor/
-display_url: https://comisionrelevamiento.github.io/vocor/
+site_url: https://repositorio-vocor.github.io/
+display_url: https://repositorio-vocor.github.io/
 logo_url: data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231f6b52'/%3E%3Ctext x='16' y='23' font-family='Arial' font-weight='700' font-size='17' text-anchor='middle' fill='%23fff'%3EVC%3C/text%3E%3C/svg%3E
 
 media_folder: imagenes

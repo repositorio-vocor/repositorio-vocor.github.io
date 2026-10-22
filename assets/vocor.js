@@ -6,7 +6,7 @@ const $ = s => document.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const norm = s => String(s ?? "").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase().trim();
 const arr = v => Array.isArray(v) ? v.filter(Boolean).map(String) : (v ? [String(v)] : []);
-// Las rutas de imagen se guardan como "/imagenes/x.jpg"; se usan relativas para que funcione en usuario.github.io/vocor/
+// Las rutas de imagen se guardan como "/imagenes/x.jpg"; se usan relativas para que funcione en cualquier dirección (con o sin subcarpeta)
 const imgSrc = p => !p ? "" : /^https?:/.test(p) ? p : p.replace(/^\/+/, "");
 
 let items = [], loaded = false;

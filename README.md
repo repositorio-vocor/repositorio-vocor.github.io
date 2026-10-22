@@ -2,8 +2,8 @@
 
 Repositorio de material de comunicación científica de Córdoba.
 
-**Sitio:** https://comisionrelevamiento.github.io/vocor/
-**Panel de carga:** https://comisionrelevamiento.github.io/vocor/admin/
+**Sitio:** https://repositorio-vocor.github.io/
+**Panel de carga:** https://repositorio-vocor.github.io/admin/
 
 ## Cómo se carga material
 
@@ -16,7 +16,7 @@ Entrá a `/admin/`, iniciá sesión con GitHub y usá **Nuevo material**. Al gua
 La primera vez, el panel pide un *token* de GitHub:
 
 1. En GitHub: foto de perfil → **Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token**.
-2. *Resource owner*: `comisionrelevamiento`. *Repository access*: solo `vocor`.
+2. *Resource owner*: `repositorio-vocor`. *Repository access*: solo `repositorio-vocor.github.io`.
 3. *Permissions → Repository permissions → Contents*: **Read and write**.
 4. Copiá el token y pegalo en el panel. Queda guardado en ese navegador.
 
