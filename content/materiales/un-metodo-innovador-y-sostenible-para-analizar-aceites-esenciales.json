@@ -17,7 +17,9 @@
   ],
   "descripcion": "Un método innovador y sostenible para analizar aceites esenciales",
   "links": [
-    "https://youtu.be/WKKZchOBgI8?si=23eAXUZ4d8oJv1m5"
+    {
+      "url": "https://youtu.be/WKKZchOBgI8?si=23eAXUZ4d8oJv1m5"
+    }
   ],
   "imagen": "/imagenes/un-metodo-innovador-y-sostenible-para-analizar-aceites-esenciales.jpg",
   "origen": "notion",

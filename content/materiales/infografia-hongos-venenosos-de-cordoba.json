@@ -17,7 +17,9 @@
     "venenosos"
   ],
   "links": [
-    "https://imbiv.conicet.unc.edu.ar/hongos-venenosos-de-cordoba/"
+    {
+      "url": "https://imbiv.conicet.unc.edu.ar/hongos-venenosos-de-cordoba/"
+    }
   ],
   "imagen": "/imagenes/infografia-hongos-venenosos-de-cordoba.jpg",
   "origen": "web",

@@ -22,7 +22,9 @@
   ],
   "descripcion": "Publicación de ensayo sobre la pandemia de coronavirus desde una perspectiva de largo plazo a partir de las ciencias históricas.",
   "links": [
-    "https://ffyh.unc.edu.ar/noticias/06/2021/presentacion-de-escrivid-2020-reflexiones-en-torno-a-pandemias-y-aislamientos/"
+    {
+      "url": "https://ffyh.unc.edu.ar/noticias/06/2021/presentacion-de-escrivid-2020-reflexiones-en-torno-a-pandemias-y-aislamientos/"
+    }
   ],
   "imagen": "/imagenes/que-culpa-tiene-el-murcielago-una-reflexion-en-perspectiva-historica-d.jpg",
   "origen": "notion",

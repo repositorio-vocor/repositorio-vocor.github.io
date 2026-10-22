@@ -32,6 +32,10 @@ const norm = s => String(s ?? "").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowe
 const arr = v => Array.isArray(v) ? v.filter(Boolean).map(String) : (v ? [String(v)] : []);
 // Las rutas de imagen se guardan como "/imagenes/x.jpg"; se usan relativas para que funcione en cualquier dirección
 const imgSrc = p => !p ? "" : /^https?:/.test(p) ? p : p.replace(/^\/+/, "");
+// Enlaces: cada uno puede ser una dirección o {url, texto}. El texto es opcional ("Capítulo 1", "Descargar PDF"…).
+const linksOf = it => (Array.isArray(it.links) ? it.links : it.links ? [it.links] : [])
+  .map(l => typeof l === "string" ? {url:l, texto:""} : {url:String(l?.url||""), texto:String(l?.texto||"")})
+  .filter(l => /^https?:\/\//.test(l.url));
 const sortKey = s => norm(s).replace(/^[^a-z0-9]+/,"");
 const porFecha = (a,b) => String(b.creado||"").localeCompare(String(a.creado||"")) || sortKey(a.recurso).localeCompare(sortKey(b.recurso),"es");
 
@@ -175,7 +179,7 @@ function openDetail(id){
   openId = id;
   const f0 = arr(it.formato)[0] || "";
   $("#detEye").innerHTML = tagsHTML(it);
-  const links = arr(it.links);
+  const links = linksOf(it);
   $("#detBody").innerHTML = `<div class="det">
     <div><div class="cover" style="--c:${colorDe(f0)}"><div class="ph">${icono(f0)}</div>${imgTag(it,false)}</div></div>
     <div style="min-width:0">
@@ -187,7 +191,7 @@ function openDetail(id){
         ${arr(it.publico).length?`<dt>Público</dt><dd>${esc(arr(it.publico).join(" · "))}</dd>`:""}
         ${arr(it.palabras).length?`<dt>Temas</dt><dd class="kw">${arr(it.palabras).map(k=>`<button type="button" data-kw="${esc(k)}">${esc(k)}</button>`).join("")}</dd>`:""}
       </dl>
-      ${links.length?`<div class="links">${links.map((l,i)=>`<a class="btn${i===0?" primary":""}" href="${esc(l)}" target="_blank" rel="noopener">${i===0?"Ver material":"Enlace "+(i+1)} ↗</a>`).join("")}</div>`:`<p style="color:var(--ink-2)">Sin enlace cargado.</p>`}
+      ${links.length?`<div class="links">${links.map((l,i)=>`<a class="btn${i===0?" primary":""}" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.texto || (i===0?"Ver material":"Enlace "+(i+1)))} ↗</a>`).join("")}</div>`:`<p style="color:var(--ink-2)">Sin enlace cargado.</p>`}
     </div></div>`;
   $("#detBody").querySelectorAll("[data-kw]").forEach(b=>b.onclick=()=>{ F.q=b.dataset.kw; $("#q").value=F.q; dDet.close(); render(); toCatalog(); });
   if (!dDet.open) dDet.showModal();
@@ -197,7 +201,7 @@ function openDetail(id){
 $("#btnExport").onclick = e=>{
   e.preventDefault();
   if (typeof XLSX==="undefined"){ toast("No se pudo preparar el archivo. Probá recargar la página."); return; }
-  const rows = [...items].sort((a,b)=>sortKey(a.recurso).localeCompare(sortKey(b.recurso),"es")).map(i=>[i.recurso, arr(i.ue).join("; "), arr(i.area).join("; "), arr(i.formato).join("; "), arr(i.publico).join("; "), arr(i.palabras).join(", "), i.descripcion||"", arr(i.links).join(" ")]);
+  const rows = [...items].sort((a,b)=>sortKey(a.recurso).localeCompare(sortKey(b.recurso),"es")).map(i=>[i.recurso, arr(i.ue).join("; "), arr(i.area).join("; "), arr(i.formato).join("; "), arr(i.publico).join("; "), arr(i.palabras).join(", "), i.descripcion||"", linksOf(i).map(l=>l.url).join(" ")]);
   const ws = XLSX.utils.aoa_to_sheet([["Recurso","UE","Área","Formato","Público","Palabras clave","Descripción","Links"], ...rows]);
   ws["!cols"] = [40,22,34,22,26,30,60,40].map(w=>({wch:w}));
   const wb = XLSX.utils.book_new(); XLSX.utils.book_append_sheet(wb, ws, "Materiales");

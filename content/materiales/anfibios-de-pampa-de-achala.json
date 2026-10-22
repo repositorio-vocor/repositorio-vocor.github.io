@@ -22,7 +22,9 @@
   ],
   "descripcion": "Investigadores y becarios del IDEA y el Centro de Zoología Aplicada desarrollaron una infografía, en  donde se brinda información sobre los anfibios de la Pampa de Achala, (Córdoba – Argentina). En esta región habitan una alta proporción de especies de anfibios endémicos, con alto valor en conservación, que utilizan de manera diferencial los distintos tipos de cuerpos de agua presentes en el área. Se brindan detalles para su reconocimiento y los principales rasgos de su biología. Asimismo se indican las principales amenazas que atentan sobre sus poblaciones.",
   "links": [
-    "https://www.idea.conicet.unc.edu.ar/2018/02/09/infografia-sobre-anfibios-de-la-pampa-de-achala/"
+    {
+      "url": "https://www.idea.conicet.unc.edu.ar/2018/02/09/infografia-sobre-anfibios-de-la-pampa-de-achala/"
+    }
   ],
   "imagen": "/imagenes/anfibios-de-pampa-de-achala.jpg",
   "origen": "notion",

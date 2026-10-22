@@ -20,7 +20,9 @@
   ],
   "descripcion": "Fanzines sobre género, hábitat y desigualdades",
   "links": [
-    "https://ceve.org.ar/fanzines-sobre-genero-habitat-y-desigualdades/"
+    {
+      "url": "https://ceve.org.ar/fanzines-sobre-genero-habitat-y-desigualdades/"
+    }
   ],
   "imagen": "/imagenes/femzine.jpg",
   "origen": "notion",

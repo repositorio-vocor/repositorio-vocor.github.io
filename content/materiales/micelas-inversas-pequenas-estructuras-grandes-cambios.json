@@ -21,7 +21,9 @@
   ],
   "descripcion": "Micelas inversas: pequeñas estructuras, grandes cambios",
   "links": [
-    "https://youtu.be/V1KyyPHA4vY?si=WVHp4qQ7MD7sIGp_"
+    {
+      "url": "https://youtu.be/V1KyyPHA4vY?si=WVHp4qQ7MD7sIGp_"
+    }
   ],
   "imagen": "/imagenes/micelas-inversas-pequenas-estructuras-grandes-cambios.jpg",
   "origen": "notion",

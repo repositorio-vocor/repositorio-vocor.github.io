@@ -24,7 +24,9 @@
   ],
   "descripcion": "Ansenuza es un santuario natural con un increíble valor biológico, científico, cultural y recreativo de la provincia de Córdoba. En esta lámina creada por Manuel Sosa San Román, Fedra Bollatti y Mariela Oviedo-Diego te invitamos a conocer más sus características y su fauna.",
   "links": [
-    "https://www.idea.conicet.unc.edu.ar/2024/12/06/infografia-laguna-mar-chiquita/"
+    {
+      "url": "https://www.idea.conicet.unc.edu.ar/2024/12/06/infografia-laguna-mar-chiquita/"
+    }
   ],
   "imagen": "/imagenes/infografia-laguna-mar-chiquita.jpg",
   "origen": "web",

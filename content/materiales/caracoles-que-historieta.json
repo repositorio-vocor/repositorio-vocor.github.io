@@ -25,7 +25,9 @@
   ],
   "descripcion": "Este cuadernillo está dedicado a todos los docentes y educadores de niñas, niños y jóvenes de la Provincia de Córdoba. Es una invitación a utilizar la historieta infanto-juvenil tanto en las instituciones escolares como en otros espacios culturales como los museos, ya que constituye\nun recurso didáctico valioso al presentar una gran aceptación entre niñas/os y jóvenes.\nAdemás, como somos malacólogas (es decir, estudiamos moluscos), el eje temático del cuadernillo es la malacología. Los personajes principales de esta historieta, “Boris” y “Dentón”, están inspirados en dos especies de caracoles terrestres nativos de la Provincia de Córdoba.\nElegimos esta modalidad porque nos parece que a través de la historieta se pueden realizar diferentes actividades educativas divertidas e interesantes, y con un enfoque multidisciplinario, conocer un poco más sobre las especies de Córdoba.",
   "links": [
-    "https://grupomalacologia.wixsite.com/grupomalacologia/cartilla-paradocentes"
+    {
+      "url": "https://grupomalacologia.wixsite.com/grupomalacologia/cartilla-paradocentes"
+    }
   ],
   "imagen": "/imagenes/caracoles-que-historieta.jpg",
   "origen": "notion",

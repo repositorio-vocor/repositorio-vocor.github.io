@@ -20,9 +20,15 @@
   ],
   "descripcion": "Podcast de Antropología y Literatura: un proyecto extensionista de la Universidad Nacional de Córdoba",
   "links": [
-    "https://open.spotify.com/show/4WMMKz29nBrR9KkcdkO8g8",
-    "https://www.instagram.com/lasargonautasdelosconfines/",
-    "https://www.facebook.com/argonautas.delosconfines"
+    {
+      "url": "https://open.spotify.com/show/4WMMKz29nBrR9KkcdkO8g8"
+    },
+    {
+      "url": "https://www.instagram.com/lasargonautasdelosconfines/"
+    },
+    {
+      "url": "https://www.facebook.com/argonautas.delosconfines"
+    }
   ],
   "imagen": "/imagenes/las-argonautas-de-los-confines.jpg",
   "origen": "notion",

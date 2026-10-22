@@ -22,7 +22,9 @@
   ],
   "descripcion": "Entrevista sobre el trayecto personal y profesional hasta trabajar en la Comisión Nacional de Actividades Espaciales como Investigador/aa de CONICET en el tema de monitoreo satelital de calidad de aguas",
   "links": [
-    "https://www.argentina.gob.ar/noticias/industria-espacial-argentina-con-perspectiva-de-genero"
+    {
+      "url": "https://www.argentina.gob.ar/noticias/industria-espacial-argentina-con-perspectiva-de-genero"
+    }
   ],
   "imagen": "/imagenes/industria-espacial-argentina-con-perspectiva-de-genero.jpg",
   "origen": "notion",

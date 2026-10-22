@@ -18,7 +18,9 @@
   ],
   "descripcion": "Entrevista para Agencia CyTA",
   "links": [
-    "https://www.agenciacyta.org.ar/2021/04/la-combinacion-de-luz-y-compuestos-de-un-arbusto-andino-inhibe-en-laboratorio-el-virus-del-herpes-labial/"
+    {
+      "url": "https://www.agenciacyta.org.ar/2021/04/la-combinacion-de-luz-y-compuestos-de-un-arbusto-andino-inhibe-en-laboratorio-el-virus-del-herpes-labial/"
+    }
   ],
   "imagen": "/imagenes/la-combinacion-de-luz-y-compuestos-de-un-arbusto-andino-inhibe-en-labo.jpg",
   "origen": "notion",

@@ -18,7 +18,9 @@
   ],
   "descripcion": "Hongos comestibles de Córdoba",
   "links": [
-    "https://imbiv.conicet.unc.edu.ar/hongos-comestibles-de-cordoba/"
+    {
+      "url": "https://imbiv.conicet.unc.edu.ar/hongos-comestibles-de-cordoba/"
+    }
   ],
   "imagen": "/imagenes/infografia-hongos-comestibles-de-cordoba.jpg",
   "origen": "web",

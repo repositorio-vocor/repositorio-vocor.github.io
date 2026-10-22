@@ -27,7 +27,9 @@
   ],
   "descripcion": "Una propuesta que busca difundir de un modo didáctico y coloquial las investigaciones que realiza el personal de CONICET en esta provincia y de esta manera acercar la ciencia que se produce a la sociedad, generando un material que puede servir en el ámbito educativo, como disparador de temas. Se trata de una de las actividades planteadas para celebrar el 15º aniversario de la Institución.\nLos cuatro episodios, ya producidos se encuentran disponibles aquí.\n“Mundo de Plástico” Dra. Soledad Renzini. CITEQ, CONICET-UTN.\n“La mosca y la Soja” Dr. Agustín Luna. IIBYT, CONICET-UNC.\n“Harina de la buena” Dr. Pablo Palavecino. ICYTAC, CONICET-UNC.\n“Aire y Agua” Dra. Natalia Podio ICYTAC, CONICET-UNC.",
   "links": [
-    "https://open.spotify.com/show/1R9CGRgihp6ovaiOfUXeR7?si=NqTOtjtES4q-F0a0YhBOpA"
+    {
+      "url": "https://open.spotify.com/show/1R9CGRgihp6ovaiOfUXeR7?si=NqTOtjtES4q-F0a0YhBOpA"
+    }
   ],
   "imagen": "/imagenes/podcast-conicet-cordoba-15-anos.jpg",
   "origen": "notion",

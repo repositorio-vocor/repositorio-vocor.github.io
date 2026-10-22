@@ -20,7 +20,9 @@
   ],
   "descripcion": "Podcast sobre difusión de ideas científicas. En el marco de la re-edición y re-impresión del libro \"The City\" de Robert Park y Ernest Burgess",
   "links": [
-    "https://altersapukairadio.argentinastream.com/"
+    {
+      "url": "https://altersapukairadio.argentinastream.com/"
+    }
   ],
   "imagen": "/imagenes/indios-verdes.jpg",
   "origen": "notion",

@@ -20,7 +20,9 @@
   ],
   "descripcion": "Entrevista para Página/12. El aislamiento modificó hábitos alimenticios de los argentinos: aumentó el consumo de gaseosas, golosinas y bebidas alcohólicas; disminuyó el de frutas y vegetales.",
   "links": [
-    "https://www.pagina12.com.ar/258124-coronavirus-como-cambia-la-alimentacion-en-tiempos-de-cuaren"
+    {
+      "url": "https://www.pagina12.com.ar/258124-coronavirus-como-cambia-la-alimentacion-en-tiempos-de-cuaren"
+    }
   ],
   "imagen": "/imagenes/coronavirus-como-cambia-la-alimentacion-en-tiempos-de-cuarentena.jpg",
   "origen": "notion",

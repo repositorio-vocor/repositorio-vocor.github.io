@@ -21,7 +21,9 @@
   ],
   "descripcion": "Culturas Interiores prolonga la actividad del Programa de Historia y Antropología de la Cultura (PHAC), radicado en el Instituto de Antropología de Córdoba (IDACOR CONICET/UNC). Tratándose de un programa de investigaciones dedicado a temas de historia y antropología cultural y especialmente interesado en Córdoba, Argentina, Culturas Interiores promueve la constitución de un archivo, no en el sentido de un repositorio material de documentos sino en el de un repertorio de información fundamental, original y confiable sobre la cultura cordobesa de los siglos XIX y XX, tal como ésta fue forjada por locales y extranjeros. Se trata de un archivo de vocación pública, construcción gradual y apertura paulatina, orientado tanto a la comunidad de Investigador/aes cuanto al público interesado en general. Quienes recorran las diversas alternativas de Culturas Interiores podrán encontrar hoy una serie de instrumentos de pesquisa fundamentales para ciertas investigaciones orientadas al mundo cultural local: fichas y voces relativas a figuras, asociaciones, formaciones e instituciones culturales relevantes en diversos periodos; reseñas y catálogos de imprentas, editoriales y por autor, entre otras. Sin ser un diccionario biográfico o una enciclopedia temática, este archivo intentará reparar la ausencia largamente sentida de ellos respecto de nuestros objetos; sin ser exhaustivo, procurará reunir los datos del mayor conjunto posible de experiencias, dimensiones y épocas culturales, creando una serie de tramas en las que podrán ir insertándose las próximas contribuciones; sin ser definitivo, porque uno de sus mayores desafíos será el de ir creciendo y corrigiéndose al tiempo de nuevos indicios o certezas, intentará congregar y socializar los elementos acordados de un complejo mundo cultural.",
   "links": [
-    "https://culturasinteriores.ffyh.unc.edu.ar/index.php"
+    {
+      "url": "https://culturasinteriores.ffyh.unc.edu.ar/index.php"
+    }
   ],
   "imagen": "/imagenes/proyecto-culturas-interiores-un-archivo-de-la-cultura-de-cordoba.jpg",
   "origen": "notion",

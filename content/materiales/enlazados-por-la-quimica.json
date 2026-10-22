@@ -18,7 +18,9 @@
   ],
   "descripcion": "El grupo Enlazados por la Química desarrolla una intensa actividad de divulgación científica y articulación con escuelas e institutos de formación docente, a través de talleres de capacitación, diseño de kits educativos y elaboración de diversos materiales de divulgación. Las actividades tienen como objetivo contribuir al mejoramiento de la enseñanza de la química.",
   "links": [
-    "https://enlazadosporlaquim.wixsite.com/misitio"
+    {
+      "url": "https://enlazadosporlaquim.wixsite.com/misitio"
+    }
   ],
   "imagen": "/imagenes/enlazados-por-la-quimica.jpg",
   "origen": "notion",

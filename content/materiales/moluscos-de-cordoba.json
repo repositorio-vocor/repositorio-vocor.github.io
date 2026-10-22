@@ -25,7 +25,9 @@
   ],
   "descripcion": "Lamina educativa",
   "links": [
-    "https://grupomalacologia.wixsite.com/grupomalacologia/lamina-moluscos-de-cordoba"
+    {
+      "url": "https://grupomalacologia.wixsite.com/grupomalacologia/lamina-moluscos-de-cordoba"
+    }
   ],
   "imagen": "/imagenes/moluscos-de-cordoba.jpg",
   "origen": "notion",

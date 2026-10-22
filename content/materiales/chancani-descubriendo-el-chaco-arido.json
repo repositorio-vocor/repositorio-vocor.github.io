@@ -21,7 +21,9 @@
   ],
   "descripcion": "Audiovisual realizado en Chancani y sus alrededores, realizado por la Dra. Margarita Chiaraviglio y el Dr. Sergio Naretto, investigadores del IDEA (CONICET-Universidad Nacional de Córdoba). El documental, que busca mostrar el valor del Chaco Árido, fue financiado por la U.S. Fish and Wildlife Service y filmado y editado por Miguel Bertona y José Villodre.",
   "links": [
-    "https://www.youtube.com/watch?v=HZLXrvA-m28"
+    {
+      "url": "https://www.youtube.com/watch?v=HZLXrvA-m28"
+    }
   ],
   "imagen": "/imagenes/chancani-descubriendo-el-chaco-arido.jpg",
   "origen": "notion",

@@ -21,7 +21,9 @@
   ],
   "descripcion": "¡Invasores! explica el fenómeno de las especies invasoras, sus causas y consecuencias; como así también posibles soluciones para el problema. Los autores son los Dres: Marcos Tatián, Tamara Maggioni, Paola Reyna Sandri, Emilia Calcagno, Cristian Lagger, Anabela Taverna, Clara Rimondino, Diego Giménez, Gastón Alurralde, Luciana Torre, Natalia Servetto, Carla de Aranzamendi, Soledad Acosta Jofré y Gisela Morán. Fue producido por Muchas Manos Films y financiado por el Programa de Transferencia y Conocimientos de Resultados de Investigación y Comunicación Pública de la Ciencia 2015 (PROTRI, MinCyT CBA).",
   "links": [
-    "https://www.youtube.com/watch?v=1yYkt8kOEU8"
+    {
+      "url": "https://www.youtube.com/watch?v=1yYkt8kOEU8"
+    }
   ],
   "imagen": "/imagenes/invasores.jpg",
   "origen": "notion",

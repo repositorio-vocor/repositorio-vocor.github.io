@@ -18,7 +18,9 @@
   ],
   "descripcion": "Entrevista Radio Universidad",
   "links": [
-    "https://www.ivoox.com/aime-aminahuel-1-ano-despues-aspo-audios-mp3_rf_67183320_1.html"
+    {
+      "url": "https://www.ivoox.com/aime-aminahuel-1-ano-despues-aspo-audios-mp3_rf_67183320_1.html"
+    }
   ],
   "imagen": "/imagenes/analisis-politico-sobre-el-escenario-publico-nacional-luego-de-un-ano.jpg",
   "origen": "notion",

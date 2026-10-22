@@ -26,7 +26,9 @@
   ],
   "descripcion": "Flyers con tips prácticos para asistir la recuperación de ambientes quemados",
   "links": [
-    "https://www.conicet.gov.ar/wp-content/uploads/Donde-hubo-fuego-cenizas-quedan-recomendaciones-para-recuperacion-luego-de-incendios-Conicet-Cordoba.pdf"
+    {
+      "url": "https://www.conicet.gov.ar/wp-content/uploads/Donde-hubo-fuego-cenizas-quedan-recomendaciones-para-recuperacion-luego-de-incendios-Conicet-Cordoba.pdf"
+    }
   ],
   "imagen": "/imagenes/donde-hubo-fuego-cenizas-quedan.jpg",
   "origen": "notion",

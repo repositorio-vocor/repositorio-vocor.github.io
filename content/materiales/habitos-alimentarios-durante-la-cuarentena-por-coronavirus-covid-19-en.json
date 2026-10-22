@@ -22,7 +22,9 @@
   ],
   "descripcion": "Entrevista radial para el programa Geografías Inestables de Radio Cultura.",
   "links": [
-    "https://drive.google.com/open?id=1rrY08Tdbv-nKFw3FDL0XF6GZ1GFbcK8x"
+    {
+      "url": "https://drive.google.com/open?id=1rrY08Tdbv-nKFw3FDL0XF6GZ1GFbcK8x"
+    }
   ],
   "imagen": "/imagenes/habitos-alimentarios-durante-la-cuarentena-por-coronavirus-covid-19-en.jpg",
   "origen": "notion",

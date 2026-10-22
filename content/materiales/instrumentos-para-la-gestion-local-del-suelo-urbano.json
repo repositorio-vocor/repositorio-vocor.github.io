@@ -19,7 +19,9 @@
   ],
   "descripcion": "El material que presenta una serie de instrumentos de gestión urbana -algunos de ellos novedosos para los contextos locales argentinos- que permiten a los municipios y comunas, asumir un rol protagónico en la planificación urbana e intervenir en tal sentido en el propio mercado de suelo urbano, tanto para su regulación o manejo, como para la generación o habilitación de nueva tierra urbanizada. El video se plantea como una herramienta didáctica de apoyo a la labor que realiza el CEVE en la implementación de instancias de fortalecimiento institucional y capacitación de funcionarios y equipos técnicos de municipios y comunas en la formulación y puesta en marcha de políticas públicas que promuevan el acceso al suelo urbano. El audiovisual fue realizado por el Centro Experimental de la Vivienda Económica (CEVE) y el Centro de Estudios Legales y Sociales (CELS) con el apoyo del Ministerio de Ciencia y Tecnología de la Provincia de Córdoba (Argentina).",
   "links": [
-    "https://www.youtube.com/watch?v=E9y4ErYxNnY&t=1s"
+    {
+      "url": "https://www.youtube.com/watch?v=E9y4ErYxNnY&t=1s"
+    }
   ],
   "imagen": "/imagenes/instrumentos-para-la-gestion-local-del-suelo-urbano.jpg",
   "origen": "notion",

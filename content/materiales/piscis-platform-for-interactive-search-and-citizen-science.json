@@ -24,7 +24,9 @@
   ],
   "descripcion": "PISCIS es una plataforma de uso libre para el desarrollo de páginas web de ciencia ciudadana. El objetivo de este proyecto es brindar una herramienta a la comunidad científica que facilite el proceso de generación de datos a partir de un conjunto imágenes acompañadas de una encuesta, en esta oportunidad se presenta una encuesta sobre el grado de interacción de pares de galaxias, teniendo en cuenta únicamente su apariencia visual.",
   "links": [
-    "https://paresdegalaxias.iate.conicet.unc.edu.ar/"
+    {
+      "url": "https://paresdegalaxias.iate.conicet.unc.edu.ar/"
+    }
   ],
   "imagen": "/imagenes/piscis-platform-for-interactive-search-and-citizen-science.jpg",
   "origen": "notion",

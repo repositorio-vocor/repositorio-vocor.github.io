@@ -21,7 +21,9 @@
   ],
   "descripcion": "\"Miradores\" es una programa en formato Podcast que tiene como fin realizar tareas de divulgación de la ciencia y en particular difundir las producciones cientificas realizadas en el IECET a partir de efemerides que conectan con las diversas tematicas de investigación de los entrevistados/as.",
   "links": [
-    "https://open.spotify.com/show/7qQpjQZ8pxpiFjxqdu5ncH"
+    {
+      "url": "https://open.spotify.com/show/7qQpjQZ8pxpiFjxqdu5ncH"
+    }
   ],
   "imagen": "/imagenes/miradores.jpg",
   "origen": "notion",

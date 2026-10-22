@@ -20,7 +20,9 @@
   ],
   "descripcion": "Entrevista a integrantes del grupo GEANA sobre un paper recientemente publicado.",
   "links": [
-    "https://youtu.be/9FDGf4wWHCI?si=Q32MgxMhLNNyg0V2"
+    {
+      "url": "https://youtu.be/9FDGf4wWHCI?si=Q32MgxMhLNNyg0V2"
+    }
   ],
   "imagen": "/imagenes/un-metodo-simple-y-economico-para-detectar-paracetamol.jpg",
   "origen": "notion",

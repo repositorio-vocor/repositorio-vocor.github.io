@@ -21,7 +21,9 @@
   ],
   "descripcion": "Entrego mi Cuerpo a la Ciencia empezó como una columna de radio sobre mujeres en ciencia y se fue convirtiendo en un espacio mutable y mutante, edición cuarentena. Yo soy Lucy Céspedes, y acá hablamos sobre ciencia, ciencia y política, ciencia y género, mujeres en ciencia, política para la ciencia, y en general ciencia y bardo y muchas, muchas frikeadas.",
   "links": [
-    "https://open.spotify.com/show/5d5telRu49HJTEuT3m23Ee"
+    {
+      "url": "https://open.spotify.com/show/5d5telRu49HJTEuT3m23Ee"
+    }
   ],
   "imagen": "/imagenes/entrego-mi-cuerpo-a-la-ciencia.jpg",
   "origen": "notion",

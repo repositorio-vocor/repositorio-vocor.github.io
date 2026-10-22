@@ -25,7 +25,9 @@
   ],
   "descripcion": "Un sitio web en el que comparten material didáctico y contenido de divulgación sobre moluscos y temas ambientales.",
   "links": [
-    "https://grupomalacologia.wixsite.com/grupomalacologia"
+    {
+      "url": "https://grupomalacologia.wixsite.com/grupomalacologia"
+    }
   ],
   "imagen": "/imagenes/malacologia-caracoles-y-almejas.jpg",
   "origen": "notion",

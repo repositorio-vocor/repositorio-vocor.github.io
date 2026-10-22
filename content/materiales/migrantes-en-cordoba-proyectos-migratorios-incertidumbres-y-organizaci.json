@@ -19,7 +19,9 @@
   ],
   "descripcion": "Desde hace más de tres décadas Córdoba se ha ido configurando como un importante lugar de tránsito y destino de las migraciones procedentes de países limítrofes y del Perú.",
   "links": [
-    "https://pescadofrescoblog.wordpress.com/2020/06/08/migrantes-en-cordoba-proyectos-migratorios-incertidumbres-y-organizacion-colectiva-en-tiempos-de-pandemia/"
+    {
+      "url": "https://pescadofrescoblog.wordpress.com/2020/06/08/migrantes-en-cordoba-proyectos-migratorios-incertidumbres-y-organizacion-colectiva-en-tiempos-de-pandemia/"
+    }
   ],
   "imagen": "/imagenes/migrantes-en-cordoba-proyectos-migratorios-incertidumbres-y-organizaci.jpg",
   "origen": "notion",

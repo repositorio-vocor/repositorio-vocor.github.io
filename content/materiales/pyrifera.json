@@ -22,7 +22,9 @@
   ],
   "descripcion": "En las costas de Santa Cruz, Argentina, hay un mar por descubrir. Las aguas de Monte León son cambiantes e impredecibles, pero un equipo de científicos e investigadores está dispuesto a emprender este desafío y adaptarse a los ritmos de la naturaleza. Este equipo de biólogos marinos y fotógrafos se sumergen en una aventura con el fin de identificar las especies asociadas a los bosques de macroalgas y de visibilizar la importancia de la conservación del ecosistema marino. A través de testimonios, el equipo comparte sus experiencias y reflexiona sobre la importancia de estos ecosistemas y la necesidad de crear áreas marinas protegidas que garanticen su conservación.",
   "links": [
-    "https://www.youtube.com/watch?v=wm24yKMU0JI"
+    {
+      "url": "https://www.youtube.com/watch?v=wm24yKMU0JI"
+    }
   ],
   "imagen": "/imagenes/pyrifera.jpg",
   "origen": "notion",

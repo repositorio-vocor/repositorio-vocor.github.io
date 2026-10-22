@@ -22,7 +22,9 @@
   ],
   "descripcion": "El trabajo en el que participaron investigadores del IDAS ocupó la portada del último número de Chemistry: A European Journal.\nLa investigación abre nuevas posibilidades para el diseño de materiales inteligentes inspirados en la naturaleza, con potencial aplicación en nanomedicina y tecnologías verdes.\nEn la investigación, los Dres. Correa y Falcone, junto con los Dres. Maria Laura Uhrig, Pablo Di Chenna, el Lic. Miguel Tovar, de la UBA y, el Dr. Marcelo Ceolín del INIFTA revelaron cómo ciertos surfactantes derivados de azúcares se autoensamblan de manera espontánea en determinados ambientes, formando estructuras autoensambladas con una precisión nunca antes vista.\nSe trata de un logro de gran relevancia, ya que ésta es una de las revistas científicas más prestigiosas en el campo de la química a nivel mundial. Además, la selección del trabajo para la portada no solo valida el contenido científico, sino también valora la creatividad del equipo para ilustrar su investigación. Esta selección está reservada a investigaciones excepcionales por su impacto y originalidad.",
   "links": [
-    "https://youtu.be/O_s0ywdydPM?si=v_tFpsByTPz_7aey"
+    {
+      "url": "https://youtu.be/O_s0ywdydPM?si=v_tFpsByTPz_7aey"
+    }
   ],
   "imagen": "/imagenes/azucar-ciencia-y-rock-and-rol.jpg",
   "origen": "notion",

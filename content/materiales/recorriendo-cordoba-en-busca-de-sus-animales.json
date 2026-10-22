@@ -21,7 +21,9 @@
   ],
   "descripcion": "Mapa ilustrado para la observación de fauna de los ambientes chaqueños de la provincia de Córdoba.",
   "links": [
-    "https://www.idea.conicet.unc.edu.ar/2018/05/23/mapa-recorriendo-cordoba-en-busca-de-sus-animales/"
+    {
+      "url": "https://www.idea.conicet.unc.edu.ar/2018/05/23/mapa-recorriendo-cordoba-en-busca-de-sus-animales/"
+    }
   ],
   "imagen": "/imagenes/recorriendo-cordoba-en-busca-de-sus-animales.jpg",
   "origen": "notion",

@@ -20,7 +20,9 @@
   ],
   "descripcion": "Material audiovisual correspondiente al ciclo \"¿Qué hacemos en el IDAS?\"",
   "links": [
-    "https://youtu.be/f87M8eozTpw?si=Al4ICbIggzwz4JP8"
+    {
+      "url": "https://youtu.be/f87M8eozTpw?si=Al4ICbIggzwz4JP8"
+    }
   ],
   "imagen": "/imagenes/en-que-pueden-ayudarnos-las-nanoparticulas.jpg",
   "origen": "notion",

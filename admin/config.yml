@@ -116,9 +116,21 @@ collections:
         required: false
       - name: links
         label: Enlaces
-        hint: Dirección completa (https://…). El primero es el que abre el botón "Ver material".
+        label_singular: Enlace
+        hint: El primero es el botón principal. Si no le ponés texto, dice "Ver material" (y "Enlace 2", "Enlace 3"… los siguientes).
         widget: list
         required: false
+        summary: "{{fields.texto}} {{fields.url}}"
+        fields:
+          - name: url
+            label: Dirección
+            hint: Completa, con https://
+            widget: string
+          - name: texto
+            label: Texto del botón (opcional)
+            hint: Por ejemplo "Capítulo 1" o "Descargar PDF".
+            widget: string
+            required: false
       - name: imagen
         label: Imagen de portada
         widget: image

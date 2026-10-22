@@ -84,7 +84,8 @@ def separar_palabras(valor):
 
 
 def separar_links(valor):
-    return [l.rstrip(").,;") for l in re.findall(r"https?://[^\s,;]+", str(valor or ""))]
+    """Devuelve [{"url": ...}] con cada dirección web que aparezca en la celda."""
+    return [{"url": l.rstrip(").,;")} for l in re.findall(r"https?://[^\s,;]+", str(valor or ""))]
 
 
 def cargar_materiales():

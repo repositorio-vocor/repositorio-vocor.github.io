@@ -20,7 +20,9 @@
   ],
   "descripcion": "Todas estas historias ocurrieron en Cordoba, con nuestros chanchos del monte, lagartos y yararas. Con nuestras aves y nuestra gente. Texto de Mariela Lopez Cordero, ilustraciones de Jeremias Di Pietro y asesoramiento de investigadores de CONICET Cordoba.",
   "links": [
-    "https://www.conicet.gov.ar/wp-content/uploads/2014/08/Cuentos-con-Ciencia-CONICET.pdf"
+    {
+      "url": "https://www.conicet.gov.ar/wp-content/uploads/2014/08/Cuentos-con-Ciencia-CONICET.pdf"
+    }
   ],
   "imagen": "/imagenes/cuentos-con-ciencia-los-cuentos-de-siempre-con-tonada-cordobesa.jpg",
   "origen": "notion",
