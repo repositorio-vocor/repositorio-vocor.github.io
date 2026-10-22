@@ -162,6 +162,16 @@ collections:
             summary: "{{fields.sigla}}"
             fields:
               - { name: sigla, label: Sigla, widget: string, hint: "Igual que en el campo Unidad ejecutora de los materiales, así se enlazan." }
+              - name: area
+                label: Gran área
+                widget: select
+                required: false
+                hint: Define el color del recuadro.
+                options:
+                  - Ciencias Agrarias, de las Ingenierías y Materiales / Desarrollo Tecnológico y Social
+                  - Ciencias Biológicas y de la Salud
+                  - Ciencias Exactas y Naturales
+                  - Ciencias Sociales y Humanidades
               - { name: web, label: Sitio web, widget: string, required: false, hint: "Dirección completa, con https://" }
               - { name: instagram, label: Instagram, widget: string, required: false, hint: "https://www.instagram.com/usuario" }
               - { name: facebook, label: Facebook, widget: string, required: false, hint: "https://www.facebook.com/pagina" }

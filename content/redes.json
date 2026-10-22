@@ -2,11 +2,13 @@
   "institutos": [
     {
       "sigla": "CCONFINES",
+      "area": "Ciencias Sociales y Humanidades",
       "web": "https://cconfines.conicet.gov.ar",
       "instagram": "https://www.instagram.com/socialesunvm"
     },
     {
       "sigla": "CEVE",
+      "area": "Ciencias Agrarias, de las Ingenierías y Materiales / Desarrollo Tecnológico y Social",
       "web": "https://www.ceve.org.ar",
       "facebook": "https://www.facebook.com/aveyceve",
       "x": "https://x.com/aveyceve",
@@ -15,12 +17,14 @@
     },
     {
       "sigla": "CIBICI",
+      "area": "Ciencias Biológicas y de la Salud",
       "web": "https://cibici.conicet.gov.ar",
       "x": "https://x.com/cibici.unc",
       "instagram": "https://www.instagram.com/cibici.conicet.unc"
     },
     {
       "sigla": "CICTERRA",
+      "area": "Ciencias Exactas y Naturales",
       "web": "https://cicterra.conicet.unc.edu.ar",
       "facebook": "https://www.facebook.com/Cicterra",
       "x": "https://x.com/cicterra",
@@ -28,6 +32,7 @@
     },
     {
       "sigla": "CIECS",
+      "area": "Ciencias Sociales y Humanidades",
       "web": "https://ciecs-conicet.gob.ar/sitio",
       "facebook": "https://www.facebook.com/ciecs.conicetunc",
       "x": "https://x.com/ciecsconicet",
@@ -36,10 +41,12 @@
     },
     {
       "sigla": "CINTRA",
-      "web": "https://investigacion.frc.utn.edu.ar/cintra"
+      "area": "Ciencias Agrarias, de las Ingenierías y Materiales / Desarrollo Tecnológico y Social",
+      "web": "https://cintra.ar"
     },
     {
       "sigla": "CIQUIBIC",
+      "area": "Ciencias Biológicas y de la Salud",
       "web": "https://ciquibic.org.ar",
       "facebook": "https://www.facebook.com/ciquibic",
       "x": "https://x.com/CIQUIBIC",
@@ -48,24 +55,30 @@
     },
     {
       "sigla": "CIT VILLA MARIA",
+      "area": "Ciencias Sociales y Humanidades",
       "web": "https://humanas.unvm.edu.ar/cit-villa-maria",
       "instagram": "https://www.instagram.com/humanasunvm"
     },
     {
       "sigla": "CITeQ",
-      "web": "https://investigacion.frc.utn.edu.ar/citeq",
-      "facebook": "https://www.facebook.com/citequtn"
+      "area": "Ciencias Exactas y Naturales",
+      "web": "https://www.investigacion.frc.utn.edu.ar/citeq",
+      "facebook": "https://www.facebook.com/citequtn",
+      "instagram": "https://www.instagram.com/citeq.conicet.utn"
     },
     {
       "sigla": "IATE",
+      "area": "Ciencias Exactas y Naturales",
       "web": "https://iate.oac.uncor.edu"
     },
     {
       "sigla": "ICBIA",
+      "area": "Ciencias Exactas y Naturales",
       "web": "https://icbia.conicet.gov.ar"
     },
     {
       "sigla": "ICYTAC",
+      "area": "Ciencias Agrarias, de las Ingenierías y Materiales / Desarrollo Tecnológico y Social",
       "web": "https://www.icytac.conicet.unc.edu.ar",
       "facebook": "https://www.facebook.com/icytac",
       "x": "https://x.com/icytac",
@@ -73,6 +86,7 @@
     },
     {
       "sigla": "IDACOR",
+      "area": "Ciencias Sociales y Humanidades",
       "web": "https://idacor.conicet.gov.ar",
       "facebook": "https://www.facebook.com/IDACOR.CONICET",
       "x": "https://x.com/idacorconicet",
@@ -81,11 +95,13 @@
     },
     {
       "sigla": "IDAS",
+      "area": "Ciencias Agrarias, de las Ingenierías y Materiales / Desarrollo Tecnológico y Social",
       "web": "https://idas.conicet.gov.ar",
       "instagram": "https://www.instagram.com/idas.conicet"
     },
     {
       "sigla": "IDEA",
+      "area": "Ciencias Biológicas y de la Salud",
       "web": "https://www.idea.conicet.unc.edu.ar",
       "facebook": "https://www.facebook.com/ideaconicet",
       "x": "https://x.com/idea_conicet",
@@ -96,6 +112,7 @@
     },
     {
       "sigla": "IDEJUS",
+      "area": "Ciencias Sociales y Humanidades",
       "web": "https://idejus.conicet.gov.ar",
       "facebook": "https://www.facebook.com/IDEJUS.CONICET.UNC",
       "instagram": "https://www.instagram.com/cienciadelderechoydelreves",
@@ -104,6 +121,7 @@
     },
     {
       "sigla": "IDH",
+      "area": "Ciencias Sociales y Humanidades",
       "web": "https://idh.unc.edu.ar",
       "facebook": "https://www.facebook.com/InstitutoDeHumanidadesCba",
       "x": "https://x.com/IdhCordoba",
@@ -112,10 +130,12 @@
     },
     {
       "sigla": "IDIT",
+      "area": "Ciencias Sociales y Humanidades",
       "web": "https://www.inv.idit.efn.uncor.edu"
     },
     {
       "sigla": "IECET",
+      "area": "Ciencias Sociales y Humanidades",
       "web": "https://www.iecet.conicet.gov.ar",
       "facebook": "https://www.facebook.com/IECET.ConicetUNC",
       "instagram": "https://www.instagram.com/iecet_conicet.unc",
@@ -123,14 +143,17 @@
     },
     {
       "sigla": "IEH",
+      "area": "Ciencias Sociales y Humanidades",
       "web": "https://cehsegreti.org.ar/ieh"
     },
     {
       "sigla": "IFEC",
+      "area": "Ciencias Exactas y Naturales",
       "web": "https://ifec.fcq.unc.edu.ar"
     },
     {
       "sigla": "IIBYT",
+      "area": "Ciencias Exactas y Naturales",
       "web": "https://www.iibyt.conicet.unc.edu.ar",
       "facebook": "https://www.facebook.com/iibytconicetunc",
       "x": "https://x.com/IIBYT_CONICET",
@@ -139,12 +162,14 @@
     },
     {
       "sigla": "IIPSI",
+      "area": "Ciencias Sociales y Humanidades",
       "web": "https://iipsi.psicologia.unc.edu.ar",
       "instagram": "https://www.instagram.com/iipsi_unc_conicet",
       "youtube": "https://www.youtube.com/@iipsi-institutodeinvestiga8962"
     },
     {
       "sigla": "IITEMA",
+      "area": "Ciencias Agrarias, de las Ingenierías y Materiales / Desarrollo Tecnológico y Social",
       "web": "https://iitema.conicet.gov.ar",
       "facebook": "https://www.facebook.com/iitema",
       "x": "https://x.com/IitemaC",
@@ -153,28 +178,42 @@
     },
     {
       "sigla": "IMBIV",
+      "area": "Ciencias Biológicas y de la Salud",
       "web": "https://imbiv.conicet.unc.edu.ar",
       "facebook": "https://www.facebook.com/IMBIVCONICETUNC",
       "x": "https://x.com/IMBIVCONICETUNC",
       "instagram": "https://www.instagram.com/imbivconicetunc",
-      "youtube": "https://www.youtube.com/@IMBIVCONICETUNC"
-    },
-    {
-      "sigla": "IMBIV-Museo Botánico (UNC)",
-      "web": "https://museobotanico.unc.edu.ar",
-      "facebook": "https://www.facebook.com/museobotanico",
-      "instagram": "https://www.instagram.com/museobotanicunc",
+      "youtube": "https://www.youtube.com/@IMBIVCONICETUNC",
       "otros": [
+        {
+          "texto": "Museo Botánico",
+          "url": "https://museobotanico.unc.edu.ar"
+        },
+        {
+          "texto": "Facebook Museo Botánico",
+          "url": "https://www.facebook.com/museobotanico"
+        },
+        {
+          "texto": "Instagram @museobotanicunc",
+          "url": "https://www.instagram.com/museobotanicunc"
+        },
         {
           "texto": "Instagram @experienciabiodiversa",
           "url": "https://www.instagram.com/experienciabiodiversa"
+        },
+        {
+          "texto": "YouTube Museo Botánico",
+          "url": "https://www.youtube.com/@imbivmuseobotanico1397"
+        },
+        {
+          "texto": "Linktree Museo Botánico",
+          "url": "https://linktr.ee/museobotanico"
         }
-      ],
-      "youtube": "https://www.youtube.com/@imbivmuseobotanico1397",
-      "linktree": "https://linktr.ee/museobotanico"
+      ]
     },
     {
       "sigla": "IMICO",
+      "area": "Ciencias Biológicas y de la Salud",
       "web": "https://imico.conicet.gov.ar",
       "facebook": "https://www.facebook.com/IMICOCONICET",
       "instagram": "https://www.instagram.com/imico",
@@ -182,65 +221,76 @@
     },
     {
       "sigla": "IMITAB",
+      "area": "Ciencias Agrarias, de las Ingenierías y Materiales / Desarrollo Tecnológico y Social",
       "web": "https://www.imitab.conicet.gov.ar",
       "instagram": "https://www.instagram.com/imitab.conicet.unvm"
     },
     {
       "sigla": "INBIAS",
+      "area": "Ciencias Biológicas y de la Salud",
       "web": "https://www.unrc.edu.ar/cyt/inbias.html"
     },
     {
       "sigla": "INCIVET",
+      "area": "Ciencias Biológicas y de la Salud",
       "web": "https://incivet.conicet.gov.ar",
       "instagram": "https://www.instagram.com/incivetunrc"
     },
     {
       "sigla": "INFIQC",
+      "area": "Ciencias Exactas y Naturales",
       "web": "https://infiqc.conicet.gov.ar",
       "x": "https://x.com/infiqcenred",
       "youtube": "https://www.youtube.com/@infiqc"
     },
     {
       "sigla": "INIAB",
+      "area": "Ciencias Agrarias, de las Ingenierías y Materiales / Desarrollo Tecnológico y Social",
       "web": "https://iniab.conicet.gov.ar",
       "x": "https://x.com/INIABCONICET",
       "instagram": "https://www.instagram.com/iniabcomunicacion"
     },
     {
       "sigla": "INICSA",
+      "area": "Ciencias Biológicas y de la Salud",
       "web": "https://inicsa.webs.fcm.unc.edu.ar"
     },
     {
       "sigla": "INIMEC",
+      "area": "Ciencias Biológicas y de la Salud",
       "web": "https://inimec.conicet.gov.ar",
+      "facebook": "https://www.facebook.com/institutoferreyra",
+      "x": "https://x.com/InstFerreyra",
+      "instagram": "https://www.instagram.com/institutoferreyra",
+      "youtube": "https://www.youtube.com/@institutoferreyra",
+      "tiktok": "https://www.tiktok.com/@institutoferreyra",
       "otros": [
         {
           "texto": "Instituto Ferreyra",
           "url": "https://www.institutoferreyra.org"
         }
-      ],
-      "facebook": "https://www.facebook.com/institutoferreyra",
-      "x": "https://x.com/InstFerreyra",
-      "instagram": "https://www.instagram.com/institutoferreyra",
-      "youtube": "https://www.youtube.com/@institutoferreyra",
-      "tiktok": "https://www.tiktok.com/@institutoferreyra"
+      ]
     },
     {
       "sigla": "IPQA",
+      "area": "Ciencias Exactas y Naturales",
       "web": "https://ipqa.unc.edu.ar",
       "facebook": "https://www.facebook.com/IPQACONICET",
       "instagram": "https://www.instagram.com/ipqa_unc_conicet"
     },
     {
       "sigla": "ISTE",
+      "area": "Ciencias Sociales y Humanidades",
       "web": "https://www.unrc.edu.ar/cyt/iste.html"
     },
     {
       "sigla": "UDEA",
+      "area": "Ciencias Agrarias, de las Ingenierías y Materiales / Desarrollo Tecnológico y Social",
       "web": "https://udea.conicet.gov.ar"
     },
     {
       "sigla": "UNITEFA",
+      "area": "Ciencias Exactas y Naturales",
       "web": "https://www.unitefa-conicet.gov.ar"
     }
   ]

@@ -5,7 +5,7 @@
   --bg:#f6f7f9; --surface:#ffffff; --surface-2:#eef1f5; --ink:#111111; --ink-2:#686f78; --line:#d9dee5;
   --accent:#0064c8; --accent-ink:#ffffff; --accent-deep:#00468c; --sky:#0695d6; --sky-ink:#ffffff; --sun:#f6b40e; --sun-ink:#2a1f00;
   --hero-bg:#0064c8; --hero-ink:#ffffff; --hero-ink-2:#cfe3fb;
-  --on-c:#ffffff; --c-audio:#6a4fb3; --c-video:#d9480f; --c-texto:#0064c8; --c-edu:#b07d00; --c-web:#00897b;
+  --on-c:#ffffff; --a-agr:#b0661c; --a-bio:#2e7d32; --a-exa:#0064c8; --a-soc:#9c2f6e; --c-audio:#6a4fb3; --c-video:#d9480f; --c-texto:#0064c8; --c-edu:#b07d00; --c-web:#00897b;
   --ok:#2b7a3d; --warn:#a66a00; --err:#c62828;
   --f-display:"Roboto Condensed", "Arial Narrow", "Roboto", system-ui, sans-serif;
   --f-body:"Roboto", "Segoe UI", system-ui, sans-serif;
@@ -16,13 +16,13 @@
   --bg:#0c141d; --surface:#142030; --surface-2:#1b2a3c; --ink:#e8eef4; --ink-2:#9fb0c2; --line:#2a3b4f;
   --accent:#4da3ff; --accent-ink:#06121f; --accent-deep:#2b7fd6; --sky:#2bb0ec; --sky-ink:#06121f; --sun:#f6b40e; --sun-ink:#2a1f00;
   --hero-bg:#003a75; --hero-ink:#ffffff; --hero-ink-2:#b9d4f3;
-  --on-c:#06121f; --c-audio:#a68ef0; --c-video:#ff8a5c; --c-texto:#5aaeff; --c-edu:#f2c14a; --c-web:#3fc7b6;
+  --on-c:#06121f; --a-agr:#f0a35e; --a-bio:#7bd389; --a-exa:#5aaeff; --a-soc:#f08cc4; --c-audio:#a68ef0; --c-video:#ff8a5c; --c-texto:#5aaeff; --c-edu:#f2c14a; --c-web:#3fc7b6;
   --ok:#6fcf86; --warn:#e6b14a; --err:#f08a80; --shadow:0 1px 2px rgb(0 0 0 / .3), 0 10px 28px rgb(0 0 0 / .3); color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#0c141d; --surface:#142030; --surface-2:#1b2a3c; --ink:#e8eef4; --ink-2:#9fb0c2; --line:#2a3b4f;
   --accent:#4da3ff; --accent-ink:#06121f; --accent-deep:#2b7fd6; --sky:#2bb0ec; --sky-ink:#06121f; --sun:#f6b40e; --sun-ink:#2a1f00;
   --hero-bg:#003a75; --hero-ink:#ffffff; --hero-ink-2:#b9d4f3;
-  --on-c:#06121f; --c-audio:#a68ef0; --c-video:#ff8a5c; --c-texto:#5aaeff; --c-edu:#f2c14a; --c-web:#3fc7b6;
+  --on-c:#06121f; --a-agr:#f0a35e; --a-bio:#7bd389; --a-exa:#5aaeff; --a-soc:#f08cc4; --c-audio:#a68ef0; --c-video:#ff8a5c; --c-texto:#5aaeff; --c-edu:#f2c14a; --c-web:#3fc7b6;
   --ok:#6fcf86; --warn:#e6b14a; --err:#f08a80; --shadow:0 1px 2px rgb(0 0 0 / .3), 0 10px 28px rgb(0 0 0 / .3); color-scheme:dark}
 
 *{box-sizing:border-box}
@@ -157,14 +157,22 @@ main{padding-block:24px 20px}
 /* ---------- Redes de los institutos ---------- */
 .redes-q{flex:0 1 280px}
 .redes{display:grid; grid-template-columns:repeat(auto-fill, minmax(270px, 1fr)); gap:12px}
-.red{display:flex; flex-direction:column; gap:10px; padding:16px; background:var(--surface); border:1px solid var(--line); border-radius:var(--r); min-width:0}
+.red{--ac:var(--line); display:flex; flex-direction:column; gap:10px; padding:16px 16px 16px 18px; background:color-mix(in srgb, var(--ac) 7%, var(--surface)); border:1px solid color-mix(in srgb, var(--ac) 30%, var(--line)); border-left:5px solid var(--ac); border-radius:var(--r); min-width:0}
+.red-area{font-family:var(--f-mono); font-size:10.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--ac); font-weight:500; line-height:1.35}
 .red-h{display:flex; justify-content:space-between; align-items:baseline; gap:10px}
 .red-h h3{font-size:20px; font-weight:700; overflow-wrap:anywhere; min-width:0}
 .red-h button{flex:none; border:0; background:none; padding:0; color:var(--accent); font-size:12.5px; cursor:pointer; text-decoration:underline}
 .red-links{display:flex; flex-wrap:wrap; gap:6px}
-.red-links a{display:inline-flex; align-items:center; gap:6px; padding:5px 10px; border-radius:999px; border:1px solid var(--line); background:var(--surface-2); color:var(--ink); font-size:13px; text-decoration:none; transition:background .15s, color .15s, border-color .15s}
-.red-links a:hover{background:var(--accent); border-color:var(--accent); color:var(--accent-ink)}
+.red-links a{display:inline-flex; align-items:center; gap:6px; padding:5px 10px; border-radius:999px; border:1px solid color-mix(in srgb, var(--ac) 25%, var(--line)); background:var(--surface); color:var(--ink); font-size:13px; text-decoration:none; transition:background .15s, color .15s, border-color .15s}
+.red-links a:hover{background:var(--ac); border-color:var(--ac); color:var(--on-c)}
 .red-links svg{width:14px; height:14px; flex:none}
+.area-chips{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px}
+.area-chips button{--ac:var(--ink-2); display:inline-flex; align-items:center; gap:8px; padding:6px 12px; border-radius:999px; border:1px solid var(--line); background:var(--surface); cursor:pointer; font-size:13.5px; text-align:left}
+.area-chips button i{width:10px; height:10px; border-radius:50%; background:var(--ac); flex:none}
+.area-chips button span{font-family:var(--f-mono); font-size:11.5px; color:var(--ink-2)}
+.area-chips button[aria-pressed="true"]{background:var(--ac); border-color:var(--ac); color:var(--on-c)}
+.area-chips button[aria-pressed="true"] i{background:var(--on-c)}
+.area-chips button[aria-pressed="true"] span{color:inherit; opacity:.8}
 .redes-empty{color:var(--ink-2); grid-column:1 / -1}
 
 /* ---------- Diálogo de ficha ---------- */
