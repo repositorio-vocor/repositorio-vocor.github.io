@@ -1,5 +1,5 @@
 {
-  "recurso": "Vecinas invasoras: un juego didáctico para comprender cómo conquistan el mundo las plantas exóticas",
+  "recurso": "Vecinas invasoras",
   "ue": [
     "IMBIV"
   ],
@@ -22,7 +22,7 @@
       "url": "https://imbiv.conicet.unc.edu.ar/vecinas-invasoras-un-juego-didactico-para-comprender-como-conquistan-el-mundo-las-plantas-exoticas/"
     }
   ],
-  "imagen": "/imagenes/vecinas-invasoras.jpg",
+  "imagen": "/imagenes/vecinas-invasoras-tablero.jpg",
   "origen": "web",
   "creado": "2022-01-01T00:00:00Z"
 }
