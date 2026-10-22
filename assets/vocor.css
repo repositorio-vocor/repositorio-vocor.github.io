@@ -171,6 +171,7 @@ main{padding-block:24px 20px}
 .red-links a{display:inline-flex; align-items:center; gap:6px; padding:5px 10px; border-radius:999px; border:1px solid color-mix(in srgb, var(--ac) 25%, var(--line)); background:var(--surface); color:var(--ink); font-size:13px; text-decoration:none; transition:background .15s, color .15s, border-color .15s}
 .red-links a:hover{background:var(--ac); border-color:var(--ac); color:var(--on-c)}
 .red-links svg{width:14px; height:14px; flex:none}
+.red-pronto{margin:0; font-size:13px; font-style:italic; color:var(--ink-2)}
 .area-chips{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px}
 .area-chips button{--ac:var(--ink-2); display:inline-flex; align-items:center; gap:8px; padding:6px 12px; border-radius:999px; border:1px solid var(--line); background:var(--surface); cursor:pointer; font-size:13.5px; text-align:left}
 .area-chips button i{width:10px; height:10px; border-radius:50%; background:var(--ac); flex:none}

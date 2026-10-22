@@ -35,6 +35,11 @@
       "x": "https://x.com/cicterra"
     },
     {
+      "sigla": "CIDIE",
+      "area": "Ciencias Biológicas y de la Salud",
+      "logo": "/imagenes/logos/CIDIE.png"
+    },
+    {
       "sigla": "CIECS",
       "area": "Ciencias Sociales y Humanidades",
       "logo": "/imagenes/logos/CIECS.png",
@@ -43,6 +48,11 @@
       "facebook": "https://www.facebook.com/ciecs.conicetunc",
       "x": "https://x.com/ciecsconicet",
       "youtube": "https://www.youtube.com/user/CiecsConicetUnc"
+    },
+    {
+      "sigla": "CIEM",
+      "area": "Ciencias Exactas y Naturales",
+      "logo": "/imagenes/logos/CIEM.png"
     },
     {
       "sigla": "CINTRA",
@@ -126,6 +136,7 @@
     {
       "sigla": "IDEJUS",
       "area": "Ciencias Sociales y Humanidades",
+      "logo": "/imagenes/logos/IDEJUS.png",
       "web": "https://idejus.conicet.gov.ar",
       "instagram": "https://www.instagram.com/cienciadelderechoydelreves",
       "facebook": "https://www.facebook.com/IDEJUS.CONICET.UNC",
@@ -167,6 +178,11 @@
       "area": "Ciencias Exactas y Naturales",
       "logo": "/imagenes/logos/IFEC.png",
       "web": "https://ifec.fcq.unc.edu.ar"
+    },
+    {
+      "sigla": "IFEG",
+      "area": "Ciencias Exactas y Naturales",
+      "logo": "/imagenes/logos/IFEG.png"
     },
     {
       "sigla": "IIBYT",
@@ -308,6 +324,11 @@
       "facebook": "https://www.facebook.com/IPQACONICET"
     },
     {
+      "sigla": "IRNASUS",
+      "area": "Ciencias Exactas y Naturales",
+      "logo": "/imagenes/logos/IRNASUS.png"
+    },
+    {
       "sigla": "ISTE",
       "area": "Ciencias Sociales y Humanidades",
       "logo": "/imagenes/logos/ISTE.png",
@@ -318,6 +339,11 @@
       "area": "Ciencias Agrarias, de las Ingenierías y Materiales / Desarrollo Tecnológico y Social",
       "logo": "/imagenes/logos/UDEA.png",
       "web": "https://udea.conicet.gov.ar"
+    },
+    {
+      "sigla": "UFYMA",
+      "area": "Ciencias Agrarias, de las Ingenierías y Materiales / Desarrollo Tecnológico y Social",
+      "logo": "/imagenes/logos/UFYMA.png"
     },
     {
       "sigla": "UNITEFA",
