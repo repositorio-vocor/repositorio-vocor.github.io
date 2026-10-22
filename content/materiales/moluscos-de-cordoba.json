@@ -1,0 +1,33 @@
+{
+  "recurso": "Moluscos de Cordoba",
+  "ue": [
+    "IDACOR",
+    "IDEA",
+    "CICTERRA"
+  ],
+  "area": [
+    "Ciencias Biológicas y de la Salud",
+    "Ciencias Exactas y Naturales",
+    "Ciencias Sociales y Humanidades"
+  ],
+  "formato": [
+    "Material didáctico"
+  ],
+  "publico": [
+    "Docentes",
+    "Público General"
+  ],
+  "palabras": [
+    "Material didáctico",
+    "Malacología",
+    "Multidisciplina",
+    "Redes sociales"
+  ],
+  "descripcion": "Lamina educativa",
+  "links": [
+    "https://grupomalacologia.wixsite.com/grupomalacologia/lamina-moluscos-de-cordoba"
+  ],
+  "imagen": "/imagenes/moluscos-de-cordoba.jpg",
+  "origen": "notion",
+  "creado": "2024-11-24T12:00:20.000Z"
+}

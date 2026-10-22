@@ -1,0 +1,33 @@
+{
+  "recurso": "Yo como diferente: un libro para toda la familia",
+  "ue": [
+    "INICSA"
+  ],
+  "area": [
+    "Ciencias Biológicas y de la Salud"
+  ],
+  "formato": [
+    "Libro"
+  ],
+  "publico": [
+    "Docentes",
+    "Infantil (7 a 11 años)",
+    "Juvenil (12 a 18 años)",
+    "Público General"
+  ],
+  "palabras": [
+    "discapacidad",
+    "nutrición",
+    "alimentación",
+    "actividades",
+    "familia",
+    "niño"
+  ],
+  "descripcion": "Libro digital de actividades para niños/as con discapacidad. Desde el grupo de investigación y extensión hemos desarrollado un libro de actividades sobre alimentación y salud para niños/as con personajes con discapacidad y con la posibilidad de adaptar las activdiades a niños/as con discapacidad. El libro presenta personajes con discapacidades y diversidades funcionales que abordan la alimentación recorriendo distintas actividades con distintos grados de dificultades, y poniendo en juego diversas habilidades.",
+  "links": [
+    "https://rdu.unc.edu.ar/handle/11086/20636"
+  ],
+  "imagen": "/imagenes/yo-como-diferente-un-libro-para-toda-la-familia.jpg",
+  "origen": "notion",
+  "creado": "2024-11-24T12:00:32.000Z"
+}

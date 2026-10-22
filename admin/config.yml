@@ -1,0 +1,142 @@
+# Configuración del panel de carga de VoCor (Sveltia CMS).
+# Solo pueden guardar las personas que son colaboradoras del repositorio en GitHub.
+# Documentación: https://sveltiacms.app/en/docs
+
+backend:
+  name: github
+  repo: comisionrelevamiento/vocor
+  branch: main
+  commit_messages:
+    create: "Nuevo material: {{slug}}"
+    update: "Editar material: {{slug}}"
+    delete: "Borrar material: {{slug}}"
+    uploadMedia: "Subir imagen: {{path}}"
+    deleteMedia: "Borrar imagen: {{path}}"
+  # Para tener el botón "Entrar con GitHub" en lugar de pegar un token,
+  # desplegá https://github.com/sveltia/sveltia-cms-auth en Cloudflare
+  # y poné acá la dirección del worker:
+  # base_url: https://vocor-cms-auth.TU-CUENTA.workers.dev
+
+site_url: https://comisionrelevamiento.github.io/vocor/
+display_url: https://comisionrelevamiento.github.io/vocor/
+logo_url: data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231f6b52'/%3E%3Ctext x='16' y='23' font-family='Arial' font-weight='700' font-size='17' text-anchor='middle' fill='%23fff'%3EVC%3C/text%3E%3C/svg%3E
+
+media_folder: imagenes
+public_folder: /imagenes
+
+media_libraries:
+  default:
+    config:
+      max_file_size: 15000000
+      slugify_filename: true
+      transformations:
+        raster_image:
+          format: webp
+          quality: 82
+          width: 1200
+          height: 1200
+
+collections:
+  - name: materiales
+    label: Materiales
+    label_singular: Material
+    description: Cada ficha es un material del repositorio. Obligatorios Título, Unidad ejecutora y Formato.
+    folder: content/materiales
+    format: json
+    extension: json
+    create: true
+    delete: true
+    identifier_field: recurso
+    slug: "{{recurso}}"
+    summary: "{{recurso}} · {{ue}}"
+    sortable_fields:
+      fields: [recurso, creado]
+      default:
+        field: creado
+        direction: descending
+    view_filters:
+      - label: Podcasts
+        field: formato
+        pattern: Podcast
+      - label: Audiovisuales y videos
+        field: formato
+        pattern: "Audiovisual|Video"
+    fields:
+      - name: recurso
+        label: Título del recurso
+        widget: string
+      - name: ue
+        label: Unidad ejecutora
+        hint: Sigla del instituto o unidad (IDEA, IMBIV, CIECS…). Podés agregar más de una.
+        widget: list
+        min: 1
+      - name: formato
+        label: Formato
+        widget: select
+        multiple: true
+        min: 1
+        options:
+          - Audiovisual
+          - Cartilla
+          - Entrevista
+          - Libro
+          - Material didáctico
+          - Nota
+          - Podcast
+          - Publicación de divulgación científica
+          - Recursos para docentes
+          - Redes sociales
+          - Revista
+          - Revista anual
+          - Sitio Web
+          - Video
+          - Webinar
+      - name: area
+        label: Área
+        widget: select
+        multiple: true
+        required: false
+        options:
+          - Ciencias Agrarias
+          - Ciencias Biológicas y de la Salud
+          - Ciencias Exactas y Naturales
+          - Ciencias Sociales y Humanidades
+          - Tecnología, de la Ingeniería y Materiales
+      - name: publico
+        label: Público
+        widget: select
+        multiple: true
+        required: false
+        options:
+          - Público General
+          - Infancia temprana (0-5 años)
+          - Infantil (7 a 11 años)
+          - Juvenil (12 a 18 años)
+          - Docentes
+      - name: descripcion
+        label: Descripción
+        widget: text
+        required: false
+      - name: palabras
+        label: Palabras clave
+        hint: Temas que ayudan a encontrar el material en el buscador.
+        widget: list
+        required: false
+      - name: links
+        label: Enlaces
+        hint: Dirección completa (https://…). El primero es el que abre el botón "Ver material".
+        widget: list
+        required: false
+      - name: imagen
+        label: Imagen de portada
+        widget: image
+        required: false
+      - name: creado
+        label: Fecha de carga
+        widget: datetime
+        required: false
+        default: "{{now}}"
+      - name: origen
+        label: Origen
+        widget: hidden
+        default: web

@@ -1,0 +1,28 @@
+{
+  "recurso": "Indios Verdes",
+  "ue": [
+    "UPC-UNC"
+  ],
+  "area": [
+    "Ciencias Sociales y Humanidades"
+  ],
+  "formato": [
+    "Podcast"
+  ],
+  "publico": [
+    "Público General"
+  ],
+  "palabras": [
+    "Ciudad",
+    "Incorporación Social",
+    "Desigualdad: Migración",
+    "Ecología Urbana"
+  ],
+  "descripcion": "Podcast sobre difusión de ideas científicas. En el marco de la re-edición y re-impresión del libro \"The City\" de Robert Park y Ernest Burgess",
+  "links": [
+    "https://altersapukairadio.argentinastream.com/"
+  ],
+  "imagen": "/imagenes/indios-verdes.jpg",
+  "origen": "notion",
+  "creado": "2024-11-24T12:00:31.000Z"
+}

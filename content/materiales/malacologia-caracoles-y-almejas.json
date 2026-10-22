@@ -1,0 +1,33 @@
+{
+  "recurso": "Malacología. Caracoles y Almejas",
+  "ue": [
+    "IDACOR",
+    "IDEA",
+    "CICTERRA"
+  ],
+  "area": [
+    "Ciencias Biológicas y de la Salud",
+    "Ciencias Exactas y Naturales",
+    "Ciencias Sociales y Humanidades"
+  ],
+  "formato": [
+    "Sitio Web"
+  ],
+  "publico": [
+    "Docentes",
+    "Público General"
+  ],
+  "palabras": [
+    "Material didáctico",
+    "Malacología",
+    "Multidisciplina",
+    "Redes sociales"
+  ],
+  "descripcion": "Un sitio web en el que comparten material didáctico y contenido de divulgación sobre moluscos y temas ambientales.",
+  "links": [
+    "https://grupomalacologia.wixsite.com/grupomalacologia"
+  ],
+  "imagen": "/imagenes/malacologia-caracoles-y-almejas.jpg",
+  "origen": "notion",
+  "creado": "2024-11-24T12:00:10.000Z"
+}

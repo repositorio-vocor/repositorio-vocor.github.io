@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>VoCor · Repositorio de comunicación científica de Córdoba</title>
+<meta name="description" content="Podcasts, libros, videos, cartillas y materiales para docentes producidos por institutos y unidades ejecutoras de Córdoba.">
+<meta property="og:title" content="VoCor · Comunicación científica de Córdoba">
+<meta property="og:description" content="Materiales de divulgación de la comunidad científica cordobesa, reunidos en un solo lugar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/vocor.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231f6b52'/%3E%3Ctext x='16' y='23' font-family='Arial' font-weight='700' font-size='17' text-anchor='middle' fill='%23fff'%3EVC%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-grid">
+    <div class="brand">
+      <div class="eyebrow">Repositorio de comunicación científica · Córdoba</div>
+      <h1>Vo<span class="o">Cor</span></h1>
+      <p>Podcasts, libros, videos, cartillas y materiales para docentes producidos por institutos y unidades ejecutoras de Córdoba, reunidos en un solo lugar.</p>
+    </div>
+    <div class="stats" aria-live="polite">
+      <div class="stat"><b id="sTotal">—</b><span>materiales</span></div>
+      <div class="stat"><b id="sUE">—</b><span>unidades ejecutoras</span></div>
+      <div class="stat"><b id="sFmt">—</b><span>formatos</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="bar">
+  <div class="wrap bar-in">
+    <div class="row1">
+      <div class="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="q" type="search" placeholder="Buscar por título, tema, palabra clave o instituto" aria-label="Buscar">
+      </div>
+      <select class="f" id="fArea" aria-label="Área"></select>
+      <select class="f" id="fPub" aria-label="Público"></select>
+      <select class="f" id="fUE" aria-label="Unidad ejecutora"></select>
+      <select class="f" id="fSort" aria-label="Orden">
+        <option value="az">A–Z</option>
+        <option value="new">Más recientes</option>
+      </select>
+    </div>
+    <div class="chips" id="fmtChips" role="group" aria-label="Formato"></div>
+    <div class="resline"><span id="resCount">Cargando el repositorio…</span><button class="linkbtn" id="clear" type="button" hidden>Limpiar filtros</button></div>
+  </div>
+</div>
+
+<main class="wrap">
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty" hidden></div>
+</main>
+
+<footer class="wrap foot">
+  <p>VoCor reúne material de divulgación de la comunidad científica cordobesa.</p>
+  <p class="foot-links">
+    <a href="#" id="btnExport">Descargar catálogo (.xlsx)</a>
+    <a href="plantilla/vocor-planilla-modelo.xlsx">Planilla modelo para cargar material</a>
+    <a href="admin/">Acceso para cargar material</a>
+  </p>
+</footer>
+
+<dialog id="dDet"><div class="dlg">
+  <div class="dlg-h"><span class="eyebrow" id="detEye"></span><button class="x" data-close aria-label="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+  <div class="dlg-b" id="detBody"></div>
+</div></dialog>
+
+<div class="toast" id="toast" hidden></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js" defer></script>
+<script src="assets/vocor.js" defer></script>
+</body>
+</html>

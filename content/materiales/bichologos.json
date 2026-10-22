@@ -1,0 +1,27 @@
+{
+  "recurso": "Bichologos",
+  "ue": [
+    "Asociación Argentina de Microbiología Filial Córdoba"
+  ],
+  "area": [
+    "Ciencias Biológicas y de la Salud"
+  ],
+  "formato": [
+    "Podcast"
+  ],
+  "publico": [
+    "Público General"
+  ],
+  "palabras": [
+    "bichos",
+    "microbios",
+    "microbiología"
+  ],
+  "descripcion": "Podcast de la Filial Córdoba de la Asociación Argentina de Microbiología.\nEn cada episodio se proponen noticias microbiológicas y entrevistas de todos los temas y rincones del mundo microbiano para descubrir sus secretos. Para amantes de los microbios.",
+  "links": [
+    "https://open.spotify.com/show/47bGWZDrahB9sPu3foXz75"
+  ],
+  "imagen": "/imagenes/bichologos.jpg",
+  "origen": "notion",
+  "creado": "2024-11-24T12:00:01.000Z"
+}

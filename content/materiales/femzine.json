@@ -1,0 +1,28 @@
+{
+  "recurso": "Femzine",
+  "ue": [
+    "CEVE"
+  ],
+  "area": [
+    "Ciencias Sociales y Humanidades"
+  ],
+  "formato": [
+    "Revista"
+  ],
+  "publico": [
+    "Público General"
+  ],
+  "palabras": [
+    "Fanzines",
+    "Hábitat",
+    "Género",
+    "Desigualdades"
+  ],
+  "descripcion": "Fanzines sobre género, hábitat y desigualdades",
+  "links": [
+    "https://ceve.org.ar/fanzines-sobre-genero-habitat-y-desigualdades/"
+  ],
+  "imagen": "/imagenes/femzine.jpg",
+  "origen": "notion",
+  "creado": "2024-11-24T12:00:05.000Z"
+}

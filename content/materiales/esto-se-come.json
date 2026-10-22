@@ -1,0 +1,26 @@
+{
+  "recurso": "¿Esto se come?",
+  "ue": [
+    "IMBIV"
+  ],
+  "area": [
+    "Ciencias Biológicas y de la Salud"
+  ],
+  "formato": [
+    "Publicación de divulgación científica"
+  ],
+  "publico": [
+    "Público General"
+  ],
+  "palabras": [
+    "Plantas silvestres",
+    "flora de Córdoba"
+  ],
+  "descripcion": "Libro sobre plantas alimenticias silvestres de Córdoba con descripciones, usos, información nutricional y de cultivo y recetas para elaborar con cada especie.\nPuede compartirse y circular libremente, como una forma más de conocer nuestra flora profundamente rica y diversa, de revalorizar a las economías regionales y de aportar a la alimentación familiar en forma saludable.",
+  "links": [
+    "https://bit.ly/EstoSeCome"
+  ],
+  "imagen": "/imagenes/esto-se-come.jpg",
+  "origen": "notion",
+  "creado": "2024-11-24T12:00:44.000Z"
+}

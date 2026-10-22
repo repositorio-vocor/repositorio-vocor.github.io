@@ -1,0 +1,30 @@
+{
+  "recurso": "Las Argonautas de los Confines",
+  "ue": [
+    "IDACOR"
+  ],
+  "area": [
+    "Ciencias Sociales y Humanidades"
+  ],
+  "formato": [
+    "Podcast"
+  ],
+  "publico": [
+    "Público General"
+  ],
+  "palabras": [
+    "Podcast",
+    "Antropología",
+    "literatura",
+    "divulgación"
+  ],
+  "descripcion": "Podcast de Antropología y Literatura: un proyecto extensionista de la Universidad Nacional de Córdoba",
+  "links": [
+    "https://open.spotify.com/show/4WMMKz29nBrR9KkcdkO8g8",
+    "https://www.instagram.com/lasargonautasdelosconfines/",
+    "https://www.facebook.com/argonautas.delosconfines"
+  ],
+  "imagen": "/imagenes/las-argonautas-de-los-confines.jpg",
+  "origen": "notion",
+  "creado": "2024-11-24T12:00:02.000Z"
+}

@@ -1,0 +1,28 @@
+{
+  "recurso": "Revista AlimentaMENTE: ciencia y tecnología en tu plato",
+  "ue": [
+    "ICYTAC"
+  ],
+  "area": [
+    "Tecnología, de la Ingeniería y Materiales",
+    "Ciencias Agrarias",
+    "Ciencias Biológicas y de la Salud",
+    "Ciencias Exactas y Naturales"
+  ],
+  "formato": [
+    "Revista anual"
+  ],
+  "publico": [
+    "Público General"
+  ],
+  "palabras": [
+    "Alimentación-Avances-Calidad-Industria Alimentaria-Evidencias"
+  ],
+  "descripcion": "Es la revista de divulgación científica del ICYTAC. El objetivo de nuestra revista es divulgar sobre la ciencia y la tecnología de los alimentos: su elaboración, producción, innovación, impacto en la salud y la relación de los alimentos con todos estos factores. Asimismo, AlimentaMENTE apunta a compartir con la comunidad los últimos avances en las áreas del conocimiento que se trabajan en ICYTAC. Los artículos abordan temas de interés general vinculados a los alimentos y están pensados para un público diverso: profesionales de la industria alimenticia, investigadores y académicos, estudiantes de distintos niveles, docentes, consumidores y personas con un interés general en la calidad de los alimentos. Pueden ser artículos originales o revisiones sistemáticas sobre cualquier tema relacionado con la alimentación. AlimentaMENTE publica 1 volumen al año, es de acceso abierto, no tiene costo de publicación para las personas autoras y cuenta con revisión por pares.",
+  "links": [
+    "https://www.icytac.conicet.unc.edu.ar/divulgacion/revista-alimentamente/"
+  ],
+  "imagen": "/imagenes/revista-alimentamente-ciencia-y-tecnologia-en-tu-plato.jpg",
+  "origen": "notion",
+  "creado": "2024-11-24T12:00:47.000Z"
+}
