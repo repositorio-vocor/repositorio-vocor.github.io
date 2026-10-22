@@ -1,0 +1,247 @@
+{
+  "institutos": [
+    {
+      "sigla": "CCONFINES",
+      "web": "https://cconfines.conicet.gov.ar",
+      "instagram": "https://www.instagram.com/socialesunvm"
+    },
+    {
+      "sigla": "CEVE",
+      "web": "https://www.ceve.org.ar",
+      "facebook": "https://www.facebook.com/aveyceve",
+      "x": "https://x.com/aveyceve",
+      "instagram": "https://www.instagram.com/aveyceve",
+      "youtube": "https://www.youtube.com/c/aveyceve"
+    },
+    {
+      "sigla": "CIBICI",
+      "web": "https://cibici.conicet.gov.ar",
+      "x": "https://x.com/cibici.unc",
+      "instagram": "https://www.instagram.com/cibici.conicet.unc"
+    },
+    {
+      "sigla": "CICTERRA",
+      "web": "https://cicterra.conicet.unc.edu.ar",
+      "facebook": "https://www.facebook.com/Cicterra",
+      "x": "https://x.com/cicterra",
+      "instagram": "https://www.instagram.com/cicterra"
+    },
+    {
+      "sigla": "CIECS",
+      "web": "https://ciecs-conicet.gob.ar/sitio",
+      "facebook": "https://www.facebook.com/ciecs.conicetunc",
+      "x": "https://x.com/ciecsconicet",
+      "instagram": "https://www.instagram.com/ciecsconicetunc",
+      "youtube": "https://www.youtube.com/user/CiecsConicetUnc"
+    },
+    {
+      "sigla": "CINTRA",
+      "web": "https://investigacion.frc.utn.edu.ar/cintra"
+    },
+    {
+      "sigla": "CIQUIBIC",
+      "web": "https://ciquibic.org.ar",
+      "facebook": "https://www.facebook.com/ciquibic",
+      "x": "https://x.com/CIQUIBIC",
+      "instagram": "https://www.instagram.com/CIQUIBIC",
+      "youtube": "https://www.youtube.com/@ciquibic4919"
+    },
+    {
+      "sigla": "CIT VILLA MARIA",
+      "web": "https://humanas.unvm.edu.ar/cit-villa-maria",
+      "instagram": "https://www.instagram.com/humanasunvm"
+    },
+    {
+      "sigla": "CITeQ",
+      "web": "https://investigacion.frc.utn.edu.ar/citeq",
+      "facebook": "https://www.facebook.com/citequtn"
+    },
+    {
+      "sigla": "IATE",
+      "web": "https://iate.oac.uncor.edu"
+    },
+    {
+      "sigla": "ICBIA",
+      "web": "https://icbia.conicet.gov.ar"
+    },
+    {
+      "sigla": "ICYTAC",
+      "web": "https://www.icytac.conicet.unc.edu.ar",
+      "facebook": "https://www.facebook.com/icytac",
+      "x": "https://x.com/icytac",
+      "instagram": "https://www.instagram.com/icytac.conicet.unc"
+    },
+    {
+      "sigla": "IDACOR",
+      "web": "https://idacor.conicet.gov.ar",
+      "facebook": "https://www.facebook.com/IDACOR.CONICET",
+      "x": "https://x.com/idacorconicet",
+      "instagram": "https://www.instagram.com/idacorconicet",
+      "youtube": "https://www.youtube.com/c/InstitutodeAntropolog%C3%ADadeC%C3%B3rdoba"
+    },
+    {
+      "sigla": "IDAS",
+      "web": "https://idas.conicet.gov.ar",
+      "instagram": "https://www.instagram.com/idas.conicet"
+    },
+    {
+      "sigla": "IDEA",
+      "web": "https://www.idea.conicet.unc.edu.ar",
+      "facebook": "https://www.facebook.com/ideaconicet",
+      "x": "https://x.com/idea_conicet",
+      "instagram": "https://www.instagram.com/idea_conicet",
+      "youtube": "https://www.youtube.com/c/IDEAUNCCONICET",
+      "tiktok": "https://www.tiktok.com/@idea_conicet",
+      "linktree": "https://linktr.ee/ideaconicet"
+    },
+    {
+      "sigla": "IDEJUS",
+      "web": "https://idejus.conicet.gov.ar",
+      "facebook": "https://www.facebook.com/IDEJUS.CONICET.UNC",
+      "instagram": "https://www.instagram.com/cienciadelderechoydelreves",
+      "youtube": "https://www.youtube.com/@cienciadelderechoydelreves",
+      "linktree": "https://biolink.website/IDEJUSCONICETUNC"
+    },
+    {
+      "sigla": "IDH",
+      "web": "https://idh.unc.edu.ar",
+      "facebook": "https://www.facebook.com/InstitutoDeHumanidadesCba",
+      "x": "https://x.com/IdhCordoba",
+      "instagram": "https://www.instagram.com/institutodehumanidades",
+      "youtube": "https://www.youtube.com/c/InstitutodeHumanidades"
+    },
+    {
+      "sigla": "IDIT",
+      "web": "https://www.inv.idit.efn.uncor.edu"
+    },
+    {
+      "sigla": "IECET",
+      "web": "https://www.iecet.conicet.gov.ar",
+      "facebook": "https://www.facebook.com/IECET.ConicetUNC",
+      "instagram": "https://www.instagram.com/iecet_conicet.unc",
+      "youtube": "https://www.youtube.com/@IECET"
+    },
+    {
+      "sigla": "IEH",
+      "web": "https://cehsegreti.org.ar/ieh"
+    },
+    {
+      "sigla": "IFEC",
+      "web": "https://ifec.fcq.unc.edu.ar"
+    },
+    {
+      "sigla": "IIBYT",
+      "web": "https://www.iibyt.conicet.unc.edu.ar",
+      "facebook": "https://www.facebook.com/iibytconicetunc",
+      "x": "https://x.com/IIBYT_CONICET",
+      "instagram": "https://www.instagram.com/iibytoficial",
+      "youtube": "https://www.youtube.com/@IIByT"
+    },
+    {
+      "sigla": "IIPSI",
+      "web": "https://iipsi.psicologia.unc.edu.ar",
+      "instagram": "https://www.instagram.com/iipsi_unc_conicet",
+      "youtube": "https://www.youtube.com/@iipsi-institutodeinvestiga8962"
+    },
+    {
+      "sigla": "IITEMA",
+      "web": "https://iitema.conicet.gov.ar",
+      "facebook": "https://www.facebook.com/iitema",
+      "x": "https://x.com/IitemaC",
+      "instagram": "https://www.instagram.com/grupoiitema",
+      "youtube": "https://www.youtube.com/@iitemaunrcconicet9663"
+    },
+    {
+      "sigla": "IMBIV",
+      "web": "https://imbiv.conicet.unc.edu.ar",
+      "facebook": "https://www.facebook.com/IMBIVCONICETUNC",
+      "x": "https://x.com/IMBIVCONICETUNC",
+      "instagram": "https://www.instagram.com/imbivconicetunc",
+      "youtube": "https://www.youtube.com/@IMBIVCONICETUNC"
+    },
+    {
+      "sigla": "IMBIV-Museo Botánico (UNC)",
+      "web": "https://museobotanico.unc.edu.ar",
+      "facebook": "https://www.facebook.com/museobotanico",
+      "instagram": "https://www.instagram.com/museobotanicunc",
+      "otros": [
+        {
+          "texto": "Instagram @experienciabiodiversa",
+          "url": "https://www.instagram.com/experienciabiodiversa"
+        }
+      ],
+      "youtube": "https://www.youtube.com/@imbivmuseobotanico1397",
+      "linktree": "https://linktr.ee/museobotanico"
+    },
+    {
+      "sigla": "IMICO",
+      "web": "https://imico.conicet.gov.ar",
+      "facebook": "https://www.facebook.com/IMICOCONICET",
+      "instagram": "https://www.instagram.com/imico",
+      "youtube": "https://www.youtube.com/@imico3758"
+    },
+    {
+      "sigla": "IMITAB",
+      "web": "https://www.imitab.conicet.gov.ar",
+      "instagram": "https://www.instagram.com/imitab.conicet.unvm"
+    },
+    {
+      "sigla": "INBIAS",
+      "web": "https://www.unrc.edu.ar/cyt/inbias.html"
+    },
+    {
+      "sigla": "INCIVET",
+      "web": "https://incivet.conicet.gov.ar",
+      "instagram": "https://www.instagram.com/incivetunrc"
+    },
+    {
+      "sigla": "INFIQC",
+      "web": "https://infiqc.conicet.gov.ar",
+      "x": "https://x.com/infiqcenred",
+      "youtube": "https://www.youtube.com/@infiqc"
+    },
+    {
+      "sigla": "INIAB",
+      "web": "https://iniab.conicet.gov.ar",
+      "x": "https://x.com/INIABCONICET",
+      "instagram": "https://www.instagram.com/iniabcomunicacion"
+    },
+    {
+      "sigla": "INICSA",
+      "web": "https://inicsa.webs.fcm.unc.edu.ar"
+    },
+    {
+      "sigla": "INIMEC",
+      "web": "https://inimec.conicet.gov.ar",
+      "otros": [
+        {
+          "texto": "Instituto Ferreyra",
+          "url": "https://www.institutoferreyra.org"
+        }
+      ],
+      "facebook": "https://www.facebook.com/institutoferreyra",
+      "x": "https://x.com/InstFerreyra",
+      "instagram": "https://www.instagram.com/institutoferreyra",
+      "youtube": "https://www.youtube.com/@institutoferreyra",
+      "tiktok": "https://www.tiktok.com/@institutoferreyra"
+    },
+    {
+      "sigla": "IPQA",
+      "web": "https://ipqa.unc.edu.ar",
+      "facebook": "https://www.facebook.com/IPQACONICET",
+      "instagram": "https://www.instagram.com/ipqa_unc_conicet"
+    },
+    {
+      "sigla": "ISTE",
+      "web": "https://www.unrc.edu.ar/cyt/iste.html"
+    },
+    {
+      "sigla": "UDEA",
+      "web": "https://udea.conicet.gov.ar"
+    },
+    {
+      "sigla": "UNITEFA",
+      "web": "https://www.unitefa-conicet.gov.ar"
+    }
+  ]
+}

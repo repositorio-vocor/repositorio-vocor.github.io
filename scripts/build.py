@@ -48,6 +48,9 @@ def main():
     if errores:
         print("Hay materiales con problemas y no se publicaron:\n  " + "\n  ".join(errores))
     (SALIDA / "materiales.json").write_text(json.dumps(materiales, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    redes = CONTENIDO.parent / "redes.json"
+    if redes.exists():
+        shutil.copy2(redes, SALIDA / "redes.json")
     (SALIDA / ".nojekyll").write_text("")
     print(f"Sitio armado en _site/ con {len(materiales)} materiales ({ocultos} ocultos por formato: {', '.join(FORMATOS_OCULTOS) or 'ninguno'}).")
 

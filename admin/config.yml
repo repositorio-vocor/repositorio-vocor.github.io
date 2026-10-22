@@ -145,3 +145,36 @@ collections:
         label: Origen
         widget: hidden
         default: web
+
+  - name: redes
+    label: Redes de los institutos
+    description: Sitios y redes sociales que se muestran en la sección "Redes de los institutos".
+    files:
+      - name: redes
+        label: Redes de los institutos
+        file: content/redes.json
+        format: json
+        fields:
+          - name: institutos
+            label: Institutos
+            label_singular: Instituto
+            widget: list
+            summary: "{{fields.sigla}}"
+            fields:
+              - { name: sigla, label: Sigla, widget: string, hint: "Igual que en el campo Unidad ejecutora de los materiales, así se enlazan." }
+              - { name: web, label: Sitio web, widget: string, required: false, hint: "Dirección completa, con https://" }
+              - { name: instagram, label: Instagram, widget: string, required: false, hint: "https://www.instagram.com/usuario" }
+              - { name: facebook, label: Facebook, widget: string, required: false, hint: "https://www.facebook.com/pagina" }
+              - { name: x, label: X (ex Twitter), widget: string, required: false, hint: "https://x.com/usuario" }
+              - { name: youtube, label: YouTube, widget: string, required: false }
+              - { name: tiktok, label: TikTok, widget: string, required: false, hint: "https://www.tiktok.com/@usuario" }
+              - { name: linktree, label: Linktree u otra página de enlaces, widget: string, required: false }
+              - name: otros
+                label: Otros enlaces
+                label_singular: Enlace
+                widget: list
+                required: false
+                summary: "{{fields.texto}}"
+                fields:
+                  - { name: texto, label: Texto, widget: string }
+                  - { name: url, label: Dirección, widget: string }

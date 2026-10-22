@@ -154,6 +154,19 @@ main{padding-block:24px 20px}
 .uebtn .meter i{display:block; height:100%; background:var(--sky)}
 .uebtn span{font-family:var(--f-mono); font-size:12.5px; color:var(--ink-2); font-variant-numeric:tabular-nums; min-width:2ch; text-align:right}
 
+/* ---------- Redes de los institutos ---------- */
+.redes-q{flex:0 1 280px}
+.redes{display:grid; grid-template-columns:repeat(auto-fill, minmax(270px, 1fr)); gap:12px}
+.red{display:flex; flex-direction:column; gap:10px; padding:16px; background:var(--surface); border:1px solid var(--line); border-radius:var(--r); min-width:0}
+.red-h{display:flex; justify-content:space-between; align-items:baseline; gap:10px}
+.red-h h3{font-size:20px; font-weight:700; overflow-wrap:anywhere; min-width:0}
+.red-h button{flex:none; border:0; background:none; padding:0; color:var(--accent); font-size:12.5px; cursor:pointer; text-decoration:underline}
+.red-links{display:flex; flex-wrap:wrap; gap:6px}
+.red-links a{display:inline-flex; align-items:center; gap:6px; padding:5px 10px; border-radius:999px; border:1px solid var(--line); background:var(--surface-2); color:var(--ink); font-size:13px; text-decoration:none; transition:background .15s, color .15s, border-color .15s}
+.red-links a:hover{background:var(--accent); border-color:var(--accent); color:var(--accent-ink)}
+.red-links svg{width:14px; height:14px; flex:none}
+.redes-empty{color:var(--ink-2); grid-column:1 / -1}
+
 /* ---------- Diálogo de ficha ---------- */
 dialog{border:0; padding:0; border-radius:10px; background:var(--surface); color:var(--ink); width:min(880px, calc(100vw - 24px)); max-height:calc(100dvh - 24px); box-shadow:0 20px 60px rgb(0 0 0 / .3)}
 dialog::backdrop{background:rgb(0 20 45 / .6)}
