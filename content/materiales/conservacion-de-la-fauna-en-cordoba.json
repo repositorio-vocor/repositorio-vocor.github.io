@@ -1,0 +1,29 @@
+{
+  "recurso": "Sitio web interactivo: Conservación de la Fauna en Córdoba",
+  "ue": [
+    "IDEA"
+  ],
+  "area": [
+    "Ciencias Biológicas y de la Salud"
+  ],
+  "formato": [
+    "Sitio Web"
+  ],
+  "publico": [
+    "Público General"
+  ],
+  "palabras": [
+    "conservación",
+    "Córdoba",
+    "biodiversidad"
+  ],
+  "descripcion": "Recorremos las ideas de biodiversidad y su importancia para el hombre a través del enfoque de la Biología de la Conservación.",
+  "links": [
+    {
+      "url": "https://www.biodiversidadfaunacordoba.com/index.html"
+    }
+  ],
+  "imagen": "/imagenes/conservacion-de-la-fauna-en-cordoba.jpg",
+  "origen": "web",
+  "creado": "2012-01-01T00:00:00Z"
+}
