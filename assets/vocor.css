@@ -158,8 +158,13 @@ main{padding-block:24px 20px}
 .redes-q{flex:0 1 280px}
 .redes{display:grid; grid-template-columns:repeat(auto-fill, minmax(270px, 1fr)); gap:12px}
 .red{--ac:var(--line); display:flex; flex-direction:column; gap:10px; padding:16px 16px 16px 18px; background:color-mix(in srgb, var(--ac) 7%, var(--surface)); border:1px solid color-mix(in srgb, var(--ac) 30%, var(--line)); border-left:5px solid var(--ac); border-radius:var(--r); min-width:0}
+.red-logo{display:flex; align-items:center; justify-content:center; height:96px; padding:10px 14px; background:#ffffff; border-radius:calc(var(--r) - 2px); border:1px solid color-mix(in srgb, var(--ac) 18%, var(--line))}
+.red-logo img{max-width:100%; max-height:100%; object-fit:contain; display:block}
+.sr-only{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap}
 .red-area{font-family:var(--f-mono); font-size:10.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--ac); font-weight:500; line-height:1.35}
 .red-h{display:flex; justify-content:space-between; align-items:baseline; gap:10px}
+.red-h:has(h3.sr-only){justify-content:flex-end}
+.red-h:has(h3.sr-only):not(:has(button)){display:none}
 .red-h h3{font-size:20px; font-weight:700; overflow-wrap:anywhere; min-width:0}
 .red-h button{flex:none; border:0; background:none; padding:0; color:var(--accent); font-size:12.5px; cursor:pointer; text-decoration:underline}
 .red-links{display:flex; flex-wrap:wrap; gap:6px}

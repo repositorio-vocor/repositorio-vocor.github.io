@@ -172,6 +172,7 @@ collections:
                   - Ciencias Biológicas y de la Salud
                   - Ciencias Exactas y Naturales
                   - Ciencias Sociales y Humanidades
+              - { name: logo, label: Logo, widget: image, required: false, hint: "Versión horizontal sobre fondo blanco. Se guarda en imagenes/logos." , media_folder: /imagenes/logos, public_folder: /imagenes/logos }
               - { name: web, label: Sitio web, widget: string, required: false, hint: "Dirección completa, con https://" }
               - { name: instagram, label: Instagram, widget: string, required: false, hint: "https://www.instagram.com/usuario" }
               - { name: facebook, label: Facebook, widget: string, required: false, hint: "https://www.facebook.com/pagina" }
