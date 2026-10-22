@@ -15,11 +15,10 @@ const ICONOS = {
   charla:'<path d="M4 5h16v10H9l-5 4z"/>',
 };
 const FAMILIA = {
-  "Podcast":["audio","audio"], "Entrevista":["audio","charla"],
-  "Audiovisual":["video","video"], "Video":["video","video"], "Webinar":["video","charla"],
-  "Libro":["texto","libro"], "Revista":["texto","revista"], "Revista anual":["texto","revista"], "Nota":["texto","texto"],
-  "Publicación de divulgación científica":["texto","texto"],
-  "Material didáctico":["edu","edu"], "Recursos para docentes":["edu","edu"], "Cartilla":["edu","texto"],
+  "Podcast":["audio","audio"], "Notas y entrevistas":["audio","charla"],
+  "Audiovisual":["video","video"], "Webinar":["video","charla"],
+  "Libro":["texto","libro"], "Revista":["texto","revista"], "Publicación de divulgación científica":["texto","texto"],
+  "Material didáctico":["edu","edu"],
   "Sitio Web":["web","web"], "Redes sociales":["web","redes"],
 };
 const fam = f => FAMILIA[f] || ["texto","texto"];

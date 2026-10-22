@@ -58,9 +58,9 @@ collections:
       - label: Podcasts
         field: formato
         pattern: Podcast
-      - label: Audiovisuales y videos
+      - label: Audiovisuales
         field: formato
-        pattern: "Audiovisual|Video"
+        pattern: Audiovisual
     fields:
       - name: recurso
         label: Título del recurso
@@ -77,19 +77,14 @@ collections:
         min: 1
         options:
           - Audiovisual
-          - Cartilla
-          - Entrevista
           - Libro
           - Material didáctico
-          - Nota
+          - Notas y entrevistas
           - Podcast
           - Publicación de divulgación científica
-          - Recursos para docentes
           - Redes sociales
           - Revista
-          - Revista anual
           - Sitio Web
-          - Video
           - Webinar
       - name: area
         label: Área

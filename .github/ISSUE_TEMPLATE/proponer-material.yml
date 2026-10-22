@@ -27,19 +27,14 @@ body:
       multiple: true
       options:
         - Audiovisual
-        - Cartilla
-        - Entrevista
         - Libro
         - Material didáctico
-        - Nota
+        - Notas y entrevistas
         - Podcast
         - Publicación de divulgación científica
-        - Recursos para docentes
         - Redes sociales
         - Revista
-        - Revista anual
         - Sitio Web
-        - Video
         - Webinar
         - Otro
     validations:

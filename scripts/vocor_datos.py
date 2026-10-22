@@ -27,15 +27,20 @@ PUBLICOS = [
     "Docentes",
 ]
 FORMATOS = [
-    "Audiovisual", "Cartilla", "Entrevista", "Libro", "Material didáctico", "Nota",
-    "Podcast", "Publicación de divulgación científica", "Recursos para docentes",
-    "Redes sociales", "Revista", "Revista anual", "Sitio Web", "Video", "Webinar",
+    "Audiovisual", "Libro", "Material didáctico", "Notas y entrevistas", "Podcast",
+    "Publicación de divulgación científica", "Redes sociales", "Revista", "Sitio Web", "Webinar",
 ]
+# Nombres viejos que se convierten al importar planillas.
+ALIAS_FORMATO = {
+    "nota": "Notas y entrevistas", "notas": "Notas y entrevistas", "entrevista": "Notas y entrevistas", "entrevistas": "Notas y entrevistas",
+    "video": "Audiovisual", "videos": "Audiovisual", "cartilla": "Material didáctico", "recursos para docentes": "Material didáctico",
+    "revista anual": "Revista", "libros": "Libro", "revistas": "Revista",
+}
 
 # Valores que llevan coma adentro y no se deben partir.
 CON_COMA = {
     "area": {"tecnologia, de la ingenieria y materiales": "Tecnología, de la Ingeniería y Materiales"},
-    "formato": {"recursos para docentes (planificaciones, manuales, etc)": "Recursos para docentes"},
+    "formato": {"recursos para docentes (planificaciones, manuales, etc)": "Material didáctico"},
 }
 VOCAB = {"area": AREAS, "publico": PUBLICOS, "formato": FORMATOS}
 
@@ -67,7 +72,7 @@ def separar(valor, campo):
                 break
         if v is None:
             p = partes[i]
-            v = especiales.get(norm(p)) or next((x for x in VOCAB.get(campo, []) if norm(x) == norm(p)), p)
+            v = especiales.get(norm(p)) or (ALIAS_FORMATO.get(norm(p)) if campo == "formato" else None) or next((x for x in VOCAB.get(campo, []) if norm(x) == norm(p)), p)
         if v not in salida:
             salida.append(v)
         i += paso
