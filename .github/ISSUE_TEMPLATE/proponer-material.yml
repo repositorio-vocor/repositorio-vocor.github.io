@@ -27,11 +27,11 @@ body:
       multiple: true
       options:
         - Audiovisual
-        - Libro
-        - Material didáctico
-        - Notas y entrevistas
         - Podcast
+        - Material didáctico
+        - Libro
         - Revista
+        - Notas y entrevistas
         - Sitio Web
         - Otro
     validations:

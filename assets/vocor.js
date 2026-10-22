@@ -1,6 +1,7 @@
 /* VoCor — sitio público. Lee materiales.json (lo arma scripts/build.py) y dibuja el catálogo. */
 const AREAS = ["Ciencias Agrarias","Ciencias Biológicas y de la Salud","Ciencias Exactas y Naturales","Ciencias Sociales y Humanidades","Tecnología, de la Ingeniería y Materiales"];
 const PUBLICOS = ["Público General","Infancia temprana (0-5 años)","Infantil (7 a 11 años)","Juvenil (12 a 18 años)","Docentes"];
+const FORMATOS = ["Audiovisual","Podcast","Material didáctico","Libro","Revista","Notas y entrevistas","Sitio Web"]; // orden en que se muestran
 
 /* Familias de formato: color e ícono. Un formato nuevo cae en "texto" hasta que se lo agregue acá. */
 const ICONOS = {
@@ -65,7 +66,7 @@ const imgTag = (it, lazy=true) => it.imagen ? `<img ${lazy?'loading="lazy" ':''}
 /* ---------- Secciones fijas ---------- */
 function renderFormats(){
   const fm = counts("formato", items);
-  const keys = [...fm.keys()].sort((a,b)=>fm.get(b)-fm.get(a) || a.localeCompare(b,"es"));
+  const keys = FORMATOS.filter(k=>fm.has(k)).concat([...fm.keys()].filter(k=>!FORMATOS.includes(k)).sort((a,b)=>a.localeCompare(b,"es")));
   $("#formats").innerHTML = keys.map(k=>`
     <button class="ftile" type="button" data-fmt="${esc(k)}" style="--c:${colorDe(k)}" aria-pressed="${F.fmt===k}">
       <span class="ic">${icono(k)}</span><b>${esc(k)}</b><span>${fm.get(k)} material${fm.get(k)>1?"es":""}</span>
@@ -99,7 +100,7 @@ function render(){
   $("#sUE").textContent = loaded ? new Set(items.flatMap(i=>arr(i.ue))).size : "—";
   $("#sFmt").textContent = loaded ? new Set(items.flatMap(i=>arr(i.formato))).size : "—";
 
-  fillSelect($("#fFmt"), "Todos los formatos", counts("formato", items.filter(i=>matches(i,"fmt"))), F.fmt);
+  fillSelect($("#fFmt"), "Todos los formatos", counts("formato", items.filter(i=>matches(i,"fmt"))), F.fmt, FORMATOS);
   fillSelect($("#fArea"), "Todas las áreas", counts("area", items.filter(i=>matches(i,"area"))), F.area, AREAS);
   fillSelect($("#fPub"), "Todo público", counts("publico", items.filter(i=>matches(i,"pub"))), F.pub, PUBLICOS);
   fillSelect($("#fUE"), "Todas las UE", counts("ue", items.filter(i=>matches(i,"ue"))), F.ue);

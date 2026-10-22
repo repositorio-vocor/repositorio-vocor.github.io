@@ -27,7 +27,7 @@ PUBLICOS = [
     "Docentes",
 ]
 FORMATOS = [
-    "Audiovisual", "Libro", "Material didáctico", "Notas y entrevistas", "Podcast", "Revista", "Sitio Web",
+    "Audiovisual", "Podcast", "Material didáctico", "Libro", "Revista", "Notas y entrevistas", "Sitio Web",
 ]
 # Nombres viejos que se convierten al importar planillas.
 ALIAS_FORMATO = {

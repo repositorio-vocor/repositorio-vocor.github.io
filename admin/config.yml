@@ -77,11 +77,11 @@ collections:
         min: 1
         options:
           - Audiovisual
-          - Libro
-          - Material didáctico
-          - Notas y entrevistas
           - Podcast
+          - Material didáctico
+          - Libro
           - Revista
+          - Notas y entrevistas
           - Sitio Web
       - name: area
         label: Área
