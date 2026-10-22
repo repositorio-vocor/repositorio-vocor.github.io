@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>VoCor · Repositorio de comunicación científica de Córdoba</title>
 <meta name="description" content="Podcasts, libros, videos, cartillas y materiales para docentes producidos por institutos y unidades ejecutoras de Córdoba.">
+<meta name="theme-color" content="#0064c8">
 <meta property="og:title" content="VoCor · Comunicación científica de Córdoba">
 <meta property="og:description" content="Materiales de divulgación de la comunidad científica cordobesa, reunidos en un solo lugar.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,13 +15,17 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230064c8'/%3E%3Ctext x='16' y='23' font-family='Arial' font-weight='700' font-size='17' text-anchor='middle' fill='%23fff'%3EVC%3C/text%3E%3C/svg%3E">
 </head>
 <body>
-<header class="top">
-  <div class="wrap top-grid">
-    <div class="brand">
-      <div class="eyebrow">Repositorio de comunicación científica · Córdoba</div>
-      <h1>Vo<span class="o">Cor</span></h1>
-      <p>Podcasts, libros, videos, cartillas y materiales para docentes producidos por institutos y unidades ejecutoras de Córdoba, reunidos en un solo lugar.</p>
-    </div>
+
+<header class="hero">
+  <div class="wrap hero-in">
+    <div class="eyebrow">Repositorio de comunicación científica · Córdoba</div>
+    <h1 class="logo">Vo<span class="o">Cor</span></h1>
+    <p class="lead">Podcasts, libros, videos, cartillas y materiales para docentes producidos por institutos y unidades ejecutoras de Córdoba, reunidos en un solo lugar.</p>
+    <form class="hero-search" id="heroForm" role="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="qHero" type="search" placeholder="¿Qué querés encontrar? Ej.: serpientes, química, docentes" aria-label="Buscar en el repositorio">
+      <button type="submit">Buscar</button>
+    </form>
     <div class="stats" aria-live="polite">
       <div class="stat"><b id="sTotal">—</b><span>materiales</span></div>
       <div class="stat"><b id="sUE">—</b><span>unidades ejecutoras</span></div>
@@ -29,13 +34,25 @@
   </div>
 </header>
 
+<section class="wrap sec" aria-labelledby="hFmt">
+  <div class="sec-h"><div><h2 id="hFmt">Explorá por formato</h2><p>Elegí un tipo de material para ver solo esos.</p></div></div>
+  <div class="formats" id="formats"></div>
+</section>
+
+<section class="wrap sec" aria-labelledby="hNew" id="secNew" hidden>
+  <div class="sec-h"><div><h2 id="hNew">Lo más nuevo</h2><p>Los últimos materiales que se sumaron al repositorio.</p></div></div>
+  <div class="feat" id="feat"></div>
+</section>
+
+<div id="catalogo"></div>
 <div class="bar">
   <div class="wrap bar-in">
     <div class="row1">
       <div class="search">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-        <input id="q" type="search" placeholder="Buscar por título, tema, palabra clave o instituto" aria-label="Buscar">
+        <input id="q" type="search" placeholder="Buscar en el catálogo" aria-label="Buscar en el catálogo">
       </div>
+      <select class="f" id="fFmt" aria-label="Formato"></select>
       <select class="f" id="fArea" aria-label="Área"></select>
       <select class="f" id="fPub" aria-label="Público"></select>
       <select class="f" id="fUE" aria-label="Unidad ejecutora"></select>
@@ -43,9 +60,12 @@
         <option value="new">Más recientes</option>
         <option value="az">A–Z</option>
       </select>
+      <div class="views" role="group" aria-label="Vista">
+        <button type="button" data-view="grid" aria-pressed="true" title="Ver en tarjetas" aria-label="Ver en tarjetas"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></button>
+        <button type="button" data-view="list" aria-pressed="false" title="Ver en lista" aria-label="Ver en lista"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg></button>
+      </div>
     </div>
-    <div class="chips" id="fmtChips" role="group" aria-label="Formato"></div>
-    <div class="resline"><span id="resCount">Cargando el repositorio…</span><button class="linkbtn" id="clear" type="button" hidden>Limpiar filtros</button></div>
+    <div class="resline"><span id="resCount">Cargando el repositorio…</span><div class="active" id="active"></div><button class="linkbtn" id="clear" type="button" hidden>Limpiar filtros</button></div>
   </div>
 </div>
 
@@ -54,17 +74,34 @@
   <div class="empty" id="empty" hidden></div>
 </main>
 
-<footer class="wrap foot">
-  <p>VoCor reúne material de divulgación de la comunidad científica cordobesa.</p>
-  <p class="foot-links">
-    <a href="#" id="btnExport">Descargar catálogo (.xlsx)</a>
-    <a href="plantilla/vocor-planilla-modelo.xlsx">Planilla modelo para cargar material</a>
-    <a href="admin/">Acceso para cargar material</a>
-  </p>
+<section class="wrap sec" aria-labelledby="hUE">
+  <div class="sec-h"><div><h2 id="hUE">Por instituto</h2><p>Unidades ejecutoras y organismos que aportaron material.</p></div></div>
+  <div class="ues" id="ues"></div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <h2>Vo<span class="o">Cor</span></h2>
+      <p>VoCor es un repositorio abierto que reúne el material de comunicación y divulgación producido por la comunidad científica de Córdoba: institutos, centros y organismos de investigación. Su nombre juega con VocAr, el repositorio de CONICET.</p>
+      <p>¿Tu instituto produjo material de divulgación que no está acá? Proponelo y lo sumamos.</p>
+      <a class="cta" href="https://github.com/repositorio-vocor/repositorio-vocor.github.io/issues/new?template=proponer-material.yml" target="_blank" rel="noopener">Proponer un material</a>
+    </div>
+    <div>
+      <h3>Recursos</h3>
+      <ul>
+        <li><a href="#" id="btnExport">Descargar el catálogo completo (.xlsx)</a></li>
+        <li><a href="plantilla/vocor-planilla-modelo.xlsx">Planilla modelo para carga masiva</a></li>
+        <li><a href="admin/">Acceso para cargar material (personas validadas)</a></li>
+        <li><a href="https://github.com/repositorio-vocor/repositorio-vocor.github.io" target="_blank" rel="noopener">Código y datos del sitio</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">Repositorio de comunicación científica de Córdoba · Los materiales pertenecen a sus autores e instituciones.</div>
 </footer>
 
 <dialog id="dDet"><div class="dlg">
-  <div class="dlg-h"><span class="eyebrow" id="detEye"></span><button class="x" data-close aria-label="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+  <div class="dlg-h"><span class="tags" id="detEye"></span><button class="x" data-close aria-label="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
   <div class="dlg-b" id="detBody"></div>
 </div></dialog>
 

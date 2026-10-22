@@ -1,0 +1,62 @@
+name: Proponer un material
+description: Sugerí un material de comunicación científica de Córdoba para sumar a VoCor.
+title: "Propuesta: "
+labels: ["propuesta"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por proponer material. Una persona del equipo lo revisa y, si corresponde, lo carga en el repositorio.
+  - type: input
+    id: recurso
+    attributes:
+      label: Título del material
+    validations:
+      required: true
+  - type: input
+    id: ue
+    attributes:
+      label: Unidad ejecutora o institución
+      placeholder: "IDEA, IMBIV, CIECS…"
+    validations:
+      required: true
+  - type: dropdown
+    id: formato
+    attributes:
+      label: Formato
+      multiple: true
+      options:
+        - Audiovisual
+        - Cartilla
+        - Entrevista
+        - Libro
+        - Material didáctico
+        - Nota
+        - Podcast
+        - Publicación de divulgación científica
+        - Recursos para docentes
+        - Redes sociales
+        - Revista
+        - Revista anual
+        - Sitio Web
+        - Video
+        - Webinar
+        - Otro
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Enlace al material
+      placeholder: "https://…"
+    validations:
+      required: true
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: Descripción breve
+  - type: input
+    id: contacto
+    attributes:
+      label: Contacto (opcional)
+      description: Por si necesitamos consultarte algo.

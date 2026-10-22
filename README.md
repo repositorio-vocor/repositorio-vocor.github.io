@@ -22,6 +22,10 @@ La primera vez, el panel pide un *token* de GitHub:
 
 (Si se prefiere un botón "Entrar con GitHub", ver la nota en `admin/config.yml`.)
 
+### Propuestas del público
+
+El botón "Proponer un material" del pie del sitio abre un formulario en **Issues** (hace falta una cuenta de GitHub). Una persona validada lo revisa, lo carga desde `/admin` y cierra el issue.
+
 ### 2. Carga masiva desde Excel
 
 Ver [`importar/LEEME.md`](importar/LEEME.md). En resumen: completar la [planilla modelo](plantilla/vocor-planilla-modelo.xlsx) y subirla a la carpeta `importar/`.
