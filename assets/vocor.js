@@ -10,7 +10,7 @@ const arr = v => Array.isArray(v) ? v.filter(Boolean).map(String) : (v ? [String
 const imgSrc = p => !p ? "" : /^https?:/.test(p) ? p : p.replace(/^\/+/, "");
 
 let items = [], loaded = false;
-const F = {q:"", fmt:"", area:"", pub:"", ue:"", sort:"az"};
+const F = {q:"", fmt:"", area:"", pub:"", ue:"", sort:"new"};
 
 function toast(msg){ const t=$("#toast"); t.textContent=msg; t.hidden=false; clearTimeout(toast.t); toast.t=setTimeout(()=>t.hidden=true, 3200); }
 
@@ -50,7 +50,7 @@ function render(){
     fkeys.map(k=>`<button class="chip" type="button" data-fmt="${esc(k)}" aria-pressed="${F.fmt===k}">${esc(k)}<span class="n">${fm.get(k)}</span></button>`).join("");
 
   const list = items.filter(i=>matches(i));
-  list.sort(F.sort==="new" ? (a,b)=>String(b.creado||"").localeCompare(String(a.creado||"")) : (a,b)=>sortKey(a.recurso).localeCompare(sortKey(b.recurso),"es"));
+  list.sort(F.sort==="new" ? (a,b)=>String(b.creado||"").localeCompare(String(a.creado||"")) || sortKey(a.recurso).localeCompare(sortKey(b.recurso),"es") : (a,b)=>sortKey(a.recurso).localeCompare(sortKey(b.recurso),"es"));
   const active = F.q||F.fmt||F.area||F.pub||F.ue;
   $("#clear").hidden = !active;
   $("#resCount").textContent = !loaded ? "Cargando el repositorio…" : active ? `${list.length} de ${items.length} materiales` : `${items.length} materiales`;

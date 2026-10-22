@@ -19,7 +19,7 @@ backend:
 
 site_url: https://repositorio-vocor.github.io/
 display_url: https://repositorio-vocor.github.io/
-logo_url: data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231f6b52'/%3E%3Ctext x='16' y='23' font-family='Arial' font-weight='700' font-size='17' text-anchor='middle' fill='%23fff'%3EVC%3C/text%3E%3C/svg%3E
+logo_url: data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230064c8'/%3E%3Ctext x='16' y='23' font-family='Arial' font-weight='700' font-size='17' text-anchor='middle' fill='%23fff'%3EVC%3C/text%3E%3C/svg%3E
 
 media_folder: imagenes
 public_folder: /imagenes
