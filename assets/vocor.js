@@ -91,7 +91,12 @@ function renderFormats(){
     </button>`).join("");
 }
 function renderFeatured(){
-  const top = [...items].sort(porFecha).slice(0,3);
+  // Destacados: el primero es siempre el último publicado; los otros dos se eligen al azar
+  // en cada visita (entre los que tienen imagen), para que la portada cambie aunque no haya novedades.
+  const orden = [...items].sort(porFecha);
+  const resto = orden.slice(1).filter(i=>i.imagen);
+  for (let i = resto.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [resto[i], resto[j]] = [resto[j], resto[i]]; }
+  const top = orden.length ? [orden[0], ...resto.slice(0,2)] : [];
   $("#secNew").hidden = top.length < 3;
   if (top.length < 3) return;
   const card = (it, big) => `
