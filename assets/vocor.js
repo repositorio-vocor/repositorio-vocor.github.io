@@ -3,7 +3,7 @@ const AREAS = ["Ciencias Agrarias, de las Ingenierías y Materiales / Desarrollo
 // Áreas viejas (links compartidos antes de unificar) → área actual
 const AREA_VIEJA = {"Ciencias Agrarias":AREAS[0],"Tecnología, de la Ingeniería y Materiales":AREAS[0]};
 // Nombre más corto para mostrar en el filtro
-const AREA_ETIQ = {[AREAS[0]]:"Ciencias Agrarias, Ingenierías y Materiales"};
+const AREA_ETIQ = {[AREAS[0]]:"Agrarias, Ing. y Mat.",[AREAS[1]]:"Biológicas y Salud",[AREAS[2]]:"Exactas y Naturales",[AREAS[3]]:"Sociales y Humanidades"}; // mismas abreviaturas que en las redes
 const PUBLICOS = ["Público General","Infancia temprana (0-5 años)","Infantil (7 a 11 años)","Juvenil (12 a 18 años)","Docentes"];
 const FORMATOS = ["Audiovisual","Podcast","Material didáctico","Libro","Revista","Notas y entrevistas","Sitio Web"]; // orden en que se muestran
 
@@ -184,7 +184,7 @@ function render(){
   $("#sUE").textContent = loaded ? new Set(items.flatMap(i=>arr(i.ue))).size : "—";
   $("#sFmt").textContent = loaded ? new Set(items.flatMap(i=>arr(i.formato))).size : "—";
 
-  fillSelect($("#fFmt"), "Todos los formatos", counts("formato", items.filter(i=>matches(i,"fmt"))), F.fmt, FORMATOS);
+  fillSelect($("#fFmt"), "Formatos", counts("formato", items.filter(i=>matches(i,"fmt"))), F.fmt, FORMATOS);
   fillSelect($("#fArea"), "Todas las áreas", counts("area", items.filter(i=>matches(i,"area"))), F.area, AREAS, AREA_ETIQ);
   fillSelect($("#fPub"), "Todo público", counts("publico", items.filter(i=>matches(i,"pub"))), F.pub, PUBLICOS);
   fillSelect($("#fUE"), "Todas las UE", counts("ue", items.filter(i=>matches(i,"ue"))), F.ue);
