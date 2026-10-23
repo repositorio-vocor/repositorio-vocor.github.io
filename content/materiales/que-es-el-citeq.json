@@ -1,0 +1,28 @@
+{
+  "recurso": "¿Qué es el CITeQ?",
+  "ue": [
+    "CITeQ"
+  ],
+  "area": [
+    "Ciencias Agrarias, de las Ingenierías y Materiales"
+  ],
+  "formato": [
+    "Audiovisual"
+  ],
+  "publico": [
+    "Público General"
+  ],
+  "palabras": [
+    "química",
+    "CITeQ"
+  ],
+  "descripcion": "Centro de Investigación y Tecnología Química. Unidad Ejecutora de doble dependencia UTN - CONICET",
+  "links": [
+    {
+      "url": "https://www.youtube.com/watch?v=Sm2w6yrNkzg"
+    }
+  ],
+  "imagen": "/imagenes/que-es-el-citeq.jpg",
+  "origen": "web",
+  "creado": "2019-08-12T12:00:00Z"
+}
