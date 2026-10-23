@@ -1,0 +1,46 @@
+{
+  "recurso": "Manos a la Fruta",
+  "ue": [
+    "INTA EEA Manfredi"
+  ],
+  "area": [
+    "Ciencias Agrarias, de las Ingenierías y Materiales"
+  ],
+  "formato": [
+    "Audiovisual"
+  ],
+  "publico": [
+    "Público General"
+  ],
+  "palabras": [
+    "INTA",
+    "Agro",
+    "frutas"
+  ],
+  "descripcion": "En esta sección les mostramos distintas especies de frutales. Frutales de clima cálido, frío y hasta de condiciones subtropicales. En estos videos vamos a recorrer diferentes y diversos árboles frutales que tenemos en nuestro país.",
+  "links": [
+    {
+      "url": "https://www.youtube.com/watch?v=Hq66HDnVsUc",
+      "texto": "Cap. 1: Variedad de frutales"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Rk6R1Tdv7z8",
+      "texto": "Cap. 2: Higuera"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=UG7cb9aeGvk",
+      "texto": "Cap. 3: Higo turco"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=OnkvleUBgy0",
+      "texto": "Cap. 4: Nogal Chandler"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=4xfo46ep5iA",
+      "texto": "Cap. 5: Manzana Daiane"
+    }
+  ],
+  "imagen": "/imagenes/manos-a-la-fruta.jpg",
+  "origen": "web",
+  "creado": "2025-03-31T12:00:00Z"
+}
