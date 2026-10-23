@@ -127,10 +127,11 @@ const REDES = [
 const ALIAS_UE = {"CIT VILLA MARIA":"CIT-UNVM"}; // sigla en redes → nombre usado en los materiales
 // Grandes áreas de CONICET: color de cada recuadro y nombre corto para los botones de filtro
 const AREAS_REDES = [
-  ["Ciencias Agrarias, de las Ingenierías y Materiales / Desarrollo Tecnológico y Social","Agrarias, Ingenierías y Materiales","agr"],
-  ["Ciencias Biológicas y de la Salud","Biológicas y de la Salud","bio"],
-  ["Ciencias Exactas y Naturales","Exactas y Naturales","exa"],
-  ["Ciencias Sociales y Humanidades","Sociales y Humanidades","soc"],
+  // [nombre completo, nombre corto (botones de filtro), color, etiqueta del recuadro (una sola línea)]
+  ["Ciencias Agrarias, de las Ingenierías y Materiales / Desarrollo Tecnológico y Social","Agrarias, Ingenierías y Materiales","agr","Agrarias, Ing. y Mat."],
+  ["Ciencias Biológicas y de la Salud","Biológicas y de la Salud","bio","Biológicas y Salud"],
+  ["Ciencias Exactas y Naturales","Exactas y Naturales","exa","Exactas y Naturales"],
+  ["Ciencias Sociales y Humanidades","Sociales y Humanidades","soc","Sociales y Humanidades"],
 ];
 const areaColor = a => { const x = AREAS_REDES.find(([n])=>n===a); return x ? `var(--a-${x[2]})` : "var(--line)"; };
 let redes = [], areaRed = "", redesAbiertas = false;
@@ -152,7 +153,7 @@ function renderRedes(){
     const ue = ALIAS_UE[r.sigla] || r.sigla, n = m.get(ue) || 0;
     const links = REDES.filter(([k])=>/^https?:\/\//.test(r[k]||"")).map(([k,lab,d])=>`<a href="${esc(r[k])}" target="_blank" rel="noopener" title="${lab}" aria-label="${lab} de ${esc(r.sigla)}">${ico(d)}</a>`)
       .concat((Array.isArray(r.otros)?r.otros:[]).filter(o=>/^https?:\/\//.test(o?.url||"")).map(o=>`<a href="${esc(o.url)}" target="_blank" rel="noopener" title="${esc(o.texto||"Otro enlace")}" aria-label="${esc(o.texto||"Otro enlace")}">${ico(REDES[0][2])}</a>`));
-    return `<article class="red" style="--ac:${areaColor(r.area)}">${r.area?`<span class="red-area" title="${esc(r.area)}">${esc((AREAS_REDES.find(([n])=>n===r.area)||[0,r.area])[1])}</span>`:""}${r.logo?`<div class="red-logo"><img loading="lazy" src="${esc(imgSrc(r.logo))}" alt="Logo de ${esc(r.sigla)}" onerror="this.closest('.red').classList.add('sin-logo');this.parentNode.remove()"></div>`:""}<div class="red-h"><h3${r.logo?' class="sr-only"':""}>${esc(r.sigla)}</h3>${n?`<button type="button" data-ue="${esc(ue)}">Ver ${n} material${n>1?"es":""}</button>`:""}</div>${links.length?`<div class="red-links">${links.join("")}</div>`:`<p class="red-pronto">Próximamente</p>`}</article>`;
+    return `<article class="red" style="--ac:${areaColor(r.area)}">${r.area?`<span class="red-area" title="${esc(r.area)}">${esc((AREAS_REDES.find(([n])=>n===r.area)||[0,0,0,r.area])[3])}</span>`:""}${r.logo?`<div class="red-logo"><img loading="lazy" src="${esc(imgSrc(r.logo))}" alt="Logo de ${esc(r.sigla)}" onerror="this.closest('.red').classList.add('sin-logo');this.parentNode.remove()"></div>`:""}<div class="red-h"><h3${r.logo?' class="sr-only"':""}>${esc(r.sigla)}</h3>${n?`<button type="button" data-ue="${esc(ue)}">Ver ${n} material${n>1?"es":""}</button>`:""}</div>${links.length?`<div class="red-links">${links.join("")}</div>`:`<p class="red-pronto">Próximamente</p>`}</article>`;
   }).join("") : `<p class="redes-empty">No hay institutos que coincidan con esa búsqueda.</p>`;
 }
 $("#qRedes").addEventListener("input", renderRedes);
