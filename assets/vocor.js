@@ -36,6 +36,9 @@ const imgSrc = p => !p ? "" : /^https?:/.test(p) ? p : p.replace(/^\/+/, "");
 const linksOf = it => (Array.isArray(it.links) ? it.links : it.links ? [it.links] : [])
   .map(l => typeof l === "string" ? {url:l, texto:""} : {url:String(l?.url||""), texto:String(l?.texto||"")})
   .filter(l => /^https?:\/\//.test(l.url));
+// Gran área de un material: la de sus institutos según "Redes de los institutos" (content/redes.json)
+let areaPorUE = new Map();
+const areasInst = it => [...new Set(arr(it.ue).map(u=>areaPorUE.get(u)).filter(Boolean))];
 const sortKey = s => norm(s).replace(/^[^a-z0-9]+/,"");
 const porFecha = (a,b) => String(b.creado||"").localeCompare(String(a.creado||"")) || sortKey(a.recurso).localeCompare(sortKey(b.recurso),"es");
 
@@ -55,7 +58,7 @@ function fillSelect(el, label, map, cur, order){
 }
 function matches(it, skip){
   if (skip!=="fmt" && F.fmt && !arr(it.formato).includes(F.fmt)) return false;
-  if (skip!=="area" && F.area && !arr(it.area).includes(F.area)) return false;
+  if (skip!=="area" && F.area && !areasInst(it).includes(F.area)) return false;
   if (skip!=="pub" && F.pub && !arr(it.publico).includes(F.pub)) return false;
   if (skip!=="ue" && F.ue && !arr(it.ue).includes(F.ue)) return false;
   if (F.q){
@@ -153,7 +156,8 @@ $("#areaChips").addEventListener("click", e=>{ const b=e.target.closest("[data-a
 $("#redes").addEventListener("click", e=>{ const b=e.target.closest("[data-ue]"); if(!b) return; clearF(); F.ue=b.dataset.ue; render(); toCatalog(); });
 fetch("redes.json", {cache:"no-cache"}).then(r=>r.ok?r.json():null).then(d=>{
   redes = (d?.institutos||[]).filter(r=>r?.sigla).sort((a,b)=>a.sigla.localeCompare(b.sigla,"es"));
-  $("#secRedes").hidden = !redes.length; renderRedes(); if (loaded) renderUEs();
+  areaPorUE = new Map(redes.filter(r=>r.area).map(r=>[ALIAS_UE[r.sigla]||r.sigla, r.area]));
+  $("#secRedes").hidden = !redes.length; renderRedes(); if (loaded) { renderUEs(); render(); }
 }).catch(()=>{});
 
 /* ---------- Catálogo ---------- */
@@ -163,14 +167,17 @@ function render(){
   $("#sFmt").textContent = loaded ? new Set(items.flatMap(i=>arr(i.formato))).size : "—";
 
   fillSelect($("#fFmt"), "Todos los formatos", counts("formato", items.filter(i=>matches(i,"fmt"))), F.fmt, FORMATOS);
-  fillSelect($("#fArea"), "Todas las áreas", counts("area", items.filter(i=>matches(i,"area"))), F.area, AREAS);
+  { const m = new Map(); items.filter(i=>matches(i,"area")).forEach(i=>areasInst(i).forEach(a=>m.set(a,(m.get(a)||0)+1)));
+    const el = $("#fArea");
+    el.innerHTML = `<option value="">Todas las áreas</option>` + AREAS_REDES.filter(([n])=>m.has(n)||n===F.area).map(([n,corto])=>`<option value="${esc(n)}"${n===F.area?" selected":""}>${esc(corto)} (${m.get(n)||0})</option>`).join("");
+    el.classList.toggle("on", !!F.area); }
   fillSelect($("#fPub"), "Todo público", counts("publico", items.filter(i=>matches(i,"pub"))), F.pub, PUBLICOS);
   fillSelect($("#fUE"), "Todas las UE", counts("ue", items.filter(i=>matches(i,"ue"))), F.ue);
   document.querySelectorAll(".ftile").forEach(b=>b.setAttribute("aria-pressed", String(F.fmt===b.dataset.fmt)));
 
   const list = items.filter(i=>matches(i));
   list.sort(F.sort==="new" ? porFecha : (a,b)=>sortKey(a.recurso).localeCompare(sortKey(b.recurso),"es"));
-  const chips = [["q",F.q&&`“${F.q}”`],["fmt",F.fmt],["area",F.area],["pub",F.pub],["ue",F.ue]].filter(([,v])=>v);
+  const chips = [["q",F.q&&`“${F.q}”`],["fmt",F.fmt],["area",F.area&&((AREAS_REDES.find(([n])=>n===F.area)||[0,F.area])[1])],["pub",F.pub],["ue",F.ue]].filter(([,v])=>v);
   $("#active").innerHTML = chips.map(([k,v])=>`<button type="button" data-k="${k}" aria-label="Quitar filtro ${esc(v)}">${esc(v)} ×</button>`).join("");
   $("#clear").hidden = chips.length < 2;
   $("#resCount").textContent = !loaded ? "Cargando el repositorio…" : chips.length ? `${list.length} de ${items.length} materiales` : `${items.length} materiales`;
