@@ -10,7 +10,8 @@
     "Material didáctico"
   ],
   "publico": [
-    "Público General"
+    "Público General",
+    "Docentes"
   ],
   "palabras": [
     "ciencias sociales",
@@ -24,6 +25,7 @@
       "url": "https://cehsegreti.org.ar/producto/coleccion-sociales-va-a-la-escuela-temas-de-ciencias-sociales-con-perspectiva-historica-para-la-educacion-primaria/"
     }
   ],
+  "imagen": "/imagenes/sociales-va-a-la-escuela.jpg",
   "origen": "web",
   "creado": "2024-01-01T12:00:00Z"
 }
