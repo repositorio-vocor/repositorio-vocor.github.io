@@ -104,12 +104,14 @@ function renderFeatured(){
 }
 function renderUEs(){
   const m = counts("ue", items);
+  // Suma con 0 materiales a los institutos de "Redes de los institutos" que todavía no aportaron
+  (typeof redes !== "undefined" ? redes : []).forEach(r=>{ const ue = ALIAS_UE[r.sigla] || r.sigla; if (!m.has(ue)) m.set(ue, 0); });
   const max = Math.max(1, ...m.values());
   const keys = [...m.keys()].sort((a,b)=>m.get(b)-m.get(a) || a.localeCompare(b,"es"));
-  $("#ues").innerHTML = keys.map(k=>`
-    <button class="uebtn" type="button" data-ue="${esc(k)}" title="${esc(k)}">
-      <b>${esc(k)}</b><span class="bar-n"><span class="meter"><i style="width:${Math.round(m.get(k)/max*100)}%"></i></span><span>${m.get(k)}</span></span>
-    </button>`).join("");
+  $("#ues").innerHTML = keys.map(k=>{ const n = m.get(k); return `
+    <button class="uebtn" type="button" data-ue="${esc(k)}" title="${esc(k)}${n?"":" · todavía sin materiales"}"${n?"":" disabled"}>
+      <b>${esc(k)}</b><span class="bar-n"><span class="meter"><i style="width:${Math.round(n/max*100)}%"></i></span><span>${n}</span></span>
+    </button>`; }).join("");
 }
 
 /* ---------- Redes de los institutos (content/redes.json) ---------- */
@@ -151,7 +153,7 @@ $("#areaChips").addEventListener("click", e=>{ const b=e.target.closest("[data-a
 $("#redes").addEventListener("click", e=>{ const b=e.target.closest("[data-ue]"); if(!b) return; clearF(); F.ue=b.dataset.ue; render(); toCatalog(); });
 fetch("redes.json", {cache:"no-cache"}).then(r=>r.ok?r.json():null).then(d=>{
   redes = (d?.institutos||[]).filter(r=>r?.sigla).sort((a,b)=>a.sigla.localeCompare(b.sigla,"es"));
-  $("#secRedes").hidden = !redes.length; renderRedes();
+  $("#secRedes").hidden = !redes.length; renderRedes(); if (loaded) renderUEs();
 }).catch(()=>{});
 
 /* ---------- Catálogo ---------- */

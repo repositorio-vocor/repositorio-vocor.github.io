@@ -148,7 +148,9 @@ main{padding-block:24px 20px}
 /* ---------- Por instituto ---------- */
 .ues{display:grid; grid-template-columns:repeat(auto-fill, minmax(200px, 1fr)); gap:8px}
 .uebtn{display:flex; justify-content:space-between; align-items:center; gap:10px; padding:11px 14px; background:var(--surface); border:1px solid color-mix(in srgb, var(--accent) 22%, var(--line)); box-shadow:0 1px 2px rgb(0 0 0 / .06); border-radius:var(--r); cursor:pointer; text-align:left; min-width:0}
-.uebtn:hover{border-color:var(--accent)}
+.uebtn:hover:not(:disabled){border-color:var(--accent)}
+.uebtn:disabled{cursor:default; background:var(--surface-2); box-shadow:none; border-color:var(--line)}
+.uebtn:disabled b{color:var(--ink-2)}
 .uebtn b{font-weight:500; font-size:14px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; min-width:0}
 .uebtn .bar-n{display:flex; align-items:center; gap:8px; flex:none}
 .uebtn .meter{width:56px; height:6px; border-radius:3px; background:var(--surface-2); overflow:hidden}
