@@ -297,7 +297,8 @@
     {
       "sigla": "IRNASUS",
       "area": "Ciencias Exactas y Naturales",
-      "logo": "/imagenes/logos/IRNASUS.png"
+      "logo": "/imagenes/logos/IRNASUS.png",
+      "web": "https://ucc.edu.ar/irnasus"
     },
     {
       "sigla": "ISTE",
