@@ -4,6 +4,7 @@ Junta todos los archivos de content/materiales/ en un único materiales.json
 que lee el sitio, y copia las páginas, estilos e imágenes.
 Para probarlo en tu compu: python scripts/build.py && python -m http.server -d _site
 """
+import hashlib
 import json
 import shutil
 import sys
@@ -26,6 +27,13 @@ def main():
             shutil.copytree(origen, SALIDA / nombre)
         elif origen.exists():
             shutil.copy2(origen, SALIDA / nombre)
+    # Versiona estilos y scripts (?v=…) para que el navegador no use una copia vieja después de cada cambio
+    pagina = SALIDA / "index.html"
+    html = pagina.read_text(encoding="utf-8")
+    for rec in ("assets/vocor.css", "assets/vocor.js"):
+        v = hashlib.sha1((RAIZ / rec).read_bytes()).hexdigest()[:10]
+        html = html.replace(f'"{rec}"', f'"{rec}?v={v}"')
+    pagina.write_text(html, encoding="utf-8")
     materiales, errores, ocultos = [], [], 0
     for f in sorted(CONTENIDO.glob("*.json")):
         try:
