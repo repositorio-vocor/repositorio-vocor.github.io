@@ -133,22 +133,30 @@ const AREAS_REDES = [
   ["Ciencias Sociales y Humanidades","Sociales y Humanidades","soc"],
 ];
 const areaColor = a => { const x = AREAS_REDES.find(([n])=>n===a); return x ? `var(--a-${x[2]})` : "var(--line)"; };
-let redes = [], areaRed = "";
+let redes = [], areaRed = "", redesAbiertas = false;
+const REDES_PLEGADO = matchMedia("(max-width:760px)").matches ? 6 : 10;
 function renderRedes(){
   const q = norm($("#qRedes").value);
   const m = counts("ue", items);
   const cnt = new Map(); redes.forEach(r=>cnt.set(r.area, (cnt.get(r.area)||0)+1));
   $("#areaChips").innerHTML = AREAS_REDES.filter(([n])=>cnt.has(n)).map(([n,corto])=>`<button type="button" data-area="${esc(n)}" style="--ac:${areaColor(n)}" aria-pressed="${areaRed===n}" title="${esc(n)}"><i></i>${esc(corto)}<span>${cnt.get(n)}</span></button>`).join("");
-  const list = redes.filter(r => (!q || norm(r.sigla).includes(q)) && (!areaRed || r.area===areaRed));
+  const todos = redes.filter(r => (!q || norm(r.sigla).includes(q)) && (!areaRed || r.area===areaRed));
+  // Plegado: sin búsqueda ni filtro se ven los primeros REDES_PLEGADO; con filtro se ven todos los que coinciden
+  const filtrando = !!(q || areaRed);
+  const list = (filtrando || redesAbiertas) ? todos : todos.slice(0, REDES_PLEGADO);
+  $("#masRedes").hidden = filtrando || todos.length <= REDES_PLEGADO;
+  $("#btnRedes").setAttribute("aria-expanded", String(redesAbiertas));
+  $("#btnRedes").textContent = redesAbiertas ? "Mostrar menos" : `Ver los ${todos.length} institutos`;
   const ico = d => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${d}</svg>`;
   $("#redes").innerHTML = list.length ? list.map(r=>{
     const ue = ALIAS_UE[r.sigla] || r.sigla, n = m.get(ue) || 0;
-    const links = REDES.filter(([k])=>/^https?:\/\//.test(r[k]||"")).map(([k,lab,d])=>`<a href="${esc(r[k])}" target="_blank" rel="noopener">${ico(d)}${lab}</a>`)
-      .concat((Array.isArray(r.otros)?r.otros:[]).filter(o=>/^https?:\/\//.test(o?.url||"")).map(o=>`<a href="${esc(o.url)}" target="_blank" rel="noopener">${ico(REDES[0][2])}${esc(o.texto||"Otro enlace")}</a>`));
+    const links = REDES.filter(([k])=>/^https?:\/\//.test(r[k]||"")).map(([k,lab,d])=>`<a href="${esc(r[k])}" target="_blank" rel="noopener" title="${lab}" aria-label="${lab} de ${esc(r.sigla)}">${ico(d)}</a>`)
+      .concat((Array.isArray(r.otros)?r.otros:[]).filter(o=>/^https?:\/\//.test(o?.url||"")).map(o=>`<a href="${esc(o.url)}" target="_blank" rel="noopener" title="${esc(o.texto||"Otro enlace")}" aria-label="${esc(o.texto||"Otro enlace")}">${ico(REDES[0][2])}</a>`));
     return `<article class="red" style="--ac:${areaColor(r.area)}">${r.area?`<span class="red-area" title="${esc(r.area)}">${esc((AREAS_REDES.find(([n])=>n===r.area)||[0,r.area])[1])}</span>`:""}${r.logo?`<div class="red-logo"><img loading="lazy" src="${esc(imgSrc(r.logo))}" alt="Logo de ${esc(r.sigla)}" onerror="this.closest('.red').classList.add('sin-logo');this.parentNode.remove()"></div>`:""}<div class="red-h"><h3${r.logo?' class="sr-only"':""}>${esc(r.sigla)}</h3>${n?`<button type="button" data-ue="${esc(ue)}">Ver ${n} material${n>1?"es":""}</button>`:""}</div>${links.length?`<div class="red-links">${links.join("")}</div>`:`<p class="red-pronto">Próximamente</p>`}</article>`;
   }).join("") : `<p class="redes-empty">No hay institutos que coincidan con esa búsqueda.</p>`;
 }
 $("#qRedes").addEventListener("input", renderRedes);
+$("#btnRedes").onclick = ()=>{ redesAbiertas = !redesAbiertas; renderRedes(); if (!redesAbiertas) $("#secRedes").scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"}); };
 $("#areaChips").addEventListener("click", e=>{ const b=e.target.closest("[data-area]"); if(!b) return; areaRed = areaRed===b.dataset.area ? "" : b.dataset.area; renderRedes(); });
 $("#redes").addEventListener("click", e=>{ const b=e.target.closest("[data-ue]"); if(!b) return; clearF(); F.ue=b.dataset.ue; render(); toCatalog(); });
 fetch("redes.json", {cache:"no-cache"}).then(r=>r.ok?r.json():null).then(d=>{
