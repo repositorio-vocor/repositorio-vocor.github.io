@@ -1,5 +1,9 @@
 /* VoCor — sitio público. Lee materiales.json (lo arma scripts/build.py) y dibuja el catálogo. */
-const AREAS = ["Ciencias Agrarias","Ciencias Biológicas y de la Salud","Ciencias Exactas y Naturales","Ciencias Sociales y Humanidades","Tecnología, de la Ingeniería y Materiales"];
+const AREAS = ["Ciencias Agrarias, de las Ingenierías y Materiales / Desarrollo Tecnológico y Social","Ciencias Biológicas y de la Salud","Ciencias Exactas y Naturales","Ciencias Sociales y Humanidades"]; // las mismas de las redes
+// Áreas viejas (links compartidos antes de unificar) → área actual
+const AREA_VIEJA = {"Ciencias Agrarias":AREAS[0],"Tecnología, de la Ingeniería y Materiales":AREAS[0]};
+// Nombre más corto para mostrar en el filtro
+const AREA_ETIQ = {[AREAS[0]]:"Ciencias Agrarias, Ingenierías y Materiales"};
 const PUBLICOS = ["Público General","Infancia temprana (0-5 años)","Infantil (7 a 11 años)","Juvenil (12 a 18 años)","Docentes"];
 const FORMATOS = ["Audiovisual","Podcast","Material didáctico","Libro","Revista","Notas y entrevistas","Sitio Web"]; // orden en que se muestran
 
@@ -46,11 +50,11 @@ try { view = localStorage.getItem("vocor-vista") === "list" ? "list" : "grid"; }
 
 function toast(msg){ const t=$("#toast"); t.textContent=msg; t.hidden=false; clearTimeout(toast.t); toast.t=setTimeout(()=>t.hidden=true, 3200); }
 function counts(key, list){ const m=new Map(); list.forEach(it=>arr(it[key]).forEach(v=>m.set(v,(m.get(v)||0)+1))); return m; }
-function fillSelect(el, label, map, cur, order){
+function fillSelect(el, label, map, cur, order, etiq){
   const rest = [...map.keys()].filter(k=>!order || !order.includes(k)).sort((a,b)=>a.localeCompare(b,"es"));
   const keys = order ? order.filter(k=>map.has(k)).concat(rest) : rest;
   if (cur && !keys.includes(cur)) keys.unshift(cur);
-  el.innerHTML = `<option value="">${label}</option>` + keys.map(k=>`<option value="${esc(k)}"${k===cur?" selected":""}>${esc(k)} (${map.get(k)||0})</option>`).join("");
+  el.innerHTML = `<option value="">${label}</option>` + keys.map(k=>`<option value="${esc(k)}"${k===cur?" selected":""}>${esc((etiq&&etiq[k])||k)} (${map.get(k)||0})</option>`).join("");
   el.classList.toggle("on", !!cur);
 }
 function matches(it, skip){
@@ -181,7 +185,7 @@ function render(){
   $("#sFmt").textContent = loaded ? new Set(items.flatMap(i=>arr(i.formato))).size : "—";
 
   fillSelect($("#fFmt"), "Todos los formatos", counts("formato", items.filter(i=>matches(i,"fmt"))), F.fmt, FORMATOS);
-  fillSelect($("#fArea"), "Todas las áreas", counts("area", items.filter(i=>matches(i,"area"))), F.area, AREAS);
+  fillSelect($("#fArea"), "Todas las áreas", counts("area", items.filter(i=>matches(i,"area"))), F.area, AREAS, AREA_ETIQ);
   fillSelect($("#fPub"), "Todo público", counts("publico", items.filter(i=>matches(i,"pub"))), F.pub, PUBLICOS);
   fillSelect($("#fUE"), "Todas las UE", counts("ue", items.filter(i=>matches(i,"ue"))), F.ue);
   document.querySelectorAll(".ftile").forEach(b=>b.setAttribute("aria-pressed", String(F.fmt===b.dataset.fmt)));
@@ -235,7 +239,7 @@ function writeHash(){
 }
 function readHash(){
   const p = new URLSearchParams(location.hash.slice(1));
-  F.q=p.get("q")||""; F.fmt=p.get("formato")||""; F.area=p.get("area")||""; F.pub=p.get("publico")||""; F.ue=p.get("ue")||"";
+  F.q=p.get("q")||""; F.fmt=p.get("formato")||""; F.area=p.get("area")||""; F.area=AREA_VIEJA[F.area]||F.area; F.pub=p.get("publico")||""; F.ue=p.get("ue")||"";
   $("#q").value=F.q; return p.get("m");
 }
 
@@ -274,7 +278,7 @@ function openDetail(id){
         ${arr(it.publico).length?`<dt>Público</dt><dd>${esc(arr(it.publico).join(" · "))}</dd>`:""}
         ${arr(it.palabras).length?`<dt>Temas</dt><dd class="kw">${arr(it.palabras).map(k=>`<button type="button" data-kw="${esc(k)}">${esc(k)}</button>`).join("")}</dd>`:""}
       </dl>
-      ${links.length?`<div class="links">${links.map((l,i)=>`<a class="btn${i===0?" primary":""}" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.texto || (i===0?"Ver material":"Enlace "+(i+1)))} ↗</a>`).join("")}</div>`:`<p style="color:var(--ink-2)">Sin enlace cargado.</p>`}
+      ${links.length?`<div class="links">${links.map((l,i)=>`<a class="btn${i===0?" primary":""}" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.texto || (i===0?"Ver":"Enlace "+(i+1)))} ↗</a>`).join("")}</div>`:`<p style="color:var(--ink-2)">Sin enlace cargado.</p>`}
     </div></div>`;
   $("#detBody").querySelectorAll("[data-kw]").forEach(b=>b.onclick=()=>{ F.q=b.dataset.kw; $("#q").value=F.q; dDet.close(); render(); toCatalog(); });
   if (!dDet.open) dDet.showModal();

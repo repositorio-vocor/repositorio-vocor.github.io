@@ -90,11 +90,10 @@ collections:
         multiple: true
         required: false
         options:
-          - Ciencias Agrarias
+          - Ciencias Agrarias, de las Ingenierías y Materiales / Desarrollo Tecnológico y Social
           - Ciencias Biológicas y de la Salud
           - Ciencias Exactas y Naturales
           - Ciencias Sociales y Humanidades
-          - Tecnología, de la Ingeniería y Materiales
       - name: publico
         label: Público
         widget: select
@@ -118,7 +117,7 @@ collections:
       - name: links
         label: Enlaces
         label_singular: Enlace
-        hint: El primero es el botón principal. Si no le ponés texto, dice "Ver material" (y "Enlace 2", "Enlace 3"… los siguientes).
+        hint: El primero es el botón principal. Si no le ponés texto, dice "Ver" (y "Enlace 2", "Enlace 3"… los siguientes).
         widget: list
         required: false
         summary: "{{fields.texto}} {{fields.url}}"

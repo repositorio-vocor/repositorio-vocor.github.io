@@ -12,12 +12,12 @@ RAIZ = Path(__file__).resolve().parent.parent
 CONTENIDO = RAIZ / "content" / "materiales"
 IMAGENES = RAIZ / "imagenes"
 
+# Las mismas cuatro grandes áreas de CONICET que usan las redes de los institutos.
 AREAS = [
-    "Ciencias Agrarias",
+    "Ciencias Agrarias, de las Ingenierías y Materiales / Desarrollo Tecnológico y Social",
     "Ciencias Biológicas y de la Salud",
     "Ciencias Exactas y Naturales",
     "Ciencias Sociales y Humanidades",
-    "Tecnología, de la Ingeniería y Materiales",
 ]
 PUBLICOS = [
     "Público General",
@@ -42,7 +42,12 @@ ALIAS_FORMATO = {
 
 # Valores que llevan coma adentro y no se deben partir.
 CON_COMA = {
-    "area": {"tecnologia, de la ingenieria y materiales": "Tecnología, de la Ingeniería y Materiales"},
+    "area": {"tecnologia, de la ingenieria y materiales": "Ciencias Agrarias, de las Ingenierías y Materiales / Desarrollo Tecnológico y Social",
+             "ciencias agrarias, de las ingenierias y materiales / desarrollo tecnologico y social": "Ciencias Agrarias, de las Ingenierías y Materiales / Desarrollo Tecnológico y Social",
+             "ciencias agrarias, de las ingenierias y materiales": "Ciencias Agrarias, de las Ingenierías y Materiales / Desarrollo Tecnológico y Social",
+             # nombres viejos o abreviados de la misma área
+             "ciencias agrarias": AREAS[0], "agrarias": AREAS[0], "tecnologia": AREAS[0], "ingenieria": AREAS[0],
+             "ciencias agrarias, de las ingenierias y materiales / desarrollo tecnologico y social": AREAS[0]},
     "formato": {"recursos para docentes (planificaciones, manuales, etc)": "Material didáctico"},
 }
 VOCAB = {"area": AREAS, "publico": PUBLICOS, "formato": FORMATOS}
