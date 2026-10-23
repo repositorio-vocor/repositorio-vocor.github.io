@@ -1,0 +1,28 @@
+{
+  "recurso": "¿Qué es el CINTRA?",
+  "ue": [
+    "CINTRA"
+  ],
+  "area": [
+    "Ciencias Agrarias, de las Ingenierías y Materiales"
+  ],
+  "formato": [
+    "Audiovisual"
+  ],
+  "publico": [
+    "Público General"
+  ],
+  "palabras": [
+    "acústica",
+    "CINTRA"
+  ],
+  "descripcion": "Centro de Investigación y Transferencia en Acústica. Unidad Ejecutora de doble dependencia UTN - CONICET",
+  "links": [
+    {
+      "url": "https://www.youtube.com/watch?v=6dwEjx9k4dU"
+    }
+  ],
+  "imagen": "/imagenes/que-es-el-cintra.jpg",
+  "origen": "web",
+  "creado": "2019-08-26T12:00:00Z"
+}
