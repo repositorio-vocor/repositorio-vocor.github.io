@@ -90,7 +90,7 @@ collections:
         multiple: true
         required: false
         options:
-          - Ciencias Agrarias, de las Ingenierías y Materiales / Desarrollo Tecnológico y Social
+          - Ciencias Agrarias, de las Ingenierías y Materiales
           - Ciencias Biológicas y de la Salud
           - Ciencias Exactas y Naturales
           - Ciencias Sociales y Humanidades
@@ -167,7 +167,7 @@ collections:
                 required: false
                 hint: Define el color del recuadro.
                 options:
-                  - Ciencias Agrarias, de las Ingenierías y Materiales / Desarrollo Tecnológico y Social
+                  - Ciencias Agrarias, de las Ingenierías y Materiales
                   - Ciencias Biológicas y de la Salud
                   - Ciencias Exactas y Naturales
                   - Ciencias Sociales y Humanidades

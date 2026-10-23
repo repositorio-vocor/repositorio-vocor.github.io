@@ -14,7 +14,7 @@ IMAGENES = RAIZ / "imagenes"
 
 # Las mismas cuatro grandes áreas de CONICET que usan las redes de los institutos.
 AREAS = [
-    "Ciencias Agrarias, de las Ingenierías y Materiales / Desarrollo Tecnológico y Social",
+    "Ciencias Agrarias, de las Ingenierías y Materiales",
     "Ciencias Biológicas y de la Salud",
     "Ciencias Exactas y Naturales",
     "Ciencias Sociales y Humanidades",
@@ -42,9 +42,9 @@ ALIAS_FORMATO = {
 
 # Valores que llevan coma adentro y no se deben partir.
 CON_COMA = {
-    "area": {"tecnologia, de la ingenieria y materiales": "Ciencias Agrarias, de las Ingenierías y Materiales / Desarrollo Tecnológico y Social",
-             "ciencias agrarias, de las ingenierias y materiales / desarrollo tecnologico y social": "Ciencias Agrarias, de las Ingenierías y Materiales / Desarrollo Tecnológico y Social",
-             "ciencias agrarias, de las ingenierias y materiales": "Ciencias Agrarias, de las Ingenierías y Materiales / Desarrollo Tecnológico y Social",
+    "area": {"tecnologia, de la ingenieria y materiales": "Ciencias Agrarias, de las Ingenierías y Materiales",
+             "ciencias agrarias, de las ingenierias y materiales / desarrollo tecnologico y social": "Ciencias Agrarias, de las Ingenierías y Materiales",
+             "ciencias agrarias, de las ingenierias y materiales": "Ciencias Agrarias, de las Ingenierías y Materiales",
              # nombres viejos o abreviados de la misma área
              "ciencias agrarias": AREAS[0], "agrarias": AREAS[0], "tecnologia": AREAS[0], "ingenieria": AREAS[0],
              "ciencias agrarias, de las ingenierias y materiales / desarrollo tecnologico y social": AREAS[0]},

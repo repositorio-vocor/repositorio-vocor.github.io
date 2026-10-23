@@ -1,7 +1,7 @@
 /* VoCor — sitio público. Lee materiales.json (lo arma scripts/build.py) y dibuja el catálogo. */
-const AREAS = ["Ciencias Agrarias, de las Ingenierías y Materiales / Desarrollo Tecnológico y Social","Ciencias Biológicas y de la Salud","Ciencias Exactas y Naturales","Ciencias Sociales y Humanidades"]; // las mismas de las redes
+const AREAS = ["Ciencias Agrarias, de las Ingenierías y Materiales","Ciencias Biológicas y de la Salud","Ciencias Exactas y Naturales","Ciencias Sociales y Humanidades"]; // las mismas de las redes
 // Áreas viejas (links compartidos antes de unificar) → área actual
-const AREA_VIEJA = {"Ciencias Agrarias":AREAS[0],"Tecnología, de la Ingeniería y Materiales":AREAS[0]};
+const AREA_VIEJA = {"Ciencias Agrarias":AREAS[0],"Ciencias Agrarias, de las Ingenierías y Materiales / Desarrollo Tecnológico y Social":AREAS[0],"Tecnología, de la Ingeniería y Materiales":AREAS[0]};
 // Nombre más corto para mostrar en el filtro
 const AREA_ETIQ = {[AREAS[0]]:"Agrarias, Ing. y Mat.",[AREAS[1]]:"Biológicas y Salud",[AREAS[2]]:"Exactas y Naturales",[AREAS[3]]:"Sociales y Humanidades"}; // mismas abreviaturas que en las redes
 const PUBLICOS = ["Público General","Infancia temprana (0-5 años)","Infantil (7 a 11 años)","Juvenil (12 a 18 años)","Docentes"];
@@ -137,7 +137,7 @@ const ALIAS_UE = {"CIT VILLA MARIA":"CIT-UNVM"}; // sigla en redes → nombre us
 // Grandes áreas de CONICET: color de cada recuadro y nombre corto para los botones de filtro
 const AREAS_REDES = [
   // [nombre completo, nombre corto (botones de filtro), color, etiqueta del recuadro (una sola línea)]
-  ["Ciencias Agrarias, de las Ingenierías y Materiales / Desarrollo Tecnológico y Social","Agrarias, Ingenierías y Materiales","agr","Agrarias, Ing. y Mat."],
+  ["Ciencias Agrarias, de las Ingenierías y Materiales","Agrarias, Ingenierías y Materiales","agr","Agrarias, Ing. y Mat."],
   ["Ciencias Biológicas y de la Salud","Biológicas y de la Salud","bio","Biológicas y Salud"],
   ["Ciencias Exactas y Naturales","Exactas y Naturales","exa","Exactas y Naturales"],
   ["Ciencias Sociales y Humanidades","Sociales y Humanidades","soc","Sociales y Humanidades"],
