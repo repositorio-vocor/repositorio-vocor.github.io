@@ -157,6 +157,10 @@ fetch("redes.json", {cache:"no-cache"}).then(r=>r.ok?r.json():null).then(d=>{
 }).catch(()=>{});
 
 /* ---------- Catálogo ---------- */
+// Catálogo de a tandas: se muestran PAGINA materiales y el botón "Ver más" suma otra tanda.
+// La cuenta vuelve a empezar cuando cambia la búsqueda, un filtro o el orden.
+const PAGINA = 12;
+let limite = PAGINA, claveLista = "";
 function render(){
   $("#sTotal").textContent = loaded ? items.length : "—";
   $("#sUE").textContent = loaded ? new Set(items.flatMap(i=>arr(i.ue))).size : "—";
@@ -178,7 +182,13 @@ function render(){
   const g = $("#grid");
   g.classList.toggle("list", view==="list");
   document.querySelectorAll("[data-view]").forEach(b=>b.setAttribute("aria-pressed", String(b.dataset.view===view)));
-  g.innerHTML = list.map(it=>{
+  const clave = JSON.stringify([F.q,F.fmt,F.area,F.pub,F.ue,F.sort]);
+  if (clave !== claveLista){ limite = PAGINA; claveLista = clave; }
+  const visibles = list.slice(0, limite);
+  $("#mas").hidden = list.length <= limite;
+  $("#masInfo").textContent = `Mostrando ${visibles.length} de ${list.length}`;
+  $("#btnMas").textContent = `Ver ${Math.min(PAGINA, list.length - limite)} más`;
+  g.innerHTML = visibles.map(it=>{
     const f0 = arr(it.formato)[0] || "";
     return `
     <button class="card" type="button" data-id="${esc(it.id)}" style="--c:${colorDe(f0)}">
@@ -198,6 +208,7 @@ function render(){
   else empty.hidden=true;
   if (loaded) writeHash();
 }
+$("#btnMas").onclick = ()=>{ const n = limite; limite += PAGINA; render(); const nueva = $("#grid").children[n]; if (nueva) nueva.focus({preventScroll:true}); };
 function clearF(){ Object.assign(F,{q:"",fmt:"",area:"",pub:"",ue:""}); $("#q").value=""; $("#qHero").value=""; render(); }
 function toCatalog(){ $("#catalogo").scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"}); }
 
