@@ -1,0 +1,46 @@
+{
+  "recurso": "Manos a la Fruta 2: ¿Cómo se multiplican los árboles frutales?",
+  "ue": [
+    "INTA EEA Manfredi"
+  ],
+  "area": [
+    "Ciencias Agrarias, de las Ingenierías y Materiales"
+  ],
+  "formato": [
+    "Audiovisual"
+  ],
+  "publico": [
+    "Público General"
+  ],
+  "palabras": [
+    "INTA",
+    "Agro",
+    "frutas"
+  ],
+  "descripcion": "\"Un viaje de sabor y conocimiento técnico por los árboles frutales de Argentina\" 🍎🍐🍋\nEn esta serie vas a encontrar recomendaciones técnicas y prácticas para multiplicar frutales.",
+  "links": [
+    {
+      "url": "https://www.youtube.com/watch?v=P1Tl5wMZmw",
+      "texto": "Cap. 1: Introducción"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=J_LoVQbb7aQ",
+      "texto": "Cap. 2: ¿Cómo multiplicar un frutal por estaca y en el suelo?"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=BVgHO1BPwMg",
+      "texto": "Cap. 3: ¿Cómo multiplicar un frutal por esqueje en una mesada?"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=jMBPhc2_Jm",
+      "texto": "Cap. 4: ¿Cómo multiplicar un frutal por injerto?"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=sKBetlJWqYU",
+      "texto": "Cap. 5: ¿Cómo multiplicar un frutal por injerto de yema?"
+    }
+  ],
+  "imagen": "/imagenes/manos-a-la-fruta-2.jpg",
+  "origen": "web",
+  "creado": "2024-12-06T12:00:00Z"
+}
