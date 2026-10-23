@@ -18,6 +18,11 @@
     "Staphylococcus aureus"
   ],
   "descripcion": "Maribel López, becaria doctoral, nos cuenta que en el IDAS trabajan en un recubrimiento para superficies de vidrio que elimina bacterias peligrosas como Staphylococcus aureus (una de las principales responsables de infecciones hospitalarias), utilizando sólo luz y oxígeno.\nEste vidrio especial está cubierto por una molécula llamada \"fotosensibilizador\" que, en este caso, es un compuesto derivado de la clorina. En la oscuridad, no pasa nada. Pero al exponerlo a la luz, el fotosensibilizador se activa y genera especies reactivas de oxígeno (ROS), que son letales para las bacterias.\nEsta tecnología tiene un enorme potencial para ayudar a mantener ambientes libres de gérmenes en hospitales, laboratorios, o incluso dispositivos electrónicos.",
+  "links": [
+    {
+      "url": "https://www.youtube.com/watch?v=Y0vPJk82MYw"
+    }
+  ],
   "imagen": "/imagenes/superficies-antibacterias.jpg",
   "origen": "web",
   "creado": "2025-09-25T12:00:00Z"
