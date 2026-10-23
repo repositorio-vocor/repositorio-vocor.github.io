@@ -1,0 +1,29 @@
+{
+  "recurso": "Aguas Subterráneas en Córdoba",
+  "ue": [
+    "IDIT"
+  ],
+  "area": [
+    "Ciencias Agrarias, de las Ingenierías y Materiales"
+  ],
+  "formato": [
+    "Audiovisual"
+  ],
+  "publico": [
+    "Público General"
+  ],
+  "palabras": [
+    "IDIT",
+    "agua",
+    "aguas subterráneas"
+  ],
+  "descripcion": "Charla Virtual del ciclo 2021: Entre el Aire y el Agua. El OHMC te Cuenta. Expuso Claudio Carignano, Dr. en Ciencias Geológicas.",
+  "links": [
+    {
+      "url": "https://www.youtube.com/watch?v=A5Yy0FPGMh0"
+    }
+  ],
+  "imagen": "/imagenes/aguas-subterraneas-en-cordoba.jpg",
+  "origen": "web",
+  "creado": "2021-08-29T12:00:00Z"
+}
