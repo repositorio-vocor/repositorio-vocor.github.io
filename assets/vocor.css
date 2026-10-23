@@ -12,12 +12,7 @@
   --f-mono:"Roboto Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
   --r:6px; --shadow:0 1px 3px rgb(0 0 0 / .1), 0 10px 28px rgb(0 40 90 / .1);
 }
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#0c141d; --surface:#142030; --surface-2:#1b2a3c; --ink:#e8eef4; --ink-2:#9fb0c2; --line:#2a3b4f;
-  --accent:#4da3ff; --accent-ink:#06121f; --accent-deep:#2b7fd6; --sky:#2bb0ec; --sky-ink:#06121f; --sun:#f6b40e; --sun-ink:#2a1f00;
-  --hero-bg:#003a75; --hero-ink:#ffffff; --hero-ink-2:#b9d4f3;
-  --on-c:#06121f; --a-agr:#f0a35e; --a-bio:#7bd389; --a-exa:#5aaeff; --a-soc:#f08cc4; --c-audio:#a68ef0; --c-video:#ff8a5c; --c-texto:#5aaeff; --c-edu:#f2c14a; --c-web:#3fc7b6;
-  --ok:#6fcf86; --warn:#e6b14a; --err:#f08a80; --shadow:0 1px 2px rgb(0 0 0 / .3), 0 10px 28px rgb(0 0 0 / .3); color-scheme:dark}}
+/* Modo oscuro: solo cuando la persona lo elige con el botón (data-theme="dark" en <html>). */
 :root[data-theme="dark"]{
   --bg:#0c141d; --surface:#142030; --surface-2:#1b2a3c; --ink:#e8eef4; --ink-2:#9fb0c2; --line:#2a3b4f;
   --accent:#4da3ff; --accent-ink:#06121f; --accent-deep:#2b7fd6; --sky:#2bb0ec; --sky-ink:#06121f; --sun:#f6b40e; --sun-ink:#2a1f00;
@@ -44,6 +39,12 @@ a{color:var(--accent)}
 
 /* ---------- Portada ---------- */
 .hero{position:relative; overflow:hidden; background:var(--hero-bg); color:var(--hero-ink)}
+.tema{position:absolute; z-index:2; top:16px; right:max(16px, env(safe-area-inset-right,0px)); display:inline-flex; align-items:center; gap:8px; padding:7px 12px; border-radius:999px; border:1px solid color-mix(in srgb, var(--hero-ink) 35%, transparent); background:color-mix(in srgb, var(--hero-ink) 10%, transparent); color:var(--hero-ink); font-size:13px; cursor:pointer}
+.tema:hover{background:color-mix(in srgb, var(--hero-ink) 20%, transparent)}
+.tema svg{width:16px; height:16px}
+.tema .ic-sol{display:none}
+:root[data-theme="dark"] .tema .ic-sol{display:block}
+:root[data-theme="dark"] .tema .ic-luna{display:none}
 .hero-in{position:relative; z-index:1; padding-block:46px 44px; display:grid; grid-template-columns:minmax(0,1fr) auto; gap:28px 56px; align-items:center}
 .hero-main{display:flex; flex-direction:column; gap:22px; min-width:0}
 .hero .eyebrow{color:var(--hero-ink-2)}
@@ -226,7 +227,7 @@ footer{margin-top:56px; background:var(--hero-bg); color:var(--hero-ink-2); font
   .feat-side{grid-template-rows:auto}
 }
 @media (max-width:760px){
-  .hero-in{grid-template-columns:1fr}
+  .hero-in{grid-template-columns:1fr; padding-top:64px}
   .stats{flex-direction:row; flex-wrap:wrap; gap:12px 32px; padding-left:0; border-left:0}
   .det{grid-template-columns:1fr}
   .bar{position:static}

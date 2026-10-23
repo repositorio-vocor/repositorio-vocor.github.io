@@ -67,6 +67,20 @@ function matches(it, skip){
 const tagsHTML = it => arr(it.formato).slice(0,2).map(f=>`<span class="tag" style="--c:${colorDe(f)}">${icono(f)}${esc(f)}</span>`).join("");
 const imgTag = (it, lazy=true) => it.imagen ? `<img ${lazy?'loading="lazy" ':''}alt="" src="${esc(imgSrc(it.imagen))}" onerror="this.remove()">` : "";
 
+/* ---------- Claro / oscuro ---------- */
+function pintarTema(){
+  const oscuro = document.documentElement.dataset.theme === "dark";
+  const b = $("#btnTema"); b.setAttribute("aria-pressed", String(oscuro));
+  b.querySelector("span").textContent = oscuro ? "Modo claro" : "Modo oscuro";
+}
+$("#btnTema").onclick = () => {
+  const oscuro = document.documentElement.dataset.theme !== "dark";
+  if (oscuro) document.documentElement.dataset.theme = "dark"; else delete document.documentElement.dataset.theme;
+  try { localStorage.setItem("vocor-tema", oscuro ? "oscuro" : "claro"); } catch {}
+  pintarTema();
+};
+pintarTema();
+
 /* ---------- Secciones fijas ---------- */
 function renderFormats(){
   const fm = counts("formato", items);
