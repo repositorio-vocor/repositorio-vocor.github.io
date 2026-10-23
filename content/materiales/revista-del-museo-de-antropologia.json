@@ -1,0 +1,32 @@
+{
+  "recurso": "Revista del Museo de Antropología",
+  "ue": [
+    "IDACOR"
+  ],
+  "area": [
+    "Ciencias Sociales y Humanidades"
+  ],
+  "formato": [
+    "Revista"
+  ],
+  "publico": [
+    "Público General",
+    "Docentes"
+  ],
+  "palabras": [
+    "antropología",
+    "arqueología",
+    "bioantropología",
+    "antropología social",
+    "museología"
+  ],
+  "descripcion": "La Revista del Museo de Antropología es un órgano de divulgación científica de circulación cuatrimestral (3 números/año) editado por el Instituto de Antropología de Córdoba (CONICET) y el Museo de Antropología de la Facultad de Filosofía y Humanidades (Universidad Nacional de Córdoba). Publica contribuciones originales e inéditas resultado de investigaciones sobre temas de la antropología (en cualquiera de sus ramas: arqueología, bioantropología y antropología social) y la museología relacionados con la exhibición y curación de material tangible e intangible vinculado con la disciplina. La Revista del Museo de Antropología intenta ser un órgano de difusión de los resultados de investigación, metodologías y propuestas teóricas, así como de debates académicos desarrollados en el Museo, así como aquellos trabajos realizados tanto por investigadores nacionales como internacionales.",
+  "links": [
+    {
+      "url": "https://revistas.unc.edu.ar/index.php/antropologia"
+    }
+  ],
+  "imagen": "/imagenes/revista-museo-de-antropologia.jpg",
+  "origen": "web",
+  "creado": "2008-01-01T12:00:00Z"
+}
