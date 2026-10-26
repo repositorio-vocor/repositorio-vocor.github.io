@@ -52,6 +52,9 @@ a{color:var(--accent)}
 .logo .o{background:var(--hero-ink); color:var(--hero-bg); padding:0 .1em; margin-left:.04em; display:inline-block}
 .hero p.lead{max-width:56ch; margin:0; color:var(--hero-ink-2); font-size:17px}
 .hero-search{position:relative; max-width:720px}
+.hero-nac{margin:-8px 0 0; font-size:14.5px; color:var(--hero-ink-2)}
+.hero-nac a{color:var(--hero-ink); font-weight:500; text-decoration:underline; text-underline-offset:3px}
+.hero-nac a:hover{text-decoration-thickness:2px}
 .hero-search input{width:100%; padding:17px 130px 17px 52px; border:0; border-radius:var(--r); background:#ffffff; color:#111111; font-size:17px; box-shadow:0 8px 24px rgb(0 0 0 / .18)}
 .hero-search input::placeholder{color:#767676}
 .hero-search svg{position:absolute; left:18px; top:50%; translate:0 -50%; width:21px; height:21px; color:#0064c8}
