@@ -14,7 +14,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 from vocor_datos import CONTENIDO, FORMATOS_OCULTOS, RAIZ
 
 SALIDA = RAIZ / "_site"
-COPIAR = ["index.html", "assets", "admin", "imagenes", "plantilla"]
+COPIAR = ["index.html", "redes.html", "assets", "admin", "imagenes", "plantilla"]
 
 
 def main():
@@ -28,12 +28,15 @@ def main():
         elif origen.exists():
             shutil.copy2(origen, SALIDA / nombre)
     # Versiona estilos y scripts (?v=…) para que el navegador no use una copia vieja después de cada cambio
-    pagina = SALIDA / "index.html"
-    html = pagina.read_text(encoding="utf-8")
-    for rec in ("assets/vocor.css", "assets/vocor.js"):
-        v = hashlib.sha1((RAIZ / rec).read_bytes()).hexdigest()[:10]
-        html = html.replace(f'"{rec}"', f'"{rec}?v={v}"')
-    pagina.write_text(html, encoding="utf-8")
+    for nombre_pagina in ("index.html", "redes.html"):
+        pagina = SALIDA / nombre_pagina
+        if not pagina.exists():
+            continue
+        html = pagina.read_text(encoding="utf-8")
+        for rec in ("assets/vocor.css", "assets/vocor.js", "assets/redes.js"):
+            v = hashlib.sha1((RAIZ / rec).read_bytes()).hexdigest()[:10]
+            html = html.replace(f'"{rec}"', f'"{rec}?v={v}"')
+        pagina.write_text(html, encoding="utf-8")
     materiales, errores, ocultos = [], [], 0
     for f in sorted(CONTENIDO.glob("*.json")):
         try:

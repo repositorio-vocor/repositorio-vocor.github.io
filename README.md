@@ -36,7 +36,7 @@ Ver [`importar/LEEME.md`](importar/LEEME.md). En resumen: completar la [planilla
 |---|---|
 | `content/materiales/` | Un archivo `.json` por material. Es la base de datos. |
 | `imagenes/` | Portadas. |
-| `content/redes.json` | Sitios y redes sociales de los institutos (sección "Redes de los institutos"). Se edita desde `/admin` → Redes de los institutos. |
+| `content/redes.json` | Sitios y redes sociales de los institutos (página `redes.html`, "Redes de los institutos", enlazada desde arriba de la portada). Se edita desde `/admin` → Redes de los institutos. |
 | `index.html`, `assets/` | El sitio público. |
 | `admin/` | Panel de carga ([Sveltia CMS](https://sveltiacms.app)). `config.yml` define los campos y las listas de valores. |
 | `importar/` | Donde se suben las planillas. Las procesadas y sus reportes quedan en `importar/procesadas/`. |

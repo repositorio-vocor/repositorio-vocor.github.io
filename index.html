@@ -21,11 +21,14 @@ try { if (localStorage.getItem("vocor-tema") === "oscuro") document.documentElem
 <body>
 
 <header class="hero">
+  <nav class="topnav" aria-label="Secciones">
+  <a class="navlink" href="redes.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="m8.2 10.8 7.6-3.6M8.2 13.2l7.6 3.6"/></svg><span>Redes de los institutos</span></a>
   <button class="tema" id="btnTema" type="button" aria-pressed="false">
     <svg class="ic-luna" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
     <svg class="ic-sol" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
     <span>Modo oscuro</span>
   </button>
+  </nav>
   <div class="wrap hero-in">
     <div class="hero-main">
     <div class="eyebrow">Repositorio de comunicación científica · Córdoba</div>
@@ -90,19 +93,10 @@ try { if (localStorage.getItem("vocor-tema") === "oscuro") document.documentElem
 </div>
 
 <section class="wrap sec" aria-labelledby="hUE">
-  <div class="sec-h"><div><h2 id="hUE">Por instituto</h2><p>Unidades ejecutoras y organismos, con la cantidad de materiales que aportaron al repositorio.</p></div></div>
+  <div class="sec-h"><div><h2 id="hUE">Por instituto</h2><p>Unidades ejecutoras y organismos, con la cantidad de materiales que aportaron al repositorio.</p></div><a class="linkver" href="redes.html">Redes de los institutos →</a></div>
   <div class="ues" id="ues"></div>
 </section>
 
-<section class="wrap sec" aria-labelledby="hRedes" id="secRedes" hidden>
-  <div class="sec-h">
-    <div><h2 id="hRedes">Redes de los institutos</h2><p>Seguí a los institutos de CONICET en Córdoba en sus sitios y redes sociales.</p></div>
-    <div class="search redes-q"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="qRedes" type="search" placeholder="Buscar instituto" aria-label="Buscar instituto"></div>
-  </div>
-  <div class="area-chips" id="areaChips" role="group" aria-label="Filtrar por gran área"></div>
-  <div class="redes" id="redes"></div>
-  <div class="mas" id="masRedes" hidden><button class="btn" id="btnRedes" type="button" aria-expanded="false" aria-controls="redes">Ver todos los institutos</button></div>
-</section>
 
 <footer>
   <div class="wrap foot">
