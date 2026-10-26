@@ -22,7 +22,7 @@ const ICONOS = {
 const FAMILIA = {
   "Podcast":["audio","audio"], "Notas y entrevistas":["audio","charla"],
   "Audiovisual":["video","video"],
-  "Libro":["texto","libro"], "Revista":["texto","revista"],
+  "Libro":["texto","libro"], "Revista":["revista","revista"],
   "Material didáctico":["edu","edu"],
   "Sitio Web":["web","web"],
 };
