@@ -1,0 +1,27 @@
+{
+  "recurso": "Gestión del suelo ocioso",
+  "ue": [
+    "CEVE"
+  ],
+  "area": [
+    "Ciencias Agrarias, de las Ingenierías y Materiales"
+  ],
+  "formato": [
+    "Audiovisual"
+  ],
+  "publico": [
+    "Público General"
+  ],
+  "palabras": [
+    "suelo ocioso"
+  ],
+  "descripcion": "La presencia de suelo ocioso es un problema frecuente en las ciudades, impide la consolidación de la trama urbana, propicia la extensión descontrolada de las ciudades y el crecimiento injustificado del valor de la tierra disponible, siendo fundamental la responsabilidad del Estado en su regulación.\nEl video Gestión de suelo ocioso presenta herramientas capaces de ser implementadas por los gobiernos locales ante la presencia de suelo vacante o subutilizado.\nEl trabajo comparte las ventajas, beneficios, dificultades posibles en su aplicación y los requerimientos necesarios para su uso.\nSe presentan también testimonios de experiencias de uso de algunas herramientas en diferentes municipios del país.",
+  "links": [
+    {
+      "url": "https://www.youtube.com/watch?v=fyBya9fqC8c"
+    }
+  ],
+  "imagen": "/imagenes/gestion-del-suelo-ocioso.jpg",
+  "origen": "web",
+  "creado": "2023-07-25T12:00:00Z"
+}
