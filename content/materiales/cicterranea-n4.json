@@ -1,0 +1,38 @@
+{
+  "recurso": "Cicterránea N°4",
+  "ue": [
+    "CICTERRA"
+  ],
+  "area": [
+    "Ciencias Exactas y Naturales"
+  ],
+  "formato": [
+    "Revista"
+  ],
+  "publico": [
+    "Público General",
+    "Juvenil (12 a 18 años)",
+    "Docentes"
+  ],
+  "palabras": [
+    "Geología",
+    "litio",
+    "conchillas",
+    "Sierras de Córdoba",
+    "arcillas",
+    "cerámica",
+    "embalses",
+    "aguas verdes",
+    "ríos andinos",
+    "graptolitos"
+  ],
+  "descripcion": "Cicterránea es una revista de comunicación pública de la ciencia, de acceso abierto, gestionada por un grupo de investigador@s, becari@s y personal de apoyo del Centro de Investigaciones en Ciencias de la Tierra (CICTERRA). La revista publica contribuciones de Ciencias de la Tierra en cualquiera de sus áreas.\n\nEn este número:\n• Yacimientos de litio, el fin del reinado de los combustibles fósiles\n• Lo que el mar se llevó... ¡y dejó!, más que adornos en la playa\n• Viaje al interior de la Tierra, conociendo los secretos de las Sierras de Córdoba\n• Arcillas, cerámica y ciencias\n• Embalses y aguas verdes, ¿qué pasa en Córdoba?\n• Un río hecho montaña, la historia de los antiguos ríos andinos\n• Graptolitos: reporteros del pasado",
+  "links": [
+    {
+      "url": "https://revistas.unc.edu.ar/index.php/cicterranea/issue/view/2185"
+    }
+  ],
+  "imagen": "/imagenes/cicterranea-n4.jpg",
+  "origen": "web",
+  "creado": "2020-03-23T12:00:00Z"
+}

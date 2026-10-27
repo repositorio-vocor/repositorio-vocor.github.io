@@ -1,0 +1,39 @@
+{
+  "recurso": "Cicterránea N°3",
+  "ue": [
+    "CICTERRA"
+  ],
+  "area": [
+    "Ciencias Exactas y Naturales"
+  ],
+  "formato": [
+    "Revista"
+  ],
+  "publico": [
+    "Público General",
+    "Juvenil (12 a 18 años)",
+    "Docentes"
+  ],
+  "palabras": [
+    "Geología",
+    "polvo atmosférico",
+    "paleoclima",
+    "peligro volcánico",
+    "Precordillera",
+    "moluscos invasores",
+    "hormigón",
+    "minería",
+    "metales",
+    "extremófilos",
+    "arsénico"
+  ],
+  "descripcion": "Cicterránea es una revista de comunicación pública de la ciencia, de acceso abierto, gestionada por un grupo de investigador@s, becari@s y personal de apoyo del Centro de Investigaciones en Ciencias de la Tierra (CICTERRA). La revista publica contribuciones de Ciencias de la Tierra en cualquiera de sus áreas.\n\nEn este número:\n• Todo es polvo en el viento, el rol del polvo atmosférico en el clima del presente y del pasado\n• El peligro volcánico en Argentina, ¿qué sabemos y qué falta saber?\n• El mar paleozoico de la región cuyana, un paseo por el Caribe de la Precordillera Argentina\n• Moluscos exóticos e invasores de Córdoba, amenazas silenciosas en ambientes acuáticos y terrestres\n• Hormigón, ¿una roca hecha por el hombre?\n• De las montañas a los ríos: siguiendo el camino de los metales en ambientes mineros\n• Microorganismos extremófilos: potenciales héroes contra el arsénico",
+  "links": [
+    {
+      "url": "https://revistas.unc.edu.ar/index.php/cicterranea/issue/view/2184"
+    }
+  ],
+  "imagen": "/imagenes/cicterranea-n3.jpg",
+  "origen": "web",
+  "creado": "2019-12-13T12:00:00Z"
+}

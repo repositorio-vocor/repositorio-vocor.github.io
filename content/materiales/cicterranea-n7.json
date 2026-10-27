@@ -1,0 +1,38 @@
+{
+  "recurso": "Cicterránea N°7",
+  "ue": [
+    "CICTERRA"
+  ],
+  "area": [
+    "Ciencias Exactas y Naturales"
+  ],
+  "formato": [
+    "Revista"
+  ],
+  "publico": [
+    "Público General",
+    "Juvenil (12 a 18 años)",
+    "Docentes"
+  ],
+  "palabras": [
+    "Geología",
+    "sequía",
+    "río Paraná",
+    "ética",
+    "minerales",
+    "turismo científico",
+    "viento",
+    "cristales",
+    "amonoideos",
+    "corteza terrestre"
+  ],
+  "descripcion": "Cicterránea es una revista de comunicación pública de la ciencia, de acceso abierto, gestionada por un grupo de investigador@s, becari@s y personal de apoyo del Centro de Investigaciones en Ciencias de la Tierra (CICTERRA). La revista publica contribuciones de Ciencias de la Tierra en cualquiera de sus áreas.\n\nEn este número:\n• La sequía extraordinaria del Paraná, ¿un fenómeno natural, o influenciado por la actividad humana?\n• ¿Cuándo dejaremos de ser humanos? El rulo intrincado entre la ética y la satisfacción del avance en el conocimiento científico\n• Lo esencial es invisible a los ojos, el estudio de las rocas y sus minerales más allá de lo que vemos\n• El gran viaje, una aproximación al turismo científico\n• Descifrando el rumbo del viento\n• Un viaje al centro de los cristales\n• ¡Las conchillas espirales de los amonoideos son intrigantes!\n• Desentrañando los misterios de la corteza terrestre",
+  "links": [
+    {
+      "url": "https://revistas.unc.edu.ar/index.php/cicterranea/issue/view/2905"
+    }
+  ],
+  "imagen": "/imagenes/cicterranea-n7.jpg",
+  "origen": "web",
+  "creado": "2024-04-08T12:00:00Z"
+}

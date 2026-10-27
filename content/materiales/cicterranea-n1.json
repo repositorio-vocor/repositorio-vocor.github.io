@@ -1,0 +1,38 @@
+{
+  "recurso": "Cicterránea N°1",
+  "ue": [
+    "CICTERRA"
+  ],
+  "area": [
+    "Ciencias Exactas y Naturales"
+  ],
+  "formato": [
+    "Revista"
+  ],
+  "publico": [
+    "Público General",
+    "Juvenil (12 a 18 años)",
+    "Docentes"
+  ],
+  "palabras": [
+    "Geología",
+    "mármoles",
+    "rocas",
+    "tiempo geológico",
+    "agua",
+    "inundaciones",
+    "fracking",
+    "bosques nativos",
+    "tufas",
+    "deriva continental"
+  ],
+  "descripcion": "Cicterránea es una revista de comunicación pública de la ciencia, de acceso abierto, gestionada por un grupo de investigador@s, becari@s y personal de apoyo del Centro de Investigaciones en Ciencias de la Tierra (CICTERRA). La revista publica contribuciones de Ciencias de la Tierra en cualquiera de sus áreas.\n\nEn este número:\n• Mármoles, rocas con mucha historia\n• La Tierra cambiante, un viaje hacia el tiempo profundo\n• Del cometa a tu vaso, el largo camino del agua\n• Inundaciones en Córdoba, ¿son realmente eventos extraordinarios y extremos?\n• Fracking, controvertida técnica de un nuevo paradigma petrolero\n• ¿Bosques nativos o pinos exóticos?\n• Entre tufas y travertinos\n• ¿Se mueven los continentes?",
+  "links": [
+    {
+      "url": "https://revistas.unc.edu.ar/index.php/cicterranea/issue/view/2181"
+    }
+  ],
+  "imagen": "/imagenes/cicterranea-n1.jpg",
+  "origen": "web",
+  "creado": "2017-08-03T12:00:00Z"
+}

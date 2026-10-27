@@ -1,0 +1,35 @@
+{
+  "recurso": "Cicterránea N°6",
+  "ue": [
+    "CICTERRA"
+  ],
+  "area": [
+    "Ciencias Exactas y Naturales"
+  ],
+  "formato": [
+    "Revista"
+  ],
+  "publico": [
+    "Público General",
+    "Juvenil (12 a 18 años)",
+    "Docentes"
+  ],
+  "palabras": [
+    "Geología",
+    "agua",
+    "territorio",
+    "problemas socioambientales",
+    "agua subterránea",
+    "cuencas",
+    "embalse San Roque"
+  ],
+  "descripcion": "Cicterránea es una revista de comunicación pública de la ciencia, de acceso abierto, gestionada por un grupo de investigador@s, becari@s y personal de apoyo del Centro de Investigaciones en Ciencias de la Tierra (CICTERRA). La revista publica contribuciones de Ciencias de la Tierra en cualquiera de sus áreas.\n\nEn este número:\n• Miradas y abordajes en torno al agua, encuentros entre ciencia y territorio\n• Vincularnos con las aguas, retejernos con la vida\n• Problemas socioambientales, reflexiones sobre el quehacer científico en Argentina\n• Agua subterránea, un tesoro escondido en peligro\n• Conociendo las aguas de la cuenca del Sol\n• Desentrañando el pasado del embalse San Roque",
+  "links": [
+    {
+      "url": "https://revistas.unc.edu.ar/index.php/cicterranea/issue/view/2580"
+    }
+  ],
+  "imagen": "/imagenes/cicterranea-n6.jpg",
+  "origen": "web",
+  "creado": "2022-09-26T12:00:00Z"
+}

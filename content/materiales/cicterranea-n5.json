@@ -1,0 +1,35 @@
+{
+  "recurso": "Cicterránea N°5",
+  "ue": [
+    "CICTERRA"
+  ],
+  "area": [
+    "Ciencias Exactas y Naturales"
+  ],
+  "formato": [
+    "Revista"
+  ],
+  "publico": [
+    "Público General",
+    "Juvenil (12 a 18 años)",
+    "Docentes"
+  ],
+  "palabras": [
+    "Geología",
+    "Laguna Negra",
+    "extremófilos",
+    "sedimentología",
+    "glaciaciones",
+    "sincrotrón",
+    "incendios"
+  ],
+  "descripcion": "Cicterránea es una revista de comunicación pública de la ciencia, de acceso abierto, gestionada por un grupo de investigador@s, becari@s y personal de apoyo del Centro de Investigaciones en Ciencias de la Tierra (CICTERRA). La revista publica contribuciones de Ciencias de la Tierra en cualquiera de sus áreas.\n\nEn este número:\n• Amor a lo extremo, los habitantes de la Laguna Negra\n• De detectives a soñadores, tras las huellas del agua y el viento en las rocas\n• De glaciares a desiertos, el ocaso de una Era\n• El Señor de los Anillos, el poder de la luz de Sincrotrón\n• Incendios en la Provincia de Córdoba, la urgencia de un abordaje integral",
+  "links": [
+    {
+      "url": "https://revistas.unc.edu.ar/index.php/cicterranea/issue/view/2340"
+    }
+  ],
+  "imagen": "/imagenes/cicterranea-n5.jpg",
+  "origen": "web",
+  "creado": "2021-07-29T12:00:00Z"
+}

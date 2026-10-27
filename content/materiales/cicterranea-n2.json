@@ -1,0 +1,38 @@
+{
+  "recurso": "Cicterránea N°2",
+  "ue": [
+    "CICTERRA"
+  ],
+  "area": [
+    "Ciencias Exactas y Naturales"
+  ],
+  "formato": [
+    "Revista"
+  ],
+  "publico": [
+    "Público General",
+    "Juvenil (12 a 18 años)",
+    "Docentes"
+  ],
+  "palabras": [
+    "Geología",
+    "contaminación natural",
+    "Paleozoico",
+    "areniscas",
+    "Cretácico",
+    "pesticidas",
+    "monitoreo ambiental",
+    "sismos",
+    "volcanes",
+    "glaciares"
+  ],
+  "descripcion": "Cicterránea es una revista de comunicación pública de la ciencia, de acceso abierto, gestionada por un grupo de investigador@s, becari@s y personal de apoyo del Centro de Investigaciones en Ciencias de la Tierra (CICTERRA). La revista publica contribuciones de Ciencias de la Tierra en cualquiera de sus áreas.\n\nEn este número:\n• Venenos en la naturaleza, ¿existe la contaminación natural?\n• La revolución marina del Paleozoico medio, el gran impacto de los continentes sobre la vida en el mar\n• ¿Una apertura oceánica en Córdoba? Lo que cuentan las areniscas del Cretácico\n• Pesticidas y metales al acecho, monitoreo ambiental en el sur de Córdoba\n• Sismos y terremotos, cuando se nos mueve el piso\n• Reconstruyendo volcanes\n• Congelando el tiempo: el estudio de los glaciares en el pasado",
+  "links": [
+    {
+      "url": "https://revistas.unc.edu.ar/index.php/cicterranea/issue/view/2183"
+    }
+  ],
+  "imagen": "/imagenes/cicterranea-n2.jpg",
+  "origen": "web",
+  "creado": "2018-10-31T12:00:00Z"
+}
