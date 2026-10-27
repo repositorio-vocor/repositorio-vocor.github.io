@@ -1,0 +1,29 @@
+{
+  "recurso": "¿Cómo ayudar al monte después del fuego?",
+  "ue": [
+    "IMBIV"
+  ],
+  "area": [
+    "Ciencias Biológicas y de la Salud"
+  ],
+  "formato": [
+    "Material didáctico"
+  ],
+  "publico": [
+    "Público General"
+  ],
+  "palabras": [
+    "fuego",
+    "monte",
+    "incendios"
+  ],
+  "descripcion": "Volvieron los incendios a Córdoba ¿Cómo podemos ayudar para que las áreas quemadas se restauren?",
+  "links": [
+    {
+      "url": "https://imbiv.conicet.unc.edu.ar/como-ayudar-al-monte-despues-del-fuego/"
+    }
+  ],
+  "imagen": "/imagenes/como-ayudar-al-monte-despues-del-fuego.jpg",
+  "origen": "web",
+  "creado": "2020-10-01T12:00:00Z"
+}
