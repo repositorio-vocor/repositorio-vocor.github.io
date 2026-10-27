@@ -1,0 +1,27 @@
+{
+  "recurso": "Biodiversa",
+  "ue": [
+    "IMBIV"
+  ],
+  "area": [
+    "Ciencias Biológicas y de la Salud"
+  ],
+  "formato": [
+    "Sitio Web"
+  ],
+  "publico": [
+    "Público General"
+  ],
+  "palabras": [
+    "biodiversidad"
+  ],
+  "descripcion": "Nos proponemos visibilizar información, recursos, proyectos y acciones relacionadas con la biodiversidad y los ambientes nativos desarrolladas por científicas/os y organizaciones de nuestra región. Compilamos valiosa información disponible públicamente para hacerla accesible a aquellas personas interesadas en temáticas ambientales.",
+  "links": [
+    {
+      "url": "https://biodiversa.museobotanico.unc.edu.ar/"
+    }
+  ],
+  "imagen": "/imagenes/biodiversa.jpg",
+  "origen": "web",
+  "creado": "2022-06-01T12:00:00Z"
+}
