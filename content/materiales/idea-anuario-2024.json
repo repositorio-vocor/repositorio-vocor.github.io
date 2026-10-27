@@ -1,0 +1,29 @@
+{
+  "recurso": "Anuario 2024",
+  "ue": [
+    "IDEA"
+  ],
+  "area": [
+    "Ciencias Biológicas y de la Salud"
+  ],
+  "formato": [
+    "Revista"
+  ],
+  "publico": [
+    "Público General"
+  ],
+  "palabras": [
+    "fotografía",
+    "fauna cordobesa",
+    "animales"
+  ],
+  "descripcion": "Las mejores fotos de la fauna cordobesa.",
+  "links": [
+    {
+      "url": "https://www.idea.conicet.unc.edu.ar/files/Revista-IDEA-Anuario-2024.pdf"
+    }
+  ],
+  "imagen": "/imagenes/idea-anuario-2024.jpg",
+  "origen": "web",
+  "creado": "2024-12-01T12:00:00Z"
+}
