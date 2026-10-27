@@ -1,0 +1,29 @@
+{
+  "recurso": "Guía de aves de Antofagasta de la Sierra",
+  "ue": [
+    "IMBIV"
+  ],
+  "area": [
+    "Ciencias Biológicas y de la Salud"
+  ],
+  "formato": [
+    "Libro"
+  ],
+  "publico": [
+    "Público General"
+  ],
+  "palabras": [
+    "aves",
+    "guía",
+    "Antofagasta"
+  ],
+  "descripcion": "La guía de aves de Antofagasta de la Sierra recopila información de 72 especies de aves de la región. Nosotros registramos en nuestros estudios 65 especies de las 152 conocidas para la Puna. Adicionalmente especies como el cóndor, el benteveo y la garza bruja o zorra del agua, fueron agregadas por los habitantes de la zona que las reconocen como aves comunes del lugar.\n\nLas aves son especies carismáticas, fáciles de observar y de rápida respuesta a las condiciones ambientales, lo que las convierte en excelentes indicadores del estado de conservación de los ambientes. La Puna alberga una importante avifauna cuya riqueza se refleja en un endemismo relativamente alto y la presencia de un elevado número de especies que utilizan sus humedales como sitios de tránsito en sus rutas.",
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1a4mlAxJZHLuBLSZ_8lqoEYLMJgYwFcb7/view"
+    }
+  ],
+  "imagen": "/imagenes/guia-de-aves-de-antofagasta-de-la-sierra.jpg",
+  "origen": "web",
+  "creado": "2022-06-01T12:00:00Z"
+}
