@@ -1,0 +1,49 @@
+{
+  "recurso": "+IDEA sobre Fauna N°7",
+  "ue": [
+    "IDEA"
+  ],
+  "area": [
+    "Ciencias Biológicas y de la Salud"
+  ],
+  "formato": [
+    "Revista"
+  ],
+  "publico": [
+    "Público General"
+  ],
+  "palabras": [
+    "ciencia ciudadana",
+    "hornero",
+    "tucanes",
+    "polillas",
+    "luz artificial",
+    "animales"
+  ],
+  "descripcion": "Cuando pensamos en cómo se hace ciencia, es fácil imaginar laboratorios con tubos de ensayo, computadoras analizando datos, o investigadores recorriendo montes, selvas o desiertos en busca de respuestas. Pero en los últimos años empezó a consolidarse otra forma de producir conocimiento: una que suma miradas, multiplica preguntas y expande los límites de lo posible. La ciencia ciudadana propone algo tan simple como poderoso: que cualquier persona pueda aportar a la construcción del conocimiento a partir de observar, registrar y compartir lo que sucede en su entorno cotidiano. Este número está dedicado justamente a esas experiencias donde la ciencia se vuelve colectiva. Donde cualquiera puede convertirse en parte de la búsqueda de respuestas.\nAbrimos con El misterio de los nidos del hornero, de Nicolás Adreani y Lucía Mentesana. A partir de una pregunta tan simple como intrigante (¿por qué algunos nidos tienen la entrada a la derecha y otros a la izquierda?), los autores nos muestran cómo una “bandada” de más de mil personas permitió reunir muchísimos datos y empezar a desentrañar este enigma.\nSeguimos con Cuando los tucanes llegan a la ciudad de Alejandro Schaaf y Roman Ruggera. En San Salvador de Jujuy, una serie de observaciones espontáneas se transformó en un proyecto que hoy permite entender cómo una especie emblemática se adapta a la vida urbana. Entre árboles, cables y jardines, los tucanes nos invitan a repensar la ciudad como un ecosistema vivo, donde la biodiversidad también encuentra su lugar.\nEn El lado oscuro de la luz, Florencia Soteras y equipo nos llevan a un problema mucho menos visible, pero igual de importante: cómo la luz artificial afecta a las polillas y a otros insectos nocturnos. A partir de observaciones y registros colaborativos, el artículo revela un impacto silencioso sobre interacciones ecológicas clave, como la polinización, y nos invita a mirar la noche con otros ojos.\nCerramos con una entrevista a Alejo Bonifacio, quien nos cuenta cómo su trayectoria como investigador derivó en una forma de hacer ciencia más cercana a las personas y los territorios. Esa experiencia tomó forma en PreserVamos, una app que muestra cómo la participación de las comunidades puede generar información útil para la conservación de ríos y lagunas, al tiempo que fortalece el vínculo entre ciencia, sociedad y gestión ambiental.\nCuatro historias distintas, un mismo hilo conductor: la idea de que la ciencia no es solo un lugar al que se llega, sino también un camino que se construye entre muchos. Que las preguntas pueden nacer en cualquier lado. Y que, a veces, mirar con atención lo que tenemos cerca es el primer paso para entender algo mucho más grande.",
+  "links": [
+    {
+      "url": "https://www.idea.conicet.unc.edu.ar/files/Revista_idea_no7.pdf",
+      "texto": "Revista completa (PDF)"
+    },
+    {
+      "url": "https://www.idea.conicet.unc.edu.ar/2026/08/13/el-misterio-de-los-nidos-del-hornero-y-como-miles-de-personas-colaboraron-para-intentar-resolverlo/",
+      "texto": "El misterio de los nidos del hornero"
+    },
+    {
+      "url": "https://www.idea.conicet.unc.edu.ar/2026/08/13/cuando-los-tucanes-llegan-a-la-ciudad/",
+      "texto": "Cuando los tucanes llegan a la ciudad"
+    },
+    {
+      "url": "https://www.idea.conicet.unc.edu.ar/2026/08/13/el-lado-oscuro-de-la-luz/",
+      "texto": "El lado oscuro de la luz"
+    },
+    {
+      "url": "https://www.idea.conicet.unc.edu.ar/2026/08/13/alejo-bonifacio-los-ambientes-acuaticos-empezaron-a-decirme-cosas/",
+      "texto": "Alejo Bonifacio: «Los ambientes acuáticos empezaron a decirme cosas»"
+    }
+  ],
+  "imagen": "/imagenes/idea-sobre-fauna-n7.jpg",
+  "origen": "web",
+  "creado": "2026-08-13T12:00:00Z"
+}
