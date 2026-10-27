@@ -1,0 +1,28 @@
+{
+  "recurso": "Adquisición de suelo apto",
+  "ue": [
+    "CEVE"
+  ],
+  "area": [
+    "Ciencias Agrarias, de las Ingenierías y Materiales"
+  ],
+  "formato": [
+    "Audiovisual"
+  ],
+  "publico": [
+    "Público General"
+  ],
+  "palabras": [
+    "suelo apto",
+    "instrumentos"
+  ],
+  "descripcion": "El vídeo Adquisición de suelo apto presenta mecanismos no tradicionales a partir de los cuales un gobierno local puede conformar un banco de tierras.\nEstos instrumentos poseen ventajas y beneficios que son presentados brevemente en este audiovisual. Se comparten también posibles dificultades en el proceso de aplicación y requerimientos necesarios para su implementación.\nFinalmente, una serie de testimonios presentan diferentes experiencias de uso de las herramientas en municipios del país.",
+  "links": [
+    {
+      "url": "https://www.youtube.com/watch?v=D5FeLMPbAzY"
+    }
+  ],
+  "imagen": "/imagenes/adquisicion-de-suelo-apto.jpg",
+  "origen": "web",
+  "creado": "2023-07-25T12:00:00Z"
+}
