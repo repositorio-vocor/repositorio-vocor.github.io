@@ -1,0 +1,45 @@
+{
+  "recurso": "+IDEA sobre Fauna N°2",
+  "ue": [
+    "IDEA"
+  ],
+  "area": [
+    "Ciencias Biológicas y de la Salud"
+  ],
+  "formato": [
+    "Revista"
+  ],
+  "publico": [
+    "Público General"
+  ],
+  "palabras": [
+    "lagartija",
+    "Pristidactylus achalensis",
+    "extracción espermática",
+    "sherpas",
+    "Antártida",
+    "animales"
+  ],
+  "descripcion": "En nuestra segunda entrega, nos animamos a la crónica. Un género hermoso que nos permite conocer una historia a través de la piel de quien la relata. ¿Quiénes hacen ciencia? ¿Conocemos a todas las personas que hacen posible una investigación? José Sánchez arremete contra la invisibilidad que presentan ciertos grupos del quehacer científico y nos cuenta sobre los “sherpas” de la ciencia.\nTambién inauguramos la sección de fotorreportajes: historias contadas con pocas palabras y muchas fotos. ¿Alguna vez te preguntaste cómo es el día a día de los investigadores e investigadoras en Antártida? Natalia Servetto nos lleva a Base Carlini, donde varios de nuestros colegas pasan varios meses del año haciendo ciencia bajo cero.\nEn nuestra sección fija de animales, Sergio Naretto nos invita a conocer a Pristidactylus achalensis, un pequeño lagarto nativo de las Altas Cumbres descubierto infraganti en pleno acto caníbal. Golazo de media cancha para el grupo de investigadores que cometió un sorprendente acto de serendipia.\nY, por si esto fuera poco, de la mano de Guadalupe López Juri y Gabriela Cardozo nos metemos de lleno entre las bambalinas científicas del sexo silvestre. Las chicas nos cuentan cómo se ve, cómo se extrae, cómo se estudia y para qué se estudia el esperma de los animales de vida silvestre. Y, en el camino, cómo lograron adaptar una técnica de extracción espermática para aplicarla a los animales en sus laboratorios.",
+  "links": [
+    {
+      "url": "https://www.idea.conicet.unc.edu.ar/files/Revista-mas-idea-no2.pdf",
+      "texto": "Revista completa (PDF)"
+    },
+    {
+      "url": "https://www.idea.conicet.unc.edu.ar/2021/12/23/canibalismo-en-cordoba-conociendo-al-lagarto-de-achala/",
+      "texto": "Canibalismo en Córdoba: conociendo al lagarto de Achala"
+    },
+    {
+      "url": "https://www.idea.conicet.unc.edu.ar/2021/12/27/esperma-silvestre/",
+      "texto": "Esperma silvestre"
+    },
+    {
+      "url": "https://www.idea.conicet.unc.edu.ar/2022/01/19/los-sherpas-de-la-ciencia/",
+      "texto": "Los sherpas de la ciencia"
+    }
+  ],
+  "imagen": "/imagenes/idea-sobre-fauna-n2.jpg",
+  "origen": "web",
+  "creado": "2021-11-01T12:00:00Z"
+}
