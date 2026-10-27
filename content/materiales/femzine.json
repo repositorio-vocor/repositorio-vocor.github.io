@@ -21,7 +21,20 @@
   "descripcion": "Fanzines sobre género, hábitat y desigualdades",
   "links": [
     {
-      "url": "https://ceve.org.ar/fanzines-sobre-genero-habitat-y-desigualdades/"
+      "url": "https://ceve.org.ar/fanzines-sobre-genero-habitat-y-desigualdades/",
+      "texto": "Ver"
+    },
+    {
+      "url": "https://ceve.org.ar/documentos/Fanzine_2020.pdf",
+      "texto": "Barrios populares & pandemia (2020)"
+    },
+    {
+      "url": "https://ceve.org.ar/documentos/Femzine_2021.pdf",
+      "texto": "Género, Hábitat, Desigualdades (2021)"
+    },
+    {
+      "url": "https://ceve.org.ar/documentos/Femzine_2023.pdf",
+      "texto": "Democratizando los cuidados (2023)"
     }
   ],
   "imagen": "/imagenes/femzine.jpg",
