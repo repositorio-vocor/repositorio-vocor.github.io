@@ -1,0 +1,49 @@
+{
+  "recurso": "+IDEA sobre Fauna N°4",
+  "ue": [
+    "IDEA"
+  ],
+  "area": [
+    "Ciencias Biológicas y de la Salud"
+  ],
+  "formato": [
+    "Revista"
+  ],
+  "publico": [
+    "Público General"
+  ],
+  "palabras": [
+    "pseudoescorpiones",
+    "arañas",
+    "aridez",
+    "alacranes",
+    "Tityus carrilloi",
+    "animales"
+  ],
+  "descripcion": "En esta cuarta entrega, nos sentimos doblemente orgullosos de presentar nuestra segunda crónica. Primero, porque ya es la segunda; y segundo, ¡porque es internacional! Mariángeles Petit nos invita a remover los mitos que circulan en torno a la aridez a través de un deslumbrante viaje a los ambientes áridos de su tierra natal: Venezuela.\nPor otra parte, Fedra Bollatti, Rocío Palen Pietri y Alejandra Ceballos nos meten de lleno en los dos extremos del mundo arácnido: las recontrafamosísimas arañas y los recontramisteriosos pseudoescorpiones (a.k.a. falsos escorpiones). ¿Alguna vez te preguntaste cómo tienen sexo las arañas, o cómo se estudian sus comportamientos sexuales? ¿Sabías que los pseudoescorpiones danzan y se besan, o que viajan como polizones? Definitivamente, no podés perderte estos dos increíblemente logrados artículos de las chicas.\n¿Hay más? Por supuesto. Los dobletes hoy son la estrella: ¡Conseguimos nuestro segundo fotorreportaje! ¡Y qué fotorreportaje! Camilo Mattoni nos cuenta qué fue lo que pasó hace unos pocos años cuando centenares de alacranes invadieron los patios de muchas casas de Mendiolaza. ¿Qué hacemos si nos cruzamos con animales venenosos que pueden afectar nuestra salud? ¿Qué medidas precautorias se pueden tomar?",
+  "links": [
+    {
+      "url": "https://www.idea.conicet.unc.edu.ar/files/Revista-mas-idea-4.pdf",
+      "texto": "Revista completa (PDF)"
+    },
+    {
+      "url": "https://www.idea.conicet.unc.edu.ar/2023/03/06/conquista-aracnida-en-miniatura-el-mundo-oculto-de-los-falsos-escorpiones/",
+      "texto": "Conquista arácnida en miniatura"
+    },
+    {
+      "url": "https://www.idea.conicet.unc.edu.ar/2023/03/07/aridez-al-descubierto/",
+      "texto": "Aridez al descubierto"
+    },
+    {
+      "url": "https://www.idea.conicet.unc.edu.ar/2023/03/07/espias-de-aranas/",
+      "texto": "Espías de arañas"
+    },
+    {
+      "url": "https://www.idea.conicet.unc.edu.ar/2023/03/07/tityus-carrilloi-el-escorpion-invasor/",
+      "texto": "Tityus carrilloi: ¡el escorpión invasor!"
+    }
+  ],
+  "imagen": "/imagenes/idea-sobre-fauna-n4.jpg",
+  "origen": "web",
+  "creado": "2023-03-01T12:00:00Z"
+}
