@@ -1,0 +1,48 @@
+{
+  "recurso": "+IDEA sobre Fauna N°1",
+  "ue": [
+    "IDEA"
+  ],
+  "area": [
+    "Ciencias Biológicas y de la Salud"
+  ],
+  "formato": [
+    "Revista"
+  ],
+  "publico": [
+    "Público General"
+  ],
+  "palabras": [
+    "lagartija",
+    "chelco",
+    "colores",
+    "entrevista",
+    "Antártida",
+    "animales"
+  ],
+  "descripcion": "En nuestra revista van a encontrar escritos sobre las más variadas facetas que hacen a nuestra actividad y objeto de estudio: animales, ambientes, procesos y metodologías. También sobre cultura científica y sobre el rol de la ciencia en nuestra sociedad.",
+  "links": [
+    {
+      "url": "https://www.idea.conicet.unc.edu.ar/files/Revista-idea-n%C2%B01.pdf",
+      "texto": "Revista completa (PDF)"
+    },
+    {
+      "url": "https://www.idea.conicet.unc.edu.ar/2021/10/07/liolaemus-chacoensis/",
+      "texto": "Lagartija o chelco chaqueño"
+    },
+    {
+      "url": "https://www.idea.conicet.unc.edu.ar/2021/10/07/amarillo-patito-y-verde-botella/",
+      "texto": "Amarillo patito y verde botella"
+    },
+    {
+      "url": "https://www.idea.conicet.unc.edu.ar/2021/10/07/ciencia-infraganti/",
+      "texto": "Ciencia infraganti"
+    },
+    {
+      "url": "https://www.idea.conicet.unc.edu.ar/2021/10/07/cientificas-y-cientificos-sin-fronteras/",
+      "texto": "Entrevista a Camila Neder"
+    }
+  ],
+  "origen": "web",
+  "creado": "2021-07-01T12:00:00Z"
+}
