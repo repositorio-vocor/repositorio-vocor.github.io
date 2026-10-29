@@ -1,0 +1,32 @@
+{
+  "recurso": "Desarrollan un método para el control de poblaciones de palomas en Córdoba",
+  "ue": [
+    "IDEA"
+  ],
+  "area": [
+    "Ciencias Biológicas y de la Salud"
+  ],
+  "formato": [
+    "En los medios"
+  ],
+  "publico": [
+    "Público General"
+  ],
+  "palabras": [
+    "palomas",
+    "control de poblaciones",
+    "aves urbanas",
+    "anticonceptivo",
+    "animales"
+  ],
+  "descripcion": "Entrevista radial de Fernando Genesir en Cadena 3 (programa Resumen 3) al Dr. Joaquín Navarro, director del IDEA y responsable del proyecto que busca desarrollar un método ético para reducir progresivamente la sobreabundancia de palomas en la ciudad de Córdoba. Se trata de un cebo que reduce la carga de parásitos y, como efecto colateral, interfiere en la ovulación de las aves, de modo que la población disminuye naturalmente sin nuevos nacimientos que la reemplacen. El sistema se probó con éxito en distintos lugares de Europa: «Es importante probarlo en cada lugar y en cada circunstancia para evaluar el éxito del proyecto», explicó Navarro.",
+  "links": [
+    {
+      "url": "https://www.cadena3.com/noticia/resumen-3/crean-anticonceptivo-para-evitar-la-proliferacion-de-palomas_302509",
+      "texto": "Escuchar en Cadena 3"
+    }
+  ],
+  "imagen": "/imagenes/control-de-palomas-cordoba.jpg",
+  "origen": "web",
+  "creado": "2021-08-26T12:00:00Z"
+}
