@@ -1,0 +1,32 @@
+{
+  "recurso": "Una casa hecha de maní",
+  "ue": [
+    "CEVE"
+  ],
+  "area": [
+    "Ciencias Agrarias, de las Ingenierías y Materiales"
+  ],
+  "formato": [
+    "En los medios"
+  ],
+  "publico": [
+    "Público General"
+  ],
+  "palabras": [
+    "maní",
+    "materiales de construcción",
+    "reciclado",
+    "residuos agroindustriales",
+    "vivienda social"
+  ],
+  "descripcion": "Nota de La Nación sobre cómo el CEVE (CONICET) convierte las cáscaras de maní, un residuo que hasta entonces se quemaba o se usaba como alimento para cerdos, en materiales para construir viviendas: combinadas con cemento se usan para ladrillos y bloques, y mezcladas con resina se transforman en placas livianas y aislantes para cielorrasos. «La idea de elaborar placas poliméricas de cáscaras de maní apunta a disminuir la demanda de madera y aprovechar otros residuos que sobreabundan en el sector agroindustrial», explica Mariana Gatani, investigadora del CEVE.",
+  "links": [
+    {
+      "url": "https://www.lanacion.com.ar/lifestyle/una-casa-hecha-de-mani-nid1809331/",
+      "texto": "Leer en La Nación"
+    }
+  ],
+  "imagen": "/imagenes/una-casa-hecha-de-mani.jpg",
+  "origen": "web",
+  "creado": "2015-07-10T12:00:00Z"
+}
