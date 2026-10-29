@@ -29,6 +29,10 @@
   "descripcion": "Es la revista de divulgación científica del ICYTAC. El objetivo de nuestra revista es divulgar sobre la ciencia y la tecnología de los alimentos: su elaboración, producción, innovación, impacto en la salud y la relación de los alimentos con todos estos factores.\n\nEn este volumen:\n• Adolescentes y elecciones: entre la góndola y el celular\n• Microplásticos en alimentos: ¿Cuánto ingerimos y cuáles son los riesgos para la salud?\n• Más allá de la quínoa: biodiversidad y revalorización de los cultivos andinos\n• ANOVA o Kruskal-Wallis: El falso dilema detrás de un vaso de yogurt",
   "links": [
     {
+      "url": "https://www.icytac.conicet.unc.edu.ar/divulgacion/revista-alimentamente/",
+      "texto": "Página de la revista"
+    },
+    {
       "url": "https://www.icytac.conicet.unc.edu.ar/adolescentes-y-elecciones-entre-la-gondola-y-el-celular/",
       "texto": "Adolescentes y elecciones: entre la góndola y el celular"
     },
@@ -47,5 +51,5 @@
   ],
   "imagen": "/imagenes/alimentamente-vol3.jpg",
   "origen": "web",
-  "creado": "2025-01-01T12:00:00Z"
+  "creado": "2026-06-01T12:00:00Z"
 }
