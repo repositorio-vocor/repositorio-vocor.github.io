@@ -28,5 +28,6 @@
   ],
   "imagen": "/imagenes/revista-museo-de-antropologia.jpg",
   "origen": "web",
-  "creado": "2008-01-01T12:00:00Z"
+  "creado": "2008-01-01T12:00:00Z",
+  "oculto": true
 }

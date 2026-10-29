@@ -27,7 +27,7 @@ PUBLICOS = [
     "Docentes",
 ]
 FORMATOS = [
-    "Audiovisual", "Podcast", "Material didáctico", "Libro", "Revista", "Notas y entrevistas", "Sitio Web",
+    "Audiovisual", "Podcast", "Material didáctico", "Libro", "Revista", "Notas y entrevistas", "Sitio web",
 ]
 # Formatos que por ahora NO se muestran en el sitio. Sus materiales se conservan en
 # content/materiales/ y se pueden seguir cargando; para volver a mostrarlos, sacalos de esta lista.
@@ -52,7 +52,7 @@ CON_COMA = {
 }
 VOCAB = {"area": AREAS, "publico": PUBLICOS, "formato": FORMATOS}
 
-CAMPOS = ["recurso", "ue", "area", "formato", "publico", "palabras", "descripcion", "links", "imagen", "origen", "creado"]
+CAMPOS = ["recurso", "ue", "area", "formato", "publico", "palabras", "descripcion", "links", "imagen", "origen", "creado", "oculto"]
 
 
 def norm(s):

@@ -48,6 +48,9 @@ def main():
             errores.append(f"{f.name}: no tiene título (recurso)")
             continue
         d["id"] = f.stem
+        if d.get("oculto"):  # "oculto": true → se conserva en content/materiales/ pero no se publica
+            ocultos += 1
+            continue
         formatos = [x for x in d.get("formato", []) if x not in FORMATOS_OCULTOS]
         if d.get("formato") and not formatos:
             ocultos += 1
@@ -63,7 +66,7 @@ def main():
     if redes.exists():
         shutil.copy2(redes, SALIDA / "redes.json")
     (SALIDA / ".nojekyll").write_text("")
-    print(f"Sitio armado en _site/ con {len(materiales)} materiales ({ocultos} ocultos por formato: {', '.join(FORMATOS_OCULTOS) or 'ninguno'}).")
+    print(f"Sitio armado en _site/ con {len(materiales)} materiales ({ocultos} ocultos — marcados como ocultos o por formato: {', '.join(FORMATOS_OCULTOS) or 'ninguno'}).")
 
 
 if __name__ == "__main__":

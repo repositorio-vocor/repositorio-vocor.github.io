@@ -7,7 +7,7 @@
     "Ciencias Biológicas y de la Salud"
   ],
   "formato": [
-    "Sitio Web"
+    "Sitio web"
   ],
   "publico": [
     "Juvenil (12 a 18 años)",
@@ -26,5 +26,6 @@
   ],
   "imagen": "/imagenes/del-imbiv-para-la-comunidad.jpg",
   "origen": "notion",
-  "creado": "2024-11-24T12:00:46.000Z"
+  "creado": "2024-11-24T12:00:46.000Z",
+  "oculto": true
 }

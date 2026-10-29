@@ -5,7 +5,7 @@ const AREA_VIEJA = {"Ciencias Agrarias":AREAS[0],"Ciencias Agrarias, de las Inge
 // Nombre más corto para mostrar en el filtro
 const AREA_ETIQ = {[AREAS[0]]:"Agrarias, Ing. y Mat.",[AREAS[1]]:"Biológicas y Salud",[AREAS[2]]:"Exactas y Naturales",[AREAS[3]]:"Sociales y Humanidades"}; // mismas abreviaturas que en las redes
 const PUBLICOS = ["Público General","Infancia temprana (0-5 años)","Infantil (7 a 11 años)","Juvenil (12 a 18 años)","Docentes"];
-const FORMATOS = ["Audiovisual","Podcast","Material didáctico","Libro","Revista","Notas y entrevistas","Sitio Web"]; // orden en que se muestran
+const FORMATOS = ["Audiovisual","Podcast","Material didáctico","Libro","Revista","Notas y entrevistas","Sitio web"]; // orden en que se muestran
 
 /* Familias de formato: color e ícono. Un formato nuevo cae en "texto" hasta que se lo agregue acá. */
 const ICONOS = {
@@ -24,7 +24,7 @@ const FAMILIA = {
   "Audiovisual":["video","video"],
   "Libro":["texto","libro"], "Revista":["revista","revista"],
   "Material didáctico":["edu","edu"],
-  "Sitio Web":["web","web"],
+  "Sitio web":["web","web"],
 };
 const fam = f => FAMILIA[f] || ["texto","texto"];
 const colorDe = f => `var(--c-${fam(f)[0]})`;

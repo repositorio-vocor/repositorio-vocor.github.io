@@ -83,7 +83,7 @@ collections:
           - Libro
           - Revista
           - Notas y entrevistas
-          - Sitio Web
+          - Sitio web
       - name: area
         label: Área
         widget: select
@@ -135,6 +135,12 @@ collections:
         label: Imagen de portada
         widget: image
         required: false
+      - name: oculto
+        label: Ocultar del sitio
+        hint: Si lo activás, el material se conserva pero no se muestra en el sitio.
+        widget: boolean
+        required: false
+        default: false
       - name: creado
         label: Fecha de carga
         widget: datetime
