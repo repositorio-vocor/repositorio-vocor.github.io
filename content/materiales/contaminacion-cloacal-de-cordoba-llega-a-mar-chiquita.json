@@ -1,0 +1,33 @@
+{
+  "recurso": "¿La contaminación cloacal de Córdoba llega a Mar Chiquita?",
+  "ue": [
+    "IDEA"
+  ],
+  "area": [
+    "Ciencias Biológicas y de la Salud"
+  ],
+  "formato": [
+    "En los medios"
+  ],
+  "publico": [
+    "Público General"
+  ],
+  "palabras": [
+    "contaminación",
+    "río Suquía",
+    "Mar Chiquita",
+    "Laguna del Plata",
+    "pesticidas",
+    "calidad del agua"
+  ],
+  "descripcion": "Nota de La Voz sobre si el inadecuado tratamiento de las cloacas de la ciudad de Córdoba ya compromete el ecosistema de la laguna Mar Chiquita, a través del río Suquía. Entre las evidencias citadas está un trabajo del IDEA (Bistoni, Hued, Ballesteros) que recopila estudios con alta afectación por material fecal, metales pesados, pesticidas y fármacos entre la planta de Bajo Grande y Río Primero, y que encontró en la Laguna del Plata restos de pesticidas prohibidos como lindano y DDT, y PCB en pejerreyes.",
+  "links": [
+    {
+      "url": "https://www.lavoz.com.ar/ciudadanos/contaminacion-por-cloacas-en-cordoba-llega-mar-chiquita/",
+      "texto": "Leer en La Voz"
+    }
+  ],
+  "imagen": "/imagenes/contaminacion-cloacas-mar-chiquita.jpg",
+  "origen": "web",
+  "creado": "2018-06-08T12:00:00Z"
+}
