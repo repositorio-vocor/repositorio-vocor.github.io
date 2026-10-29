@@ -1,0 +1,41 @@
+{
+  "recurso": "Aficionados detectan 99 especies de plantas que no estaban registradas en Córdoba",
+  "ue": [
+    "IMBIV"
+  ],
+  "area": [
+    "Ciencias Biológicas y de la Salud"
+  ],
+  "formato": [
+    "En los medios"
+  ],
+  "publico": [
+    "Público General"
+  ],
+  "palabras": [
+    "ciencia ciudadana",
+    "iNaturalist",
+    "flora de Córdoba",
+    "plantas",
+    "especies exóticas",
+    "biodiversidad"
+  ],
+  "descripcion": "Un estudio de Lucas Carbone y Julia Tavella (IMBIV, CONICET-UNC), junto a Federico Actis Alesina y Cesar Massi, analizó más de 25 mil observaciones de plantas registradas por unas 1.300 personas en iNaturalist–ArgentiNat. La ciencia ciudadana acumuló en pocos años más de 1.300 especies, la mitad de la flora conocida de la provincia, y detectó 99 especies que nunca se habían registrado en Córdoba. Muchas son exóticas, lo que sugiere que las invasiones biológicas están en expansión, y algunas nativas raras no fueron encontradas, lo que podría indicar extinciones locales. La noticia fue cubierta por UNCiencia, La Voz y Cadena 3.",
+  "links": [
+    {
+      "url": "https://unciencia.unc.edu.ar/biologia/aficionados-detectan-99-especies-de-plantas-que-no-estaban-registradas-en-cordoba/",
+      "texto": "UNCiencia"
+    },
+    {
+      "url": "https://www.lavoz.com.ar/ciudadanos/aficionados-naturaleza-detectaron-99-especies-plantas-registro-cordoba_0_ixglZ6RQBF.html",
+      "texto": "La Voz"
+    },
+    {
+      "url": "https://www.cadena3.com/noticia/radioinforme-3/aficionados-detectaron-99-plantas-ineditas-para-la-flora-de-cordoba_542122",
+      "texto": "Cadena 3"
+    }
+  ],
+  "imagen": "/imagenes/aficionados-99-especies-plantas.jpg",
+  "origen": "web",
+  "creado": "2026-04-16T12:00:00Z"
+}
