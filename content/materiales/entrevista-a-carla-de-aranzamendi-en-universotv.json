@@ -1,0 +1,36 @@
+{
+  "recurso": "Entrevista a Carla De Aranzamendi en UniversoTV",
+  "ue": [
+    "IDEA"
+  ],
+  "area": [
+    "Ciencias Biológicas y de la Salud"
+  ],
+  "formato": [
+    "En los medios"
+  ],
+  "publico": [
+    "Público General"
+  ],
+  "palabras": [
+    "Mar Argentino",
+    "biodiversidad marina",
+    "mar profundo",
+    "expedición",
+    "animales"
+  ],
+  "descripcion": "Carla De Aranzamendi estuvo en los estudios de UniversoTV para conversar sobre los misterios que esconde el Mar Argentino en sus profundidades. Algunos de los temas tratados en la entrevista fueron:\n• Qué animales habitan en las profundidades del Mar Argentino.\n• Por qué es clave estudiar la biodiversidad marina en tiempo real.\n• Cómo impactó esta expedición en la comunidad educativa y científica.\n• La importancia del trabajo de los investigadores del CONICET para la ciencia argentina.",
+  "links": [
+    {
+      "url": "https://www.youtube.com/watch?v=qllZGqLC4hw",
+      "texto": "Ver en YouTube"
+    },
+    {
+      "url": "https://www.idea.conicet.unc.edu.ar/2025/09/05/entrevista-a-carla-de-aranzamendi-en-universotv/",
+      "texto": "Nota del IDEA"
+    }
+  ],
+  "imagen": "/imagenes/carla-de-aranzamendi-universotv.jpg",
+  "origen": "web",
+  "creado": "2025-09-05T12:00:00Z"
+}
