@@ -1,0 +1,51 @@
+{
+  "recurso": "AlimentaMENTE Vol. 2",
+  "ue": [
+    "ICYTAC"
+  ],
+  "area": [
+    "Ciencias Agrarias, de las Ingenierías y Materiales",
+    "Ciencias Biológicas y de la Salud",
+    "Ciencias Exactas y Naturales"
+  ],
+  "formato": [
+    "Revista"
+  ],
+  "publico": [
+    "Público General",
+    "Juvenil (12 a 18 años)",
+    "Docentes"
+  ],
+  "palabras": [
+    "alimentos",
+    "tecnología de los alimentos",
+    "residuos",
+    "industria alimentaria",
+    "gluten",
+    "legumbres",
+    "garbanzo",
+    "nutrición"
+  ],
+  "descripcion": "Es la revista de divulgación científica del ICYTAC. El objetivo de nuestra revista es divulgar sobre la ciencia y la tecnología de los alimentos: su elaboración, producción, innovación, impacto en la salud y la relación de los alimentos con todos estos factores.\n\nEn este volumen:\n• ¡NO LO TIRES! Ciencia al rescate de los residuos de la industria alimentaria\n• El gluten: héroe y villano\n• El garbanzo en tu pan: cómo una legumbre puede mejorar la nutrición\n• Ciencia y Tecnología de los Alimentos: ¿aliadas o enemigas del bienestar humano?",
+  "links": [
+    {
+      "url": "https://www.icytac.conicet.unc.edu.ar/no-lo-tires-ciencia-al-rescate-de-los-residuos-de-la-industria-alimentaria/",
+      "texto": "¡NO LO TIRES! Ciencia al rescate de los residuos de la industria alimentaria"
+    },
+    {
+      "url": "https://www.icytac.conicet.unc.edu.ar/el-gluten-heroe-y-villano/",
+      "texto": "El gluten: héroe y villano"
+    },
+    {
+      "url": "https://www.icytac.conicet.unc.edu.ar/el-garbanzo-en-tu-pan-como-una-legumbre-puede-mejorar-la-nutricion/",
+      "texto": "El garbanzo en tu pan: cómo una legumbre puede mejorar la nutrición"
+    },
+    {
+      "url": "https://www.icytac.conicet.unc.edu.ar/ciencia-y-tecnologia-de-los-alimentos-aliadas-o-enemigas-del-bienestar-humano/",
+      "texto": "Ciencia y Tecnología de los Alimentos: ¿aliadas o enemigas del bienestar humano?"
+    }
+  ],
+  "imagen": "/imagenes/alimentamente-vol2.jpg",
+  "origen": "web",
+  "creado": "2025-01-01T12:00:00Z"
+}

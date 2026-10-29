@@ -1,0 +1,46 @@
+{
+  "recurso": "AlimentaMENTE Vol. 1",
+  "ue": [
+    "ICYTAC"
+  ],
+  "area": [
+    "Ciencias Agrarias, de las Ingenierías y Materiales",
+    "Ciencias Biológicas y de la Salud",
+    "Ciencias Exactas y Naturales"
+  ],
+  "formato": [
+    "Revista"
+  ],
+  "publico": [
+    "Público General",
+    "Juvenil (12 a 18 años)",
+    "Docentes"
+  ],
+  "palabras": [
+    "alimentos",
+    "tecnología de los alimentos",
+    "microbiota",
+    "autismo",
+    "agroecología",
+    "calidad de los alimentos",
+    "sustentabilidad"
+  ],
+  "descripcion": "Es la revista de divulgación científica del ICYTAC. El objetivo de nuestra revista es divulgar sobre la ciencia y la tecnología de los alimentos: su elaboración, producción, innovación, impacto en la salud y la relación de los alimentos con todos estos factores.\n\nEn este volumen:\n• Microorganismos y cerebro: La clave microbiana en el autismo\n• ¿Cambia la calidad de los alimentos cuando son producidos de forma agroecológica?\n• Alimentar sustentablemente a la Argentina",
+  "links": [
+    {
+      "url": "https://www.icytac.conicet.unc.edu.ar/microorganismos-y-cerebro-la-clave-microbiana-en-el-autismo/",
+      "texto": "Microorganismos y cerebro: La clave microbiana en el autismo"
+    },
+    {
+      "url": "https://www.icytac.conicet.unc.edu.ar/cambia-la-calidad-de-los-alimentos-cuando-son-producidos-de-forma-agroecologica/",
+      "texto": "¿Cambia la calidad de los alimentos cuando son producidos de forma agroecológica?"
+    },
+    {
+      "url": "https://www.icytac.conicet.unc.edu.ar/alimentar-sustentablemente-a-la-argentina/",
+      "texto": "Alimentar sustentablemente a la Argentina"
+    }
+  ],
+  "imagen": "/imagenes/alimentamente-vol1.jpg",
+  "origen": "web",
+  "creado": "2025-01-01T12:00:00Z"
+}
