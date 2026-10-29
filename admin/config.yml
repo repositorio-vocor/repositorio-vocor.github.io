@@ -72,7 +72,7 @@ collections:
         min: 1
       - name: formato
         label: Formato
-        hint: '"Notas y entrevistas" está oculto por ahora: esos materiales se guardan pero no se muestran en el sitio.'
+        hint: 'Si el material lo produjo el instituto o sus investigadores, elegí su formato (Podcast, Audiovisual…). "En los medios" es para notas periodísticas, entrevistas o podcasts de medios sobre investigaciones e investigadores.'
         widget: select
         multiple: true
         min: 1
@@ -82,8 +82,8 @@ collections:
           - Material didáctico
           - Libro
           - Revista
-          - Notas y entrevistas
           - Sitio web
+          - En los medios
       - name: area
         label: Área
         widget: select

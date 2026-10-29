@@ -5,7 +5,7 @@
   --bg:#f6f7f9; --surface:#ffffff; --surface-2:#eef1f5; --ink:#111111; --ink-2:#686f78; --line:#d9dee5;
   --accent:#0064c8; --accent-ink:#ffffff; --accent-deep:#00468c; --sky:#0695d6; --sky-ink:#ffffff; --sun:#f6b40e; --sun-ink:#2a1f00;
   --hero-bg:#0064c8; --hero-ink:#ffffff; --hero-ink-2:#cfe3fb;
-  --on-c:#ffffff; --a-agr:#b0661c; --a-bio:#2e7d32; --a-exa:#0064c8; --a-soc:#9c2f6e; --c-audio:#6a4fb3; --c-video:#d9480f; --c-texto:#0064c8; --c-revista:#c2185b; --c-edu:#b07d00; --c-web:#00897b;
+  --on-c:#ffffff; --a-agr:#b0661c; --a-bio:#2e7d32; --a-exa:#0064c8; --a-soc:#9c2f6e; --c-audio:#6a4fb3; --c-video:#d9480f; --c-texto:#0064c8; --c-revista:#c2185b; --c-medios:#546e7a; --c-edu:#b07d00; --c-web:#00897b;
   --ok:#2b7a3d; --warn:#a66a00; --err:#c62828;
   --f-display:"Roboto Condensed", "Arial Narrow", "Roboto", system-ui, sans-serif;
   --f-body:"Roboto", "Segoe UI", system-ui, sans-serif;
@@ -17,7 +17,7 @@
   --bg:#0c141d; --surface:#142030; --surface-2:#1b2a3c; --ink:#e8eef4; --ink-2:#9fb0c2; --line:#2a3b4f;
   --accent:#4da3ff; --accent-ink:#06121f; --accent-deep:#2b7fd6; --sky:#2bb0ec; --sky-ink:#06121f; --sun:#f6b40e; --sun-ink:#2a1f00;
   --hero-bg:#003a75; --hero-ink:#ffffff; --hero-ink-2:#b9d4f3;
-  --on-c:#06121f; --a-agr:#f0a35e; --a-bio:#7bd389; --a-exa:#5aaeff; --a-soc:#f08cc4; --c-audio:#a68ef0; --c-video:#ff8a5c; --c-texto:#5aaeff; --c-revista:#f48fb1; --c-edu:#f2c14a; --c-web:#3fc7b6;
+  --on-c:#06121f; --a-agr:#f0a35e; --a-bio:#7bd389; --a-exa:#5aaeff; --a-soc:#f08cc4; --c-audio:#a68ef0; --c-video:#ff8a5c; --c-texto:#5aaeff; --c-revista:#f48fb1; --c-medios:#a7bcc7; --c-edu:#f2c14a; --c-web:#3fc7b6;
   --ok:#6fcf86; --warn:#e6b14a; --err:#f08a80; --shadow:0 1px 2px rgb(0 0 0 / .3), 0 10px 28px rgb(0 0 0 / .3); color-scheme:dark}
 
 *{box-sizing:border-box}

@@ -5,7 +5,7 @@ const AREA_VIEJA = {"Ciencias Agrarias":AREAS[0],"Ciencias Agrarias, de las Inge
 // Nombre más corto para mostrar en el filtro
 const AREA_ETIQ = {[AREAS[0]]:"Agrarias, Ing. y Mat.",[AREAS[1]]:"Biológicas y Salud",[AREAS[2]]:"Exactas y Naturales",[AREAS[3]]:"Sociales y Humanidades"}; // mismas abreviaturas que en las redes
 const PUBLICOS = ["Público General","Infancia temprana (0-5 años)","Infantil (7 a 11 años)","Juvenil (12 a 18 años)","Docentes"];
-const FORMATOS = ["Audiovisual","Podcast","Material didáctico","Libro","Revista","Notas y entrevistas","Sitio web"]; // orden en que se muestran
+const FORMATOS = ["Audiovisual","Podcast","Material didáctico","Libro","Revista","Sitio web","En los medios"]; // orden en que se muestran
 
 /* Familias de formato: color e ícono. Un formato nuevo cae en "texto" hasta que se lo agregue acá. */
 const ICONOS = {
@@ -18,9 +18,10 @@ const ICONOS = {
   revista:'<rect x="5" y="3" width="14" height="18" rx="1"/><path d="M8 7h8M8 11h8M8 15h5"/>',
   redes: '<circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="m8.2 10.8 7.6-3.6M8.2 13.2l7.6 3.6"/>',
   charla:'<path d="M4 5h16v10H9l-5 4z"/>',
+  medios:'<path d="M4 5h13v14H6a2 2 0 0 1-2-2z"/><path d="M17 9h3v8a2 2 0 0 1-2 2"/><path d="M7 9h7M7 12h7M7 15h4"/>',
 };
 const FAMILIA = {
-  "Podcast":["audio","audio"], "Notas y entrevistas":["audio","charla"],
+  "Podcast":["audio","audio"], "En los medios":["medios","medios"],
   "Audiovisual":["video","video"],
   "Libro":["texto","libro"], "Revista":["revista","revista"],
   "Material didáctico":["edu","edu"],

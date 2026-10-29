@@ -27,14 +27,14 @@ PUBLICOS = [
     "Docentes",
 ]
 FORMATOS = [
-    "Audiovisual", "Podcast", "Material didáctico", "Libro", "Revista", "Notas y entrevistas", "Sitio web",
+    "Audiovisual", "Podcast", "Material didáctico", "Libro", "Revista", "Sitio web", "En los medios",
 ]
 # Formatos que por ahora NO se muestran en el sitio. Sus materiales se conservan en
 # content/materiales/ y se pueden seguir cargando; para volver a mostrarlos, sacalos de esta lista.
-FORMATOS_OCULTOS = ["Notas y entrevistas"]
+FORMATOS_OCULTOS = []
 # Nombres viejos que se convierten al importar planillas.
 ALIAS_FORMATO = {
-    "nota": "Notas y entrevistas", "notas": "Notas y entrevistas", "entrevista": "Notas y entrevistas", "entrevistas": "Notas y entrevistas",
+    "nota": "En los medios", "notas": "En los medios", "entrevista": "En los medios", "entrevistas": "En los medios", "notas y entrevistas": "En los medios", "medios": "En los medios", "prensa": "En los medios", "nota periodistica": "En los medios",
     "video": "Audiovisual", "videos": "Audiovisual", "cartilla": "Material didáctico", "recursos para docentes": "Material didáctico",
     "revista anual": "Revista", "libros": "Libro", "revistas": "Revista",
     "publicacion de divulgacion cientifica": "Material didáctico", "publicacion": "Material didáctico", "webinar": "Audiovisual", "webinars": "Audiovisual", "redes sociales": "Material didáctico",
