@@ -1,0 +1,34 @@
+{
+  "recurso": "Comer pejerreyes del San Roque puede ser un riesgo para la salud",
+  "ue": [
+    "IDEA"
+  ],
+  "area": [
+    "Ciencias Biológicas y de la Salud"
+  ],
+  "formato": [
+    "En los medios"
+  ],
+  "publico": [
+    "Público General"
+  ],
+  "palabras": [
+    "pejerrey",
+    "lago San Roque",
+    "arsénico",
+    "mercurio",
+    "contaminación",
+    "salud",
+    "animales"
+  ],
+  "descripcion": "Nota de Lucas Viano en La Voz sobre un estudio del IDEA (UNC-CONICET) que detectó niveles altos de mercurio y arsénico en pejerreyes del lago San Roque. «Una persona que come un filé de pejerrey de 150 gramos se está excediendo en lo que debería consumir de arsénico y mercurio por día», explica Paola Garnero, autora principal del trabajo. El mercurio se va biomagnificando a lo largo de la cadena trófica, y los investigadores recomiendan más controles de los alimentos acuáticos y de los cuerpos de agua, programas de educación ambiental y un correcto tratamiento de los efluentes.",
+  "links": [
+    {
+      "url": "https://www.lavoz.com.ar/ciudadanos/comer-pejerreyes-del-san-roque-puede-ser-un-riesgo-para-la-salud",
+      "texto": "Leer en La Voz"
+    }
+  ],
+  "imagen": "/imagenes/pejerreyes-san-roque.jpg",
+  "origen": "web",
+  "creado": "2016-06-19T12:00:00Z"
+}
